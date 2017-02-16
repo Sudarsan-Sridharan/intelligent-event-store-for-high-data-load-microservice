@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="Event Store" />
+        <module name="intelligent-event-store-for-high-data-load" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="Event Store" target="1.8" />
+      <module name="intelligent-event-store-for-high-data-load" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,2 +1,4 @@
+com/deviceinsight/services/HazelcastConfiguration.class
 com/deviceinsight/services/Application.class
 com/deviceinsight/services/ARestController.class
+com/deviceinsight/services/Test.class
