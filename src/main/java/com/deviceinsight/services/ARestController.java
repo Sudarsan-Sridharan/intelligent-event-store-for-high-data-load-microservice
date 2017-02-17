@@ -41,12 +41,12 @@ public class ARestController {
     }
 
 
-    @RequestMapping(value = "/events/{NODE_ID}", method = RequestMethod.POST)
-    public Set<String> getEvents(@PathVariable("NODE_ID") String nodeId, @RequestBody PanamaEventDto panamaEventDto) throws ExecutionException, InterruptedException {
+    @RequestMapping(value = "/events/{NODE_ID}", method = RequestMethod.GET)
+    public Set<String> getEvents(@PathVariable("NODE_ID") Long nodeId) throws ExecutionException, InterruptedException {
 
 
         IMap<Long, Set<String>> map = client.getMap("openedEventsNodeIdMapping");
-        Set<String> openedEvents = map.get(panamaEventDto.getNodeId());
+        Set<String> openedEvents = map.get(nodeId);
         if (openedEvents == null) {
             return Collections.emptySet();
         } else {
