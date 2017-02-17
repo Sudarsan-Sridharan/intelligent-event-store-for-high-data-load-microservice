@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-import mesosphere.marathon.client.Marathon;
+/*import mesosphere.marathon.client.Marathon;
 import mesosphere.marathon.client.MarathonClient;
 
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -26,7 +26,7 @@ import org.springframework.cloud.mesos.dcos.client.DcosHeadersInterceptor;
 import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.util.StringUtils;
+import org.springframework.util.StringUtils;*/
 
 /**
  * JUnit {@link org.junit.Rule} that detects the fact that a Marathon installation is available.
@@ -34,9 +34,9 @@ import org.springframework.util.StringUtils;
  * @author Thomas Risberg
  * @author Eric Bottard
  */
-public class MarathonTestSupport extends AbstractExternalResourceTestSupport<Marathon> {
+public class MarathonTestSupport {//extends AbstractExternalResourceTestSupport<Marathon> {
 
-    private ConfigurableApplicationContext context;
+    /*private ConfigurableApplicationContext context;
 
     protected MarathonTestSupport() {
         super("MARATHON");
@@ -69,5 +69,5 @@ public class MarathonTestSupport extends AbstractExternalResourceTestSupport<Mar
                 return MarathonClient.getInstance(marathonProperties.getApiEndpoint());
             }
         }
-    }
+    }*/
 }

@@ -59,6 +59,10 @@ public class ARestController {
         @RequestMapping(value = "/createEvent", method = RequestMethod.POST)
     public String test(@RequestBody PanamaEventDto panamaEventDto) throws ExecutionException, InterruptedException {
 
+
+          //  System.out.println(">>>>> "+client.getPartitionService().getPartitions());
+
+
         IMap<Long, Set<String>> map = client.getMap("openedEventsNodeIdMapping");
         Set<String> openedEvents = map.get(panamaEventDto.getNodeId());
         if(panamaEventDto.getOnCome()) {

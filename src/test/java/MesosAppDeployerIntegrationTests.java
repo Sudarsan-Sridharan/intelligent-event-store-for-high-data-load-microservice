@@ -15,7 +15,7 @@
  */
 
 
-
+/*
 import org.junit.ClassRule;
 import org.junit.Ignore;
 import org.junit.Test;
@@ -29,11 +29,11 @@ import org.springframework.cloud.deployer.spi.test.AbstractAppDeployerIntegratio
 import org.springframework.cloud.deployer.spi.test.Timeout;
 import org.springframework.core.io.Resource;
 
+*/
+//@SpringApplicationConfiguration(classes = {TestConfig.class, MesosAutoConfiguration.class})
+public class MesosAppDeployerIntegrationTests {//extends AbstractAppDeployerIntegrationTests {
 
-@SpringApplicationConfiguration(classes = {TestConfig.class, MesosAutoConfiguration.class})
-public class MesosAppDeployerIntegrationTests extends AbstractAppDeployerIntegrationTests {
-
-    @Autowired
+  /*  @Autowired
     private AppDeployer appDeployer;
 
     @ClassRule
@@ -69,5 +69,5 @@ public class MesosAppDeployerIntegrationTests extends AbstractAppDeployerIntegra
     @Override
     protected Resource testApplication() {
         return new DockerResource("springcloud/spring-cloud-deployer-spi-test-app:latest");
-    }
+    }*/
 }

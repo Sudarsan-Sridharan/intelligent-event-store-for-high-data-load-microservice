@@ -1,4 +1,6 @@
+/Users/ebners/DI/Event Store/src/main/java/com/deviceinsight/services/PanamaEventDto.java
 /Users/ebners/DI/Event Store/src/main/java/com/deviceinsight/services/Application.java
+/Users/ebners/DI/Event Store/src/main/java/com/deviceinsight/services/KafkaPartitionUtil.java
 /Users/ebners/DI/Event Store/src/main/java/org/springframework/cloud/deployer/spi/mesos/marathon/MarathonAppDeployerProperties.java
 /Users/ebners/DI/Event Store/src/main/java/com/deviceinsight/services/HazelcastConfiguration.java
 /Users/ebners/DI/Event Store/src/main/java/com/deviceinsight/services/ARestController.java
