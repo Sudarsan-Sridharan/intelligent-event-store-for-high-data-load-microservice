@@ -21,7 +21,7 @@ import java.util.Set;
 import java.util.concurrent.ExecutionException;
 
 
-@SpringBootApplication
+//@SpringBootApplication
 @EnableAutoConfiguration
 @RestController
 public class ARestController {

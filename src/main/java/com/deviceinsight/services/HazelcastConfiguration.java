@@ -11,7 +11,7 @@ import org.springframework.context.support.GenericXmlApplicationContext;
 
 public class HazelcastConfiguration {
 
-    public static void main(String[] args) {
+   /* public static void main(String[] args) {
         Config config = new Config();
         config.getGroupConfig().setName("name");
         config.getGroupConfig().setPassword("pwd");
@@ -31,5 +31,5 @@ public class HazelcastConfiguration {
 
         Hazelcast.shutdownAll();
         HazelcastClient.shutdownAll();
-    }
+    }*/
 }

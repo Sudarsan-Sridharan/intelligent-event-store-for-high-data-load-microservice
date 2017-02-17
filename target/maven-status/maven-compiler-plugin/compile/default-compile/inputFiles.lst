@@ -1,8 +1,14 @@
-/Users/ebners/DI/Event Store/src/main/java/com/deviceinsight/services/PanamaEventDto.java
-/Users/ebners/DI/Event Store/src/main/java/com/deviceinsight/services/Application.java
-/Users/ebners/DI/Event Store/src/main/java/com/deviceinsight/services/KafkaPartitionUtil.java
-/Users/ebners/DI/Event Store/src/main/java/org/springframework/cloud/deployer/spi/mesos/marathon/MarathonAppDeployerProperties.java
-/Users/ebners/DI/Event Store/src/main/java/com/deviceinsight/services/HazelcastConfiguration.java
-/Users/ebners/DI/Event Store/src/main/java/com/deviceinsight/services/ARestController.java
-/Users/ebners/DI/Event Store/src/main/java/com/deviceinsight/services/SpringClient.java
-/Users/ebners/DI/Event Store/src/main/java/com/deviceinsight/services/Test.java
+/Users/ebners/DI/EventStore/src/main/java/com/deviceinsight/services/SpringClient.java
+/Users/ebners/DI/EventStore/src/main/java/com/deviceinsight/services/request/GoodbyeRequest.java
+/Users/ebners/DI/EventStore/src/main/java/com/deviceinsight/services/response/GoodbyeResponse.java
+/Users/ebners/DI/EventStore/src/main/java/com/deviceinsight/services/response/HelloResponse.java
+/Users/ebners/DI/EventStore/src/main/java/com/deviceinsight/services/controller/GreetingController.java
+/Users/ebners/DI/EventStore/src/main/java/com/deviceinsight/services/request/AbstractRequest.java
+/Users/ebners/DI/EventStore/src/main/java/com/deviceinsight/services/ARestController.java
+/Users/ebners/DI/EventStore/src/main/java/com/deviceinsight/services/Application.java
+/Users/ebners/DI/EventStore/src/main/java/com/deviceinsight/services/request/HelloRequest.java
+/Users/ebners/DI/EventStore/src/main/java/com/deviceinsight/services/Test.java
+/Users/ebners/DI/EventStore/src/main/java/com/deviceinsight/services/PanamaEventDto.java
+/Users/ebners/DI/EventStore/src/main/java/org/springframework/cloud/deployer/spi/mesos/marathon/MarathonAppDeployerProperties.java
+/Users/ebners/DI/EventStore/src/main/java/com/deviceinsight/services/HazelcastConfiguration.java
+/Users/ebners/DI/EventStore/src/main/java/com/deviceinsight/services/KafkaPartitionUtil.java
