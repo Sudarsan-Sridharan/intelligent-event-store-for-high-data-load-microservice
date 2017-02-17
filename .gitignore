@@ -1,10 +1,10 @@
 # Eclipse
 .classpath
 .project
-.settings/
+.settings/*
  
 # Intellij
-.idea/
+.idea/*
 *.iml
 *.iws
  
@@ -12,5 +12,5 @@
 .DS_Store
  
 # Maven
-log/
-target/
+log/*
+target/*
