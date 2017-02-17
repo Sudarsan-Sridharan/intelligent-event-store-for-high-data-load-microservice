@@ -1,3 +1,5 @@
+com/deviceinsight/services/SpringClient.class
+org/springframework/cloud/deployer/spi/mesos/marathon/MarathonAppDeployerProperties.class
 com/deviceinsight/services/HazelcastConfiguration.class
 com/deviceinsight/services/Application.class
 com/deviceinsight/services/ARestController.class
