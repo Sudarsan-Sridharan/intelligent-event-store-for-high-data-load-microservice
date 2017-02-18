@@ -22,10 +22,16 @@ import static org.springframework.restdocs.mockmvc.MockMvcRestDocumentation.docu
 import static org.springframework.restdocs.operation.preprocess.Preprocessors.preprocessRequest;
 import static org.springframework.restdocs.operation.preprocess.Preprocessors.preprocessResponse;
 import static org.springframework.restdocs.operation.preprocess.Preprocessors.prettyPrint;
+import static org.springframework.restdocs.payload.PayloadDocumentation.fieldWithPath;
+import static org.springframework.restdocs.payload.PayloadDocumentation.requestFields;
+import static org.springframework.restdocs.payload.PayloadDocumentation.responseFields;
 import static org.springframework.restdocs.request.RequestDocumentation.parameterWithName;
 import static org.springframework.restdocs.request.RequestDocumentation.pathParameters;
+import static org.springframework.restdocs.request.RequestDocumentation.requestParameters;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.deviceinsight.services.request.GoodbyeRequest;
@@ -57,6 +63,8 @@ public class ApplicationTestDocumentation {
     public JUnitRestDocumentation restDocumentation =
             new JUnitRestDocumentation("target/generated-snippets");
 
+    private RestDocumentationResultHandler document;
+
     @Autowired
     private MockMvc mockMvc;
 
@@ -68,6 +76,9 @@ public class ApplicationTestDocumentation {
         this.mockMvc = MockMvcBuilders.webAppContextSetup(this.context)
                 .apply(documentationConfiguration(this.restDocumentation))
                 .build();
+
+
+        this.document = document("{method-name}", preprocessRequest(prettyPrint()), preprocessResponse(prettyPrint()));
     }
 
     //the hello request has a single field that is defined in the abstract class from which HelloRequest extends.
@@ -84,11 +95,30 @@ public class ApplicationTestDocumentation {
 
         ObjectMapper objectMapper = new ObjectMapper();
 
+
+
+        this.document.snippets(
+                responseFields(
+                        fieldWithPath("id").description("The person's ID"),
+                        fieldWithPath("firstName").description("The persons' first name"),
+                        fieldWithPath("lastName").description("The persons' last name")
+                )
+        );
+
+
         mockMvc.perform(post("/api/greeting").content(objectMapper.writeValueAsString(req))
                 .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(content().string(containsString("hello Will")))
-                .andDo(document("hello"
+                .andDo(document("hello",
+                        requestFields(
+                                fieldWithPath("type").description("haha").optional(),
+                                fieldWithPath("name").description("haha").optional()),
+                        responseFields(
+                                //fieldWithPath("[]").description("An array of X"),
+                                fieldWithPath("message").description("Ta message like hello Will")
+                        )
                 ));
+
     }
 
     //goodbye request has an additional field - 'fullname'. the 'name' field nfrom the abstract class can be

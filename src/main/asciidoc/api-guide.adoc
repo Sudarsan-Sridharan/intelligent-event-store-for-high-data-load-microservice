@@ -1,4 +1,4 @@
-= Greeting REST Service API Guide
+= Microservice for fast event processing inspired by AI in the area of the IoT industry (COMMUNITY EDITION), https://eventstore.next-cloud.de - REST Service API Guide
 :doctype: book
 :icons: font
 :source-highlighter: highlightjs
@@ -37,3 +37,8 @@ include::{snippets}/goodbye/http-request.adoc[]
 === Example response
 
 include::{snippets}/goodbye/http-response.adoc[]
+
+=== Other
+
+include::{snippets}/hello/request-fields.adoc[]
+include::{snippets}/hello/response-fields.adoc[]
