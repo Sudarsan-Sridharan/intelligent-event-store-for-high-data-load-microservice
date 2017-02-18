@@ -1,5 +1,9 @@
 package com.deviceinsight.services;
 
+import com.arangodb.ArangoCollection;
+import com.arangodb.ArangoDB;
+import com.arangodb.ArangoDBException;
+import com.arangodb.ArangoDatabase;
 import com.hazelcast.client.HazelcastClient;
 import com.hazelcast.config.Config;
 import com.hazelcast.core.Hazelcast;
@@ -28,6 +32,16 @@ public class ARestController {
 
     private HazelcastInstance client;
 
+
+protected static ArangoDB arangoDB;
+
+    protected static final String DB_NAME = "eventstore";
+    protected static final String COLLECTION_NAME = "json_example_collection";
+
+
+    protected static ArangoDatabase db;
+    protected static ArangoCollection collection;
+
     @PostConstruct
     public void post() {
 /*        Config config = new Config();
@@ -45,7 +59,25 @@ public class ARestController {
     public Set<String> getEvents(@PathVariable("NODE_ID") Long nodeId) throws ExecutionException, InterruptedException {
 
 
+
+        arangoDB = new ArangoDB.Builder().user("root").password("Ovjv3FrdKvf3CVfj").build();
+        try {
+            arangoDB.db(DB_NAME).drop();
+        } catch (final ArangoDBException e) {
+        }
+        arangoDB.createDatabase(DB_NAME);
+        db = arangoDB.db(DB_NAME);
+        db.createCollection(COLLECTION_NAME);
+        collection = db.collection(COLLECTION_NAME);
+
+
+
+
         IMap<Long, Set<String>> map = client.getMap("openedEventsNodeIdMapping");
+
+
+
+
         Set<String> openedEvents = map.get(nodeId);
         if (openedEvents == null) {
             return Collections.emptySet();
@@ -116,4 +148,5 @@ public class ARestController {
         System.out.println("City: " + map.get("city"));
         return "ok";
     }
+
 }
