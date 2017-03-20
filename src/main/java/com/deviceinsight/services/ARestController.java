@@ -60,7 +60,7 @@ protected static ArangoDB arangoDB;
 
 
 
-        arangoDB = new ArangoDB.Builder().user("root").password("Ovjv3FrdKvf3CVfj").build();
+     /*   arangoDB = new ArangoDB.Builder().user("root").password("Ovjv3FrdKvf3CVfj").build();
         try {
             arangoDB.db(DB_NAME).drop();
         } catch (final ArangoDBException e) {
@@ -71,7 +71,7 @@ protected static ArangoDB arangoDB;
         collection = db.collection(COLLECTION_NAME);
 
 
-
+*/
 
         IMap<Long, Set<String>> map = client.getMap("openedEventsNodeIdMapping");
 
