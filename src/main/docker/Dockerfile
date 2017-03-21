@@ -1,5 +1,7 @@
-FROM java:8
-VOLUME /tmp
-ADD intelligent-event-store-for-high-data-load-0.0.1-SNAPSHOT.war app.war
-RUN bash -c 'touch /app.jar'
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+FROM tomcat:7-jre7
+MAINTAINER xyz
+
+RUN ["rm", "-fr", "/usr/local/tomcat/webapps/ROOT"]
+COPY intelligent-event-store-for-high-data-load-0.0.1-SNAPSHOT.war /usr/local/tomcat/webapps/ROOT.war
+
+CMD ["catalina.sh", "run"]
