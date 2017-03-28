@@ -1,11 +1,13 @@
 com/deviceinsight/services/SpringClient.class
 com/deviceinsight/services/HazelcastConfiguration.class
+com/deviceinsight/services/model/Client.class
 com/deviceinsight/services/request/AbstractRequest.class
 com/deviceinsight/services/request/GoodbyeRequest.class
 com/deviceinsight/services/response/HelloResponse.class
 com/deviceinsight/services/request/HelloRequest.class
 com/deviceinsight/services/response/GoodbyeResponse.class
 org/springframework/cloud/deployer/spi/mesos/marathon/MarathonAppDeployerProperties.class
+com/deviceinsight/services/Hibernate5AutoConfiguration.class
 com/deviceinsight/services/KafkaPartitionUtil.class
 com/deviceinsight/services/controller/GreetingController.class
 com/deviceinsight/services/PanamaEventDto.class

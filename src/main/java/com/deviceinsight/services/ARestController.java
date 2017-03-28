@@ -11,10 +11,15 @@ import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.core.IMap;
 import com.hazelcast.jet.Jet;
 import com.hazelcast.jet.JetInstance;
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
+import org.springframework.orm.hibernate5.HibernateTemplate;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
@@ -42,6 +47,12 @@ protected static ArangoDB arangoDB;
     protected static ArangoDatabase db;
     protected static ArangoCollection collection;
 
+    @Autowired
+    private SessionFactory sessionFactory;
+
+    @Autowired
+    private HibernateTemplate hibernateTemplate;
+
     @PostConstruct
     public void post() {
 /*        Config config = new Config();
@@ -55,7 +66,20 @@ protected static ArangoDB arangoDB;
     }
 
 
-    @RequestMapping(value = "/events/{NODE_ID}", method = RequestMethod.GET)
+@Transactional
+    @RequestMapping(value = "/hwl", method = RequestMethod.GET)
+    public String getEsssvents() throws ExecutionException, InterruptedException {
+
+        Session sess = sessionFactory.getCurrentSession();
+
+        SessionFactory sessionFactory = hibernateTemplate.getSessionFactory();
+
+        sessionFactory.getCurrentSession().createQuery("FROM Client").list();
+
+return "db works";
+    }
+
+        @RequestMapping(value = "/events/{NODE_ID}", method = RequestMethod.GET)
     public Set<String> getEvents(@PathVariable("NODE_ID") Long nodeId) throws ExecutionException, InterruptedException {
 
 
