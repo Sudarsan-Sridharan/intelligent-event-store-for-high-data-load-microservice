@@ -38,7 +38,7 @@ public class ARestController {
     private HazelcastInstance client;
 
 
-protected static ArangoDB arangoDB;
+    protected static ArangoDB arangoDB;
 
     protected static final String DB_NAME = "eventstore";
     protected static final String COLLECTION_NAME = "json_example_collection";
@@ -62,11 +62,11 @@ protected static ArangoDB arangoDB;
         config.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
         config.getNetworkConfig().getJoin().getTcpIpConfig().addMember("172.17.0.3:5701");
         Hazelcast.newHazelcastInstance(config);*/
-        client=(HazelcastInstance) new GenericXmlApplicationContext("applicationContext.xml").getBean("client");
+        client = (HazelcastInstance) new GenericXmlApplicationContext("applicationContext.xml").getBean("client");
     }
 
 
-@Transactional
+    @Transactional
     @RequestMapping(value = "/hwl", method = RequestMethod.GET)
     public String getEsssvents() throws ExecutionException, InterruptedException {
 
@@ -76,10 +76,10 @@ protected static ArangoDB arangoDB;
 
         sessionFactory.getCurrentSession().createQuery("FROM Client").list();
 
-return "db works";
+        return "db works";
     }
 
-        @RequestMapping(value = "/events/{NODE_ID}", method = RequestMethod.GET)
+    @RequestMapping(value = "/events/{NODE_ID}", method = RequestMethod.GET)
     public Set<String> getEvents(@PathVariable("NODE_ID") Long nodeId) throws ExecutionException, InterruptedException {
 
 
@@ -100,8 +100,6 @@ return "db works";
         IMap<Long, Set<String>> map = client.getMap("openedEventsNodeIdMapping");
 
 
-
-
         Set<String> openedEvents = map.get(nodeId);
         if (openedEvents == null) {
             return Collections.emptySet();
@@ -111,17 +109,16 @@ return "db works";
     }
 
 
-
-        @RequestMapping(value = "/createEvent", method = RequestMethod.POST)
+    @RequestMapping(value = "/createEvent", method = RequestMethod.POST)
     public String test(@RequestBody PanamaEventDto panamaEventDto) throws ExecutionException, InterruptedException {
 
 
-          //  System.out.println(">>>>> "+client.getPartitionService().getPartitions());
+        //  System.out.println(">>>>> "+client.getPartitionService().getPartitions());
 
 
         IMap<Long, Set<String>> map = client.getMap("openedEventsNodeIdMapping");
         Set<String> openedEvents = map.get(panamaEventDto.getNodeId());
-        if(panamaEventDto.getOnCome()) {
+        if (panamaEventDto.getOnCome()) {
 
 
 //            System.out.println("#######  CLIENT BEGIN #######");
@@ -136,12 +133,12 @@ return "db works";
             IMap<Long, Set<String>> resultMap = client.getMap("openedEventsNodeIdMapping");
             Set<String> openEventKeys = resultMap.get(panamaEventDto.getNodeId());
             System.out.println(openEventKeys.toString());
-           // System.out.println("#######  CLIENT END #######");
+            // System.out.println("#######  CLIENT END #######");
 
 
         } else {
 
-            if(openedEvents!=null) {
+            if (openedEvents != null) {
                 openedEvents.remove(panamaEventDto.getEventKey());
                 map.put(panamaEventDto.getNodeId(), openedEvents);
                 System.out.println(openedEvents.toString());
@@ -150,7 +147,7 @@ return "db works";
         }
 
 
-            return "test";
+        return "test";
     }
 
     @RequestMapping("/docker")

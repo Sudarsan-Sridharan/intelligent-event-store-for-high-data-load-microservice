@@ -1,5 +1,7 @@
 package com.deviceinsight.services;
 
+import io.prometheus.client.spring.boot.EnablePrometheusEndpoint;
+import io.prometheus.client.spring.boot.EnableSpringBootMetricsCollector;
 import org.apache.commons.dbcp.BasicDataSource;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -28,6 +30,8 @@ import java.util.Properties;
 
 @SpringBootApplication
 @EnableAutoConfiguration
+@EnablePrometheusEndpoint
+@EnableSpringBootMetricsCollector
 public class Application {
 
     public static void main(String[] args) {

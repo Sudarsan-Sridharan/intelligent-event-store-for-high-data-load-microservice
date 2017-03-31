@@ -3,6 +3,8 @@ com/deviceinsight/services/HazelcastConfiguration.class
 com/deviceinsight/services/model/Client.class
 com/deviceinsight/services/request/AbstractRequest.class
 com/deviceinsight/services/request/GoodbyeRequest.class
+com/deviceinsight/services/controller/FriendsGraphDoc.class
+com/deviceinsight/services/controller/GraphApiController.class
 com/deviceinsight/services/response/HelloResponse.class
 com/deviceinsight/services/request/HelloRequest.class
 com/deviceinsight/services/response/GoodbyeResponse.class
