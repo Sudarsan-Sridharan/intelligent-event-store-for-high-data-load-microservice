@@ -62,7 +62,7 @@ public class ARestController {
         config.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
         config.getNetworkConfig().getJoin().getTcpIpConfig().addMember("172.17.0.3:5701");
         Hazelcast.newHazelcastInstance(config);*/
-        client = (HazelcastInstance) new GenericXmlApplicationContext("applicationContext.xml").getBean("client");
+       ////////////// client = (HazelcastInstance) new GenericXmlApplicationContext("applicationContext.xml").getBean("client");
     }
 
 
