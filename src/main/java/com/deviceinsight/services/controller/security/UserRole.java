@@ -1,6 +1,6 @@
 package com.deviceinsight.services.controller.security;
 
-import com.deviceinsight.services.model.dao.User;
+//import com.deviceinsight.services.model.dao.User;
 
 import javax.persistence.*;
 
