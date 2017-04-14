@@ -6,9 +6,9 @@ import java.util.UUID;
 
 public interface BaseDao<T> {
 
-    UUID getId();
+    UUID getUuid();
 
-    void setId(UUID id);
+ void setUuid(UUID uuid);
 
-    T getByUUID(String id);
+    T getByUUID(String s);
 }

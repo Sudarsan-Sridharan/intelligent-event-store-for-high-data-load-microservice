@@ -33,7 +33,7 @@ public class ProductRestController {
     @Transactional
     @RequestMapping(method = RequestMethod.GET)
     public Product get() {
-        return (Product) productDao.getByUUID("24cff791-cf3b-4f6e-bab1-29c364c25b49");
+        return productDao.getByUUID("b77d8fe6-c61b-49a9-9edd-6c627fcec6c7");
     }
 
 }
