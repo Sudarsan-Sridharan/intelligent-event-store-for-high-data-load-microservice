@@ -1,6 +1,6 @@
 package com.deviceinsight.services.websocket;
 
-import com.deviceinsight.services.model.Product;
+import com.deviceinsight.services.model.TopicItem;
 
 import java.util.List;
 
@@ -8,24 +8,24 @@ import java.util.List;
  * Created by ebners on 14.04.17.
  */
 public interface ProductDAO {
-    public List<Product> list();
+    public List<TopicItem> list();
 
-    public Product get(int id);
+    public TopicItem get(int id);
 
-    public void saveOrUpdate(Product user);
+    public void saveOrUpdate(TopicItem user);
 
 
-    public Product findByTicker(String string);
+    public TopicItem findByTicker(String string);
 
-    public Product findByEmployeeId(int string);
+    public TopicItem findByEmployeeId(int string);
 
-    public Product findByKellnerName(String string);
+    public TopicItem findByKellnerName(String string);
 
-    public List<Product> getAll();
+    public List<TopicItem> getAll();
 
-    void delete(Product id);
+    void delete(TopicItem id);
 
-    Product findById(String username);
+    TopicItem findById(String username);
 
     public String getCurrentItemCount();
 }

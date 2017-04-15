@@ -2,13 +2,13 @@ package com.deviceinsight.services.model;
 
 import com.deviceinsight.services.model.dao.BaseEntity;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 
 @Entity
-@javax.persistence.Table(name = "products")
-public class Product extends BaseEntity implements IProduct {
+@javax.persistence.Table(name = "topic_items")
+public class TopicItem extends BaseEntity implements IProduct {
 
-    public Product() {
+    public TopicItem() {
         super();
     }
 

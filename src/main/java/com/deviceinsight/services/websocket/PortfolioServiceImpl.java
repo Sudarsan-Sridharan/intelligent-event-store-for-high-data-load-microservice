@@ -16,7 +16,7 @@
 
 package com.deviceinsight.services.websocket;
 
-import com.deviceinsight.services.model.Product;
+import com.deviceinsight.services.model.TopicItem;
 import com.deviceinsight.services.model.ServicequeuesDAO;
 import com.deviceinsight.services.websocket.Portfolio;
 import com.deviceinsight.services.websocket.PortfolioService;
@@ -102,11 +102,11 @@ public class PortfolioServiceImpl implements PortfolioService {
 
     public void createPortfolio(ProductDAO productDAO) {
         Portfolio portfolio = new Portfolio(productDAO);
-        List<Product> k = productDAO.getAll();
+        List<TopicItem> k = productDAO.getAll();
         int i = 0;
-        for (Product p : k) {
+        for (TopicItem p : k) {
 
-            Product kkk = productDAO.findByTicker(p.getIdentifier());
+            TopicItem kkk = productDAO.findByTicker(p.getIdentifier());
             //FIX-APRIL USE UUID!!  String byServicesession = servicequeuesDAO.renderByServicesession(kkk.getId());
             String byServicesession=null;
             if (p.getFinished() == 1) {

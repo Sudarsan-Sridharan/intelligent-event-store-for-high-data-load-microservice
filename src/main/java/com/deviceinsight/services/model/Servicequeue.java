@@ -20,7 +20,7 @@ public class Servicequeue {
     @JsonIgnore
     @com.fasterxml.jackson.annotation.JsonIgnore
     @ManyToOne(fetch = FetchType.EAGER)
-    private Product servicesession;
+    private TopicItem servicesession;
     private String accept_ticket;
 
     public Long getCreated() {
@@ -66,11 +66,11 @@ public class Servicequeue {
         this.id = id;
     }
 
-    public Product getServicesession() {
+    public TopicItem getServicesession() {
         return servicesession;
     }
 
-    public void setServicesession(Product servicesession) {
+    public void setServicesession(TopicItem servicesession) {
         this.servicesession = servicesession;
     }
 

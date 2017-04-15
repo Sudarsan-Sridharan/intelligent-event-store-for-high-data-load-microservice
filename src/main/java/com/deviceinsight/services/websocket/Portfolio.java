@@ -1,7 +1,7 @@
 package com.deviceinsight.services.websocket;
 
 
-import com.deviceinsight.services.model.Product;
+import com.deviceinsight.services.model.TopicItem;
 
 import java.util.ArrayList;
 import java.util.LinkedHashMap;
@@ -50,7 +50,7 @@ public class Portfolio {
         //this.positionLookup.put(position.getTicker(), position);
 
 
-        Product product = productDAO.findByTicker(ticker);
+        TopicItem product = productDAO.findByTicker(ticker);
 //		if (product.getCredit() < product.getEnds_on_price()) {
 
 

@@ -67,7 +67,7 @@ public class UserDAOImpl implements UserDAO {
         List<User> listUser;
         Session s = sessionFactory.openSession();
         try {
-            String hql = "SELECT u from User u WHERE u.isTechnical=0 AND u.id NOT IN (SELECT p.employee_id FROM Product p)";
+            String hql = "SELECT u from TopicItem u WHERE u.isTechnical=0 AND u.id NOT IN (SELECT p.employee_id FROM Product p)";
             Query query = s.createQuery(hql);
             listUser = (List<User>) query.list();
 

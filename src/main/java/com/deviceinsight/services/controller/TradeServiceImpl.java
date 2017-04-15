@@ -2,9 +2,10 @@ package com.deviceinsight.services.controller;
 
 import com.deviceinsight.services.controller.Trade;
 import com.deviceinsight.services.controller.TradeService;
-import com.deviceinsight.services.model.Product;
+import com.deviceinsight.services.model.TopicItem;
 import com.deviceinsight.services.model.Servicequeue;
 import com.deviceinsight.services.model.ServicequeuesDAO;
+import com.deviceinsight.services.model.TopicItem;
 import com.deviceinsight.services.websocket.Portfolio;
 import com.deviceinsight.services.websocket.PortfolioPosition;
 import com.deviceinsight.services.websocket.PortfolioService;
@@ -38,7 +39,7 @@ public class TradeServiceImpl implements TradeService {
 
     private static final Log logger = LogFactory.getLog(TradeServiceImpl.class);
     public static int i = 0;
-    private static CopyOnWriteArrayList<Product> jj = new CopyOnWriteArrayList<Product>();
+    private static CopyOnWriteArrayList<TopicItem> jj = new CopyOnWriteArrayList<TopicItem>();
     private final SimpMessageSendingOperations messagingTemplate;
     private final PortfolioService portfolioService;
     private final List<TradeResult> tradeResults = new CopyOnWriteArrayList<>();
@@ -353,7 +354,7 @@ public class TradeServiceImpl implements TradeService {
             io++;
             String tcomp = ll.getCompany();
             String details = tcomp.replace("\"", "\\\"");
-            Product p1m = productDAO.findByTicker(ll.getTicker());
+            TopicItem p1m = productDAO.findByTicker(ll.getTicker());
             persisted += "{\"company\":\"" + details + "\",\"ticker\":\"" + ll.getTicker() + "\",\"price\":44.439998626708984,\"shares\":\"<div id=\\\"expireMessage_32c9effc-d158-4cbb-ad2a-b8720f716607\\\"></div>\",\"updateTime\":1451933885198,\"lastBidder\":\"" + servicequeueDAO.renderByServicesession(p1m.getId()) + "\"}";
             if (size != io) {
                 persisted += ",";
@@ -362,16 +363,16 @@ public class TradeServiceImpl implements TradeService {
         resres += persisted;
         resres += "]";
         messagingTemplate.convertAndSend("/app/positions", resres);
-        Product product = productDAO.findByTicker(ticker);
+        TopicItem product = productDAO.findByTicker(ticker);
     }
 
     public void clearTrade(String ticker) {
-        Product p0 = productDAO.findByTicker(ticker);
+        TopicItem p0 = productDAO.findByTicker(ticker);
         messagingTemplate.convertAndSend("/topic/price.stock." + ticker,
                 "{\"ticker\":\"" + ticker + "\",\"price\":" + p0.getCredit() + ",\"lastBidder\":\""
                         + "" + "\"" + ",\"isFinished\":\"" + p0.getFinished() + "\"" + "} ");
         p0.setLast_bidder("");
-        Product po = productDAO.findByTicker(ticker);
+        TopicItem po = productDAO.findByTicker(ticker);
         String pId = po.getIdentifier();
         List<Servicequeue> lpro = servicequeueDAO.findByServicesession(po.getId());
         for (Servicequeue k : lpro) {
@@ -387,7 +388,7 @@ public class TradeServiceImpl implements TradeService {
         portfolioService.getObjjj(ppa);
         productDAO.saveOrUpdate(p0);
         portfolioService.delete(ticker);
-        Product deleteProduct = productDAO.findByTicker(ticker);
+        TopicItem deleteProduct = productDAO.findByTicker(ticker);
         productDAO.delete(deleteProduct);
         Map<String, String> params;
         RestTemplate restTemplate;
