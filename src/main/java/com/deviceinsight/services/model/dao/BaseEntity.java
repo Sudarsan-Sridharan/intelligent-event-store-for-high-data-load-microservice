@@ -12,7 +12,7 @@ import java.util.UUID;
 @MappedSuperclass
 public class BaseEntity {
 
-    @Id
+    /*@Id
     @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
     @Type(type = "uuid-char")
@@ -25,6 +25,20 @@ public class BaseEntity {
 
     public void setUuid(UUID uuid) {
         this.uuid = uuid;
+    }
+*/
+
+
+    @Id
+    private int id;
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
 
