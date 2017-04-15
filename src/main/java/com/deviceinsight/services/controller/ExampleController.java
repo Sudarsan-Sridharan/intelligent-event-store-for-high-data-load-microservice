@@ -31,6 +31,7 @@ public class ExampleController {
     private MyUserDetailsService pp;
 
     private String tmp;
+
     @RequestMapping("/secured")
     @ResponseBody
     public String securedContent() {
@@ -54,10 +55,6 @@ public class ExampleController {
         //    User user = new User();
 
         //////////
-        System.out.println("---------------------------------------------------");
-        System.out.println(dto.getUsername());
-        System.out.println(dto.getPasswd());
-        System.out.println("---------------------------------------------------");
 
 
         String email;// = allRequestParams.get("email").get(0);
@@ -98,7 +95,7 @@ public class ExampleController {
         tmp = password_temporary_plain;
 
         /////////
-        if(authenticateUserAndSetSession(userDAO.findByUsername(username), request)) {
+        if (authenticateUserAndSetSession(userDAO.findByUsername(username), request)) {
             return new ResponseEntity(HttpStatus.NO_CONTENT);
 
         } else {
@@ -109,17 +106,17 @@ public class ExampleController {
         //  return "redirect:/assets/angular/#/app/extra-members-list";
 //        return "1";
     }
+
     private boolean authenticateUserAndSetSession(com.deviceinsight.services.model.User user, HttpServletRequest request) throws Exception {
 
 		/*
-		 * String username = user.getUsername(); String password =
+         * String username = user.getUsername(); String password =
 		 * user.getPassword(); UsernamePasswordAuthenticationToken token = new
 		 * UsernamePasswordAuthenticationToken(username, password);
 		 */
 
         // dao.authenticate(authentication)
 
-        System.out.println(">>>>>>>>>>>>>>>>>>>>>>" + request.getSession().getCreationTime());
 
         UserDetails details = pp.loadUserByUsername(user.getUsername());
 
@@ -140,10 +137,9 @@ public class ExampleController {
             SecurityContextHolder.getContext().setAuthentication(authenticatedUser);
             token.isAuthenticated();
             return true;
-        } catch(Exception e) {
+        } catch (Exception e) {
             return false;
         }
-
 
 
     }

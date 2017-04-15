@@ -15,18 +15,13 @@ public class PortfolioServiceImpl implements PortfolioService {
 
     public static Map<String, Portfolio> portfolioLookup = new HashMap<>();
 
-    @Autowired
-    private ServicequeuesDAO servicequeuesDAO;
-
     public PortfolioServiceImpl() {
     }
 
     public void getObjjj(PortfolioPosition vvv) {
         Portfolio hhh = this.portfolioLookup.get("fabrice");
-        System.out.println("new ticket");
         hhh.addPosition(vvv);
         this.portfolioLookup.put("fabrice", hhh);
-        System.out.println("*****************" + this.portfolioLookup.get("fabrice").getPositions().size());
     }
 
     public Portfolio findPortfolio(String username) {
@@ -43,8 +38,7 @@ public class PortfolioServiceImpl implements PortfolioService {
         int i = 0;
         for (TopicItem p : k) {
             TopicItem kkk = productDAO.findByTicker(p.getIdentifier());
-            //FIX-APRIL USE UUID!!  String byServicesession = servicequeuesDAO.renderByServicesession(kkk.getId());
-            String byServicesession=null;
+            String byServicesession = null;
             if (p.getFinished() == 1) {
                 portfolio.addPosition(
                         // ticker, price, shares, lastBidder);

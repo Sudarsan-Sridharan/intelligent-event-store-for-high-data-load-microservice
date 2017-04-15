@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="726b6499-5bf5-4486-b0da-3f8599752544" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/BaseUUIDEntity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/ProductDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/TopicItemDAO.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/ProductDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/TopicItemDAOImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ARestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ARestController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/ExampleController.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/ExampleController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/PortfolioController.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/PortfolioController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/TradeServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/TradeServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/ProductRestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/ProductRestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/Product.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/Product.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/Portfolio.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/Portfolio.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/PortfolioService.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/PortfolioService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/ServicequeuesDAOImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/ServicequeuesDAOImpl.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/PortfolioServiceImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/PortfolioServiceImpl.java" />
     </list>
     <ignored path="intelligent-event-store-for-high-data-load.iws" />
@@ -43,76 +39,71 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ProductRestController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/ProductRestController.java">
+      <file leaf-file-name="ARestController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ARestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="37" column="29" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+            <state relative-caret-position="445">
+              <caret line="133" column="96" selection-start-line="133" selection-start-column="96" selection-end-line="133" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ExampleController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/ExampleController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="213">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1231#1232#0" expanded="true" />
-                <element signature="e#1314#1315#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InvocableHandlerMethod.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.6.RELEASE/spring-web-4.3.6.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <file leaf-file-name="HazelcastConfiguration.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/HazelcastConfiguration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="215" column="0" selection-start-line="215" selection-start-column="0" selection-end-line="215" selection-end-column="0" />
+            <state relative-caret-position="345">
+              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RequestMappingHandlerAdapter.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.6.RELEASE/spring-webmvc-4.3.6.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.java">
+      <file leaf-file-name="PortfolioController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/PortfolioController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="212">
-              <caret line="834" column="0" selection-start-line="834" selection-start-column="0" selection-end-line="834" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="213">
+              <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DispatcherServlet.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/4.3.6.RELEASE/spring-webmvc-4.3.6.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+      <file leaf-file-name="TradeServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/TradeServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="911" column="94" selection-start-line="911" selection-start-column="94" selection-end-line="911" selection-end-column="94" />
-              <folding />
+            <state relative-caret-position="603">
+              <caret line="692" column="0" selection-start-line="692" selection-start-column="0" selection-end-line="692" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1798#1809#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MethodProxy.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.6.RELEASE/spring-core-4.3.6.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
+      <file leaf-file-name="ServicequeuesDAOImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/ServicequeuesDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
-              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TransactionAspectSupport.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/4.3.6.RELEASE/spring-tx-4.3.6.RELEASE.jar!/org/springframework/transaction/interceptor/TransactionAspectSupport.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CglibAopProxy.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.6.RELEASE/spring-aop-4.3.6.RELEASE-sources.jar!/org/springframework/aop/framework/CglibAopProxy.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="666" column="0" selection-start-line="666" selection-start-column="0" selection-end-line="666" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="251">
+              <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
+              <folding>
+                <marker date="1492279851000" expanded="true" signature="1980:2109" ph="select p.ide... servicequeues" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -139,15 +130,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PortfolioServiceImpl.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SpringClient.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/SpringClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PortfolioServiceImpl.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/PortfolioServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="76" column="49" selection-start-line="76" selection-start-column="49" selection-end-line="76" selection-end-column="49" />
+            <state relative-caret-position="189">
+              <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2802#2803#0" expanded="true" />
-                <element signature="e#2860#2861#0" expanded="true" />
+                <element signature="e#2474#2475#0" expanded="true" />
+                <element signature="e#2532#2533#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -195,7 +196,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/UUIDHolder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/BaseDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/UUIDHolder.java" />
@@ -213,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/GreetingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/WebSecurityConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/ExampleController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/WebSocketConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/security/UserRole.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/PortfolioPosition.java" />
@@ -228,7 +227,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/PortofolioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/TradeService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/Trade.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/ServicequeuesDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/Servicequeue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/Servicequeue.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/UserDAOImpl.java" />
@@ -237,15 +235,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/TopicItemDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/ProductDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/TopicItemDAOImpl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/PortfolioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/PortfolioService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/Portfolio.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/TradeServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/ProductRestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/ProductDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/BaseUUIDEntity.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/Product.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ARestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/ExampleController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/ServicequeuesDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/PortfolioServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/PortfolioController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/TradeServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -296,9 +297,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="167" />
+    <option name="x" value="5" />
     <option name="y" value="23" />
-    <option name="width" value="1239" />
+    <option name="width" value="1467" />
     <option name="height" value="1122" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -1242,7 +1243,7 @@
       <workItem from="1491208520692" duration="67000" />
       <workItem from="1491259936643" duration="5613000" />
       <workItem from="1491353200735" duration="833000" />
-      <workItem from="1492100828169" duration="36203000" />
+      <workItem from="1492100828169" duration="36598000" />
     </task>
     <task id="LOCAL-00001" summary="arango db connector added with sample request to create a new graph db">
       <created>1487431686224</created>
@@ -1391,7 +1392,14 @@
       <option name="project" value="LOCAL" />
       <updated>1492278158689</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Websocket spring libary added with endpoint configuration">
+      <created>1492279490872</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1492279490872</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1421,10 +1429,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96147000" />
+    <option name="totallyTimeSpent" value="96542000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="167" y="23" width="1239" height="1122" extended-state="0" />
+    <frame x="5" y="23" width="1467" height="1122" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1434,14 +1442,14 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32815534" sideWeight="0.48136315" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23592234" sideWeight="0.29902756" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16207184" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13614035" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30358875" sideWeight="0.6139601" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23592234" sideWeight="0.70097244" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23592234" sideWeight="0.70097244" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328807" sideWeight="0.49199507" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33786407" sideWeight="0.68146026" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3132832" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2631579" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14303958" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1510,46 +1518,40 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/PrometheusAutoConfiguration.java</url>
+          <url>file:///Users/ebners/Desktop/_/delivery-system/src/main/java/com/deviceinsight/services/PrometheusAutoConfiguration.java</url>
           <line>24</line>
           <properties />
           <option name="timeStamp" value="44" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/GraphApiController.java</url>
+          <url>file:///Users/ebners/Desktop/_/delivery-system/src/main/java/com/deviceinsight/services/controller/GraphApiController.java</url>
           <line>67</line>
           <properties />
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/GraphApiController.java</url>
+          <url>file:///Users/ebners/Desktop/_/delivery-system/src/main/java/com/deviceinsight/services/controller/GraphApiController.java</url>
           <line>55</line>
           <properties />
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/ProductRestController.java</url>
+          <url>file:///Users/ebners/Desktop/_/delivery-system/src/main/java/com/deviceinsight/services/ecommerce/api/ProductRestController.java</url>
           <line>31</line>
           <properties />
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/WebSecurityConfig.java</url>
+          <url>file:///Users/ebners/Desktop/_/delivery-system/src/main/java/com/deviceinsight/services/controller/WebSecurityConfig.java</url>
           <line>174</line>
           <properties />
           <option name="timeStamp" value="57" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/ExampleController.java</url>
-          <line>100</line>
+          <url>file:///Users/ebners/Desktop/_/delivery-system/src/main/java/com/deviceinsight/services/controller/ExampleController.java</url>
+          <line>97</line>
           <properties />
           <option name="timeStamp" value="62" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/ExampleController.java</url>
-          <line>121</line>
-          <properties />
-          <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/UserDAOImpl.java</url>
@@ -1558,14 +1560,14 @@
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/PortfolioServiceImpl.java</url>
-          <line>44</line>
+          <url>file:///Users/ebners/Desktop/_/delivery-system/src/main/java/com/deviceinsight/services/websocket/PortfolioServiceImpl.java</url>
+          <line>39</line>
           <properties />
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/PortfolioServiceImpl.java</url>
-          <line>64</line>
+          <url>file:///Users/ebners/Desktop/_/delivery-system/src/main/java/com/deviceinsight/services/websocket/PortfolioServiceImpl.java</url>
+          <line>58</line>
           <properties />
           <option name="timeStamp" value="67" />
         </line-breakpoint>
@@ -1594,45 +1596,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/security/AuthSuccessHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/GraphApiController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-465">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/GreetingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/ExampleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="56" column="26" selection-start-line="56" selection-start-column="26" selection-end-line="56" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1784,14 +1752,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/ServicequeuesDAOImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="0" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/Servicequeue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="474">
@@ -1841,31 +1801,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/TradeServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="448" column="0" selection-start-line="448" selection-start-column="0" selection-end-line="448" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1798#1809#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/TopicItemDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/PortfolioController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270">
-          <caret line="48" column="32" selection-start-line="48" selection-start-column="32" selection-end-line="48" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -2058,14 +1997,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/PortfolioServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ARestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="76" column="49" selection-start-line="76" selection-start-column="49" selection-end-line="76" selection-end-column="49" />
+        <state relative-caret-position="445">
+          <caret line="133" column="96" selection-start-line="133" selection-start-column="96" selection-end-line="133" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/ExampleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2802#2803#0" expanded="true" />
-            <element signature="e#2860#2861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/ServicequeuesDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
+          <folding>
+            <marker date="1492279851000" expanded="true" signature="1980:2109" ph="select p.ide... servicequeues" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/PortfolioServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="23" column="49" selection-start-line="23" selection-start-column="49" selection-end-line="23" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2474#2475#0" expanded="true" />
+            <element signature="e#2532#2533#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/HazelcastConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/SpringClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/PortfolioController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/TradeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="603">
+          <caret line="692" column="0" selection-start-line="692" selection-start-column="0" selection-end-line="692" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1798#1809#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -49,7 +49,7 @@ public class ServicequeuesDAOImpl implements ServicequeuesDAO {
             s.flush();
         } finally {
 
-            if(s.isOpen()) {
+            if (s.isOpen()) {
                 s.close();
             }
         }
@@ -70,7 +70,7 @@ public class ServicequeuesDAOImpl implements ServicequeuesDAO {
         } finally {
 
 
-            if(ss.isOpen()) {
+            if (ss.isOpen()) {
                 ss.close();
             }
         }
@@ -90,7 +90,7 @@ public class ServicequeuesDAOImpl implements ServicequeuesDAO {
             s.flush();
 
         } finally {
-            if(s.isOpen()) {
+            if (s.isOpen()) {
                 s.close();
             }
         }
@@ -130,7 +130,7 @@ public class ServicequeuesDAOImpl implements ServicequeuesDAO {
 
 
         } finally {
-            if(s.isOpen()) {
+            if (s.isOpen()) {
                 s.close();
             }
 
@@ -140,7 +140,6 @@ public class ServicequeuesDAOImpl implements ServicequeuesDAO {
         }
 
         return null;
-
 
 
     }
@@ -164,7 +163,7 @@ public class ServicequeuesDAOImpl implements ServicequeuesDAO {
         } finally {
 
 
-            if(s.isOpen()) {
+            if (s.isOpen()) {
                 s.close();
             }
         }
@@ -188,7 +187,7 @@ public class ServicequeuesDAOImpl implements ServicequeuesDAO {
 
 
         } finally {
-            if(s.isOpen()) {
+            if (s.isOpen()) {
                 s.close();
             }
 
@@ -216,7 +215,7 @@ public class ServicequeuesDAOImpl implements ServicequeuesDAO {
             s.flush();
 
         } finally {
-            if(s.isOpen()) {
+            if (s.isOpen()) {
                 s.close();
             }
         }
@@ -240,7 +239,7 @@ public class ServicequeuesDAOImpl implements ServicequeuesDAO {
             s.flush();
         } finally {
 
-            if(s.isOpen()) {
+            if (s.isOpen()) {
                 s.close();
             }
         }
@@ -267,9 +266,9 @@ public class ServicequeuesDAOImpl implements ServicequeuesDAO {
             try {
                 listSender = (List<Servicequeue>) query.list();
             } catch (HibernateException e1) {
-                System.out.println("!!!!!!!!!!!!!!! 1");
+
             } catch (Exception e2) {
-                System.out.println("!!!!!!!!!!!!!!! 2");
+
             }
 
 
@@ -289,7 +288,7 @@ public class ServicequeuesDAOImpl implements ServicequeuesDAO {
             }
 
         } finally {
-            if(s.isOpen()) {
+            if (s.isOpen()) {
                 s.close();
             }
         }
@@ -315,7 +314,7 @@ public class ServicequeuesDAOImpl implements ServicequeuesDAO {
 
 
         } finally {
-            if(s.isOpen()) {
+            if (s.isOpen()) {
                 s.close();
             }
 

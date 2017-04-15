@@ -46,15 +46,16 @@ public class TradeServiceImpl implements TradeService {
     private final List<TradeResult> tradeResults = new CopyOnWriteArrayList<>();
     @Autowired
     private ServicequeuesDAO servicequeueDAO;
-  /*  @Autowired
-    private StatisticsEmployeeDAO statisticsEmployeeDAO;
+    /*  @Autowired
+      private StatisticsEmployeeDAO statisticsEmployeeDAO;
+      @Autowired
+      private SettingsDAO settingsDAO;
+      @Autowired
+      private WorkingareaDAO workingareaDAO;
+      @Autowired
+      private TablesWorkingareasDAO tablesWorkingareasDAO;
+  */
     @Autowired
-    private SettingsDAO settingsDAO;
-    @Autowired
-    private WorkingareaDAO workingareaDAO;
-    @Autowired
-    private TablesWorkingareasDAO tablesWorkingareasDAO;
-*/    @Autowired
     private TopicItemDAO productDAO;
   /*  @Autowired
     private ServicesessionsWorkingareasDAO servicesessionsWorkingareasDAO;
@@ -228,52 +229,52 @@ public class TradeServiceImpl implements TradeService {
 */
 
 
-/*
+    /*
 
-    @ResponseBody
-    @RequestMapping(value = {"/222"}, method = RequestMethod.GET)
-    public void spieslprisddsnzipPage(HttpServletRequest req, Model model) throws IOException {
-        Trade t1 = new Trade();
-        t1.setAction(TradeAction.akzeptieren);
-        t1.setTicker("32c9effc-d158-4cbb-ad2a-b8720f716607");
-        t1.setShares(0);
-        t1.setMaximumbids("");
-        t1.setMaximumprice("");
-        t1.setBidmode("1");
-        t1.setOverwrite("");
-        executeTrade(t1);
-    }
+        @ResponseBody
+        @RequestMapping(value = {"/222"}, method = RequestMethod.GET)
+        public void spieslprisddsnzipPage(HttpServletRequest req, Model model) throws IOException {
+            Trade t1 = new Trade();
+            t1.setAction(TradeAction.akzeptieren);
+            t1.setTicker("32c9effc-d158-4cbb-ad2a-b8720f716607");
+            t1.setShares(0);
+            t1.setMaximumbids("");
+            t1.setMaximumprice("");
+            t1.setBidmode("1");
+            t1.setOverwrite("");
+            executeTrade(t1);
+        }
 
-    @RequestMapping(value = {"/clear"}, method = RequestMethod.GET)
-    public String clearPage(@RequestParam MultiValueMap<String, String> allRequestParams, Model model) throws IOException {
-        Trade t1 = new Trade();
-        t1.setAction(TradeAction.akzeptieren);
-        t1.setTicker("32c9effc-d158-4cbb-ad2a-b8720f716607");
-        t1.setShares(0);
-        t1.setMaximumbids("");
-        t1.setMaximumprice("");
-        t1.setBidmode("1");
-        t1.setOverwrite("");
-        clearTrade(allRequestParams.get("ticker").get(0));
-        return "/auktionsregeln";
-    }
+        @RequestMapping(value = {"/clear"}, method = RequestMethod.GET)
+        public String clearPage(@RequestParam MultiValueMap<String, String> allRequestParams, Model model) throws IOException {
+            Trade t1 = new Trade();
+            t1.setAction(TradeAction.akzeptieren);
+            t1.setTicker("32c9effc-d158-4cbb-ad2a-b8720f716607");
+            t1.setShares(0);
+            t1.setMaximumbids("");
+            t1.setMaximumprice("");
+            t1.setBidmode("1");
+            t1.setOverwrite("");
+            clearTrade(allRequestParams.get("ticker").get(0));
+            return "/auktionsregeln";
+        }
 
 
-    @RequestMapping(value = {"/clear5"}, method = RequestMethod.GET)
-    public String wwclearPage(@RequestParam MultiValueMap<String, String> allRequestParams, Model model) throws IOException {
-        Trade t1 = new Trade();
-        t1.setAction(TradeAction.akzeptieren);
-        t1.setTicker("32c9effc-d158-4cbb-ad2a-b8720f716607");
-        t1.setShares(0);
-        t1.setMaximumbids("");
-        t1.setMaximumprice("");
-        t1.setBidmode("1");
-        t1.setOverwrite("");
-        clearTrade5(allRequestParams.get("ticker").get(0));
-        return "/auktionsregeln";
-    }
+        @RequestMapping(value = {"/clear5"}, method = RequestMethod.GET)
+        public String wwclearPage(@RequestParam MultiValueMap<String, String> allRequestParams, Model model) throws IOException {
+            Trade t1 = new Trade();
+            t1.setAction(TradeAction.akzeptieren);
+            t1.setTicker("32c9effc-d158-4cbb-ad2a-b8720f716607");
+            t1.setShares(0);
+            t1.setMaximumbids("");
+            t1.setMaximumprice("");
+            t1.setBidmode("1");
+            t1.setOverwrite("");
+            clearTrade5(allRequestParams.get("ticker").get(0));
+            return "/auktionsregeln";
+        }
 
-*/
+    */
     public String currentDateTime() {
         GregorianCalendar gc = new GregorianCalendar();
 
@@ -419,409 +420,406 @@ public class TradeServiceImpl implements TradeService {
     }
 */
 
-/*
-    public void updateTrade(Trade trade, String sender, String button, String kellner, String battery) throws SQLIntegrityConstraintViolationException {
+    /*
+        public void updateTrade(Trade trade, String sender, String button, String kellner, String battery) throws SQLIntegrityConstraintViolationException {
 
 
-        Setting sa = settingsDAO.get(1);
-        String booleanIntStringPairingModes = sa.getValue();
+            Setting sa = settingsDAO.get(1);
+            String booleanIntStringPairingModes = sa.getValue();
 
-        if (booleanIntStringPairingModes.equals("1")) {
-            System.out.println("**** IN PAIRING MODE **** ... new sender detected " + sender);
-        } else {
+            if (booleanIntStringPairingModes.equals("1")) {
+            } else {
 
 
+            }
+
+
+            SendersTables st = sendersTablesDAO.findByUuid(sender);
+
+
+            Sender senderExiststs = senderDAO.findByUuid(sender);
+            if (senderExiststs == null) {
+                Map<String, String> params;
+                RestTemplate restTemplate;
+                String uri;
+                uri = "http://localhost:8080/333/" + sender;
+                params = new HashMap<String, String>();
+                restTemplate = new RestTemplate();
+                restTemplate.getForObject(uri, String.class, params);
+
+            } else {
+
+                senderExiststs.setLast_seen(currentDateTime());
+                senderDAO.saveOrUpdate(senderExiststs);
+            }
+
+
+            TablesWorkingareas tw = tablesWorkingareasDAO.findByTable("" + st.getTable().getId()); // optional delete it 5 3 16 // TODO release check fk table group!!
+            Table tableee = tablesWorkingareasDAO.findByTable2("" + st.getTable().getId()); // optional delete it 5 3 16
+            if (tw != null) {
+                ServicesessionsWorkingareas sswa3 = servicesessionsWorkingareasDAO.findByWorkingareaAndTableGroup("" + tw.getWorkingarea().getId(), "" + tw.getTablegroup().getId());
+                ServicesessionsWorkingareas sswa;// = servicesessionsWorkingareasDAO.findByWorkingarea("" + tw.getWorkingarea().getId());
+                sswa = sswa3;
+                String tttticker = sswa.getServicesession().getIdentifier();
+                Portfolio all = portfolioService.getAll();
+                PortfolioPosition portfolioPosition = all.getPortfolioPosition(tttticker);
+                String beforeText;
+                if (portfolioPosition != null)
+                    beforeText = portfolioPosition.getLastBidder();
+                else
+                    beforeText = "";
+                Sender senderUsed = senderDAO.findByUuid(sender);
+                senderUsed.setVoltage(Integer.parseInt(battery));
+                int batteryStatus = (Integer.parseInt(battery) - 2400) / 6;
+                if (batteryStatus < 0) batteryStatus = 0;
+                if (batteryStatus > 100) batteryStatus = 100;
+                senderUsed.setBattery(batteryStatus);
+                senderDAO.saveOrUpdate(senderUsed);
+                String text = "";
+                Servicequeue sq = new Servicequeue();
+                Product sessionEmployee = productDAO.findByTicker(tttticker);
+                sq.setServicesession(sessionEmployee);
+
+                org.springframework.samples.portfolio.persistence.model.Table tableNo = tableee; //////////////tw.getTable();
+                sq.setAction(Integer.parseInt(button));
+                sq.setTable(tableNo);
+                int zufallszahl = (int) ((Math.random() * 30) + 1);
+                sq.setAccept_ticket("" + zufallszahl);
+                sq.setCreated(System.currentTimeMillis()/1000);
+                if (Integer.parseInt(button) == 2) {
+                    Servicequeue s = servicequeueDAO.findByTable(tableNo.getId());
+                    servicequeueDAO.delete(s);
+
+                    s.getServicesession();
+
+                    int getAction = s.getAction();
+
+
+                    SimpleDateFormat formatter;
+                    formatter = new SimpleDateFormat("yyyy-MM-dd");
+                    Date today = new Date();
+                    String result = formatter.format(today);
+
+
+
+
+                    long time=System.currentTimeMillis()/1000-s.getCreated();
+
+
+                    StatisticsEmployee statisticsEmployee = statisticsEmployeeDAO.findByUserIdAndDate("" + sessionEmployee.getEmployee_id(), result);
+                    int action = Integer.parseInt(button);
+
+                    if (statisticsEmployee == null) {
+                        if(getAction==0) {
+                            statisticsEmployee = new StatisticsEmployee();
+                            statisticsEmployee.setCounter_service(1);
+                            statisticsEmployee.setDay(result);
+                            statisticsEmployee.setEmployee_id("" + sessionEmployee.getEmployee_id());
+                            statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
+                        }
+                        if(getAction==1) {
+                            statisticsEmployee = new StatisticsEmployee();
+                            statisticsEmployee.setCounter_pay(1);
+                            statisticsEmployee.setDay(result);
+                            statisticsEmployee.setEmployee_id("" + sessionEmployee.getEmployee_id());
+                            statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
+                        }
+                    } else {
+                        int counterService = statisticsEmployee.getCounter_service();
+                        int counterPay = statisticsEmployee.getCounter_pay();
+                        counterService++;
+                        counterPay++;
+                        if(getAction==0) {
+                            statisticsEmployee.setCounter_service(counterService);
+                            statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
+                        }
+                        if(getAction==1) {
+                            statisticsEmployee.setCounter_pay(counterPay);
+                            statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
+                        }
+                    }
+
+
+
+
+
+
+
+
+                    User waiter = userDAO.get(sessionEmployee.getEmployee_id());
+
+
+                    Long newAvgService = (((waiter.getService_counter()*waiter.getAverage_time_service())+time)/(waiter.getService_counter()+1));
+                    Long newAvgPay = (((waiter.getPay_counter()*waiter.getAverage_time_pay())+time)/(waiter.getPay_counter()+1));
+
+
+                    if(getAction==0) {
+                        waiter.setAverage_time_service(new Long(Integer.parseInt(newAvgService.toString())));
+                        waiter.setService_counter(waiter.getService_counter() + 1);
+                    }
+
+
+                    if(getAction==1) {
+                        waiter.setAverage_time_pay(new Long(Integer.parseInt(newAvgPay.toString())));
+                        waiter.setPay_counter(waiter.getPay_counter() + 1);
+                    }
+
+                    userDAO.saveOrUpdate(waiter);
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Statistic statistics = statisticsDAO.findByDate(result);
+
+                    if (statistics == null) {
+                        if(getAction==0) {
+                            statistics = new Statistic();
+                            statistics.setCounter_service(1);
+                            statistics.setDay(result);
+                            statistics.setAverage_time_service(time);
+                            statistics.setAverage_time_pay(0l);
+                            statisticsDAO.saveOrUpdate(statistics);
+                        }
+                        if(getAction==1) {
+                            statistics = new Statistic();
+                            statistics.setCounter_pay(1);
+                            statistics.setDay(result);
+                            statistics.setAverage_time_pay(time);
+                            statistics.setAverage_time_service(0l);
+                            statisticsDAO.saveOrUpdate(statistics);
+                        }
+                    } else {
+
+
+                        Long service = (((statistics.getCounter_service()*statistics.getAverage_time_service())+time)/(statistics.getCounter_service()+1));
+                        Long pay = (((statistics.getCounter_pay()*statistics.getAverage_time_pay())+time)/(statistics.getCounter_pay()+1));
+
+
+                        int counterService = statistics.getCounter_service();
+                        int counterPay = statistics.getCounter_pay();
+                        counterService++;
+                        counterPay++;
+                        if(getAction==0) {
+                            statistics.setCounter_service(counterService);
+                            statistics.setAverage_time_service(service);
+                            statisticsDAO.saveOrUpdate(statistics);
+                        }
+                        if(getAction==1) {
+                            statistics.setCounter_pay(counterPay);
+                            statistics.setAverage_time_pay(pay);
+                            statisticsDAO.saveOrUpdate(statistics);
+                        }
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+                } else {
+                    servicequeueDAO.saveOrUpdate(sq);
+                }
+                if (button.equals("0"))
+                    text = "<div style='float:left; background-color:#8bc832; color:#fff; padding:10px; margin-right:5px; width:133px; height:100px; text-align:center'><font style='font-size:40px'>" + tableNo.getTitle() + "</font><br /><font style='font-size:14px'>Service" + " <br />(" + tw.getWorkingarea().getId() + ")" + "</font></div>";
+                if (button.equals("1"))
+                    text = "<div style='float:left; background-color:#8bc832; color:#fff; padding:10px; margin-right:5px; width:133px; height:100px; text-align:center'><font style='font-size:40px'>" + tableNo.getTitle() + "</font><br /><font style='font-size:14px'>Pay" + " <br />(" + tw.getWorkingarea().getId() + ")" + "</font></div>";
+                portfolioPosition.setLastBidder(beforeText + text);
+                Product kkk = productDAO.findByTicker(tttticker);
+                String byServicesession = servicequeueDAO.renderByServicesession(kkk.getId());
+                portfolioPosition.setLastBidder(byServicesession);
+                portfolioService.getObjjj(portfolioPosition);
+                messagingTemplate.convertAndSend("/topic/price.stock." + tttticker,
+                        "{\"ticker\":\"" + tttticker + "\",\"price\":" + "100" + ",\"lastBidder\":\""
+                                + servicequeueDAO.renderByServicesession(sswa.getServicesession().getId()) + "\"" + ",\"isFinished\":\"" + "1" + "\"" + "} ");
+                Product pppp = productDAO.findByTicker(tttticker);
+                pppp.setLast_bidder(beforeText + text);
+                productDAO.saveOrUpdate(pppp);
+            }
         }
 
-
-        SendersTables st = sendersTablesDAO.findByUuid(sender);
-
-
-        Sender senderExiststs = senderDAO.findByUuid(sender);
-        if (senderExiststs == null) {
-            Map<String, String> params;
-            RestTemplate restTemplate;
-            String uri;
-            uri = "http://localhost:8080/333/" + sender;
-            params = new HashMap<String, String>();
-            restTemplate = new RestTemplate();
-            restTemplate.getForObject(uri, String.class, params);
-
-        } else {
-
-            senderExiststs.setLast_seen(currentDateTime());
-            senderDAO.saveOrUpdate(senderExiststs);
-        }
-
-
-        TablesWorkingareas tw = tablesWorkingareasDAO.findByTable("" + st.getTable().getId()); // optional delete it 5 3 16 // TODO release check fk table group!!
-        Table tableee = tablesWorkingareasDAO.findByTable2("" + st.getTable().getId()); // optional delete it 5 3 16
-        if (tw != null) {
-            ServicesessionsWorkingareas sswa3 = servicesessionsWorkingareasDAO.findByWorkingareaAndTableGroup("" + tw.getWorkingarea().getId(), "" + tw.getTablegroup().getId());
-            ServicesessionsWorkingareas sswa;// = servicesessionsWorkingareasDAO.findByWorkingarea("" + tw.getWorkingarea().getId());
-            sswa = sswa3;
-            String tttticker = sswa.getServicesession().getIdentifier();
+        public void confirmTicket(String accept_ticket) throws SQLIntegrityConstraintViolationException {
+            String tttticker = servicequeueDAO.findTickerByAcceptTicket(accept_ticket);
             Portfolio all = portfolioService.getAll();
             PortfolioPosition portfolioPosition = all.getPortfolioPosition(tttticker);
+
+
+            Servicequeue performedSq = servicequeueDAO.findByAcceptTicket(accept_ticket);
+
+
+            servicequeueDAO.deleteByAcceptTicket(accept_ticket);
             String beforeText;
             if (portfolioPosition != null)
                 beforeText = portfolioPosition.getLastBidder();
             else
                 beforeText = "";
-            Sender senderUsed = senderDAO.findByUuid(sender);
-            senderUsed.setVoltage(Integer.parseInt(battery));
-            int batteryStatus = (Integer.parseInt(battery) - 2400) / 6;
-            if (batteryStatus < 0) batteryStatus = 0;
-            if (batteryStatus > 100) batteryStatus = 100;
-            senderUsed.setBattery(batteryStatus);
-            senderDAO.saveOrUpdate(senderUsed);
             String text = "";
-            Servicequeue sq = new Servicequeue();
             Product sessionEmployee = productDAO.findByTicker(tttticker);
-            sq.setServicesession(sessionEmployee);
-
-            org.springframework.samples.portfolio.persistence.model.Table tableNo = tableee; //////////////tw.getTable();
-            sq.setAction(Integer.parseInt(button));
-            sq.setTable(tableNo);
-            int zufallszahl = (int) ((Math.random() * 30) + 1);
-            sq.setAccept_ticket("" + zufallszahl);
-            sq.setCreated(System.currentTimeMillis()/1000);
-            if (Integer.parseInt(button) == 2) {
-                Servicequeue s = servicequeueDAO.findByTable(tableNo.getId());
-                servicequeueDAO.delete(s);
-
-                s.getServicesession();
-
-                int getAction = s.getAction();
 
 
-                SimpleDateFormat formatter;
-                formatter = new SimpleDateFormat("yyyy-MM-dd");
-                Date today = new Date();
-                String result = formatter.format(today);
+            SimpleDateFormat formatter;
+            formatter = new SimpleDateFormat("yyyy-MM-dd");
+            Date today = new Date();
+            String result = formatter.format(today);
 
 
 
 
-                long time=System.currentTimeMillis()/1000-s.getCreated();
+            int action = performedSq.getAction();
 
 
-                StatisticsEmployee statisticsEmployee = statisticsEmployeeDAO.findByUserIdAndDate("" + sessionEmployee.getEmployee_id(), result);
-                int action = Integer.parseInt(button);
+            long time=System.currentTimeMillis()/1000-performedSq.getCreated();
 
-                if (statisticsEmployee == null) {
-                    if(getAction==0) {
-                        statisticsEmployee = new StatisticsEmployee();
-                        statisticsEmployee.setCounter_service(1);
-                        statisticsEmployee.setDay(result);
-                        statisticsEmployee.setEmployee_id("" + sessionEmployee.getEmployee_id());
-                        statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
-                    }
-                    if(getAction==1) {
-                        statisticsEmployee = new StatisticsEmployee();
-                        statisticsEmployee.setCounter_pay(1);
-                        statisticsEmployee.setDay(result);
-                        statisticsEmployee.setEmployee_id("" + sessionEmployee.getEmployee_id());
-                        statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
-                    }
-                } else {
-                    int counterService = statisticsEmployee.getCounter_service();
-                    int counterPay = statisticsEmployee.getCounter_pay();
-                    counterService++;
-                    counterPay++;
-                    if(getAction==0) {
-                        statisticsEmployee.setCounter_service(counterService);
-                        statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
-                    }
-                    if(getAction==1) {
-                        statisticsEmployee.setCounter_pay(counterPay);
-                        statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
-                    }
+
+            //Statistic stats = statisticsDAO.get(1);
+
+
+
+            //statisticsDAO.saveOrUpdate(stats);
+
+
+
+            StatisticsEmployee statisticsEmployee = statisticsEmployeeDAO.findByUserIdAndDate("" + sessionEmployee.getEmployee_id(), result);
+
+            if (statisticsEmployee == null) {
+                if(action==0) {
+                    statisticsEmployee = new StatisticsEmployee();
+                    statisticsEmployee.setCounter_service(1);
+                    statisticsEmployee.setDay(result);
+                    statisticsEmployee.setEmployee_id("" + sessionEmployee.getEmployee_id());
+                    statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
                 }
-
-
-
-
-
-
-
-
-                User waiter = userDAO.get(sessionEmployee.getEmployee_id());
-
-
-                Long newAvgService = (((waiter.getService_counter()*waiter.getAverage_time_service())+time)/(waiter.getService_counter()+1));
-                Long newAvgPay = (((waiter.getPay_counter()*waiter.getAverage_time_pay())+time)/(waiter.getPay_counter()+1));
-
-
-                if(getAction==0) {
-                    waiter.setAverage_time_service(new Long(Integer.parseInt(newAvgService.toString())));
-                    waiter.setService_counter(waiter.getService_counter() + 1);
+                if(action==1) {
+                    statisticsEmployee = new StatisticsEmployee();
+                    statisticsEmployee.setCounter_pay(1);
+                    statisticsEmployee.setDay(result);
+                    statisticsEmployee.setEmployee_id("" + sessionEmployee.getEmployee_id());
+                    statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
                 }
-
-
-                if(getAction==1) {
-                    waiter.setAverage_time_pay(new Long(Integer.parseInt(newAvgPay.toString())));
-                    waiter.setPay_counter(waiter.getPay_counter() + 1);
-                }
-
-                userDAO.saveOrUpdate(waiter);
-
-
-
-
-
-
-
-
-
-
-
-
-
-                Statistic statistics = statisticsDAO.findByDate(result);
-
-                if (statistics == null) {
-                    if(getAction==0) {
-                        statistics = new Statistic();
-                        statistics.setCounter_service(1);
-                        statistics.setDay(result);
-                        statistics.setAverage_time_service(time);
-                        statistics.setAverage_time_pay(0l);
-                        statisticsDAO.saveOrUpdate(statistics);
-                    }
-                    if(getAction==1) {
-                        statistics = new Statistic();
-                        statistics.setCounter_pay(1);
-                        statistics.setDay(result);
-                        statistics.setAverage_time_pay(time);
-                        statistics.setAverage_time_service(0l);
-                        statisticsDAO.saveOrUpdate(statistics);
-                    }
-                } else {
-
-
-                    Long service = (((statistics.getCounter_service()*statistics.getAverage_time_service())+time)/(statistics.getCounter_service()+1));
-                    Long pay = (((statistics.getCounter_pay()*statistics.getAverage_time_pay())+time)/(statistics.getCounter_pay()+1));
-
-
-                    int counterService = statistics.getCounter_service();
-                    int counterPay = statistics.getCounter_pay();
-                    counterService++;
-                    counterPay++;
-                    if(getAction==0) {
-                        statistics.setCounter_service(counterService);
-                        statistics.setAverage_time_service(service);
-                        statisticsDAO.saveOrUpdate(statistics);
-                    }
-                    if(getAction==1) {
-                        statistics.setCounter_pay(counterPay);
-                        statistics.setAverage_time_pay(pay);
-                        statisticsDAO.saveOrUpdate(statistics);
-                    }
-                }
-
-
-
-
-
-
-
-
-
-
-
-
             } else {
-                servicequeueDAO.saveOrUpdate(sq);
+                int counterService = statisticsEmployee.getCounter_service();
+                int counterPay = statisticsEmployee.getCounter_pay();
+                counterService++;
+                counterPay++;
+                if(action==0) {
+                    statisticsEmployee.setCounter_service(counterService);
+                    statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
+                }
+                if(action==1) {
+                    statisticsEmployee.setCounter_pay(counterPay);
+                    statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
+                }
             }
-            if (button.equals("0"))
-                text = "<div style='float:left; background-color:#8bc832; color:#fff; padding:10px; margin-right:5px; width:133px; height:100px; text-align:center'><font style='font-size:40px'>" + tableNo.getTitle() + "</font><br /><font style='font-size:14px'>Service" + " <br />(" + tw.getWorkingarea().getId() + ")" + "</font></div>";
-            if (button.equals("1"))
-                text = "<div style='float:left; background-color:#8bc832; color:#fff; padding:10px; margin-right:5px; width:133px; height:100px; text-align:center'><font style='font-size:40px'>" + tableNo.getTitle() + "</font><br /><font style='font-size:14px'>Pay" + " <br />(" + tw.getWorkingarea().getId() + ")" + "</font></div>";
-            portfolioPosition.setLastBidder(beforeText + text);
+
+
+
+
+
+            User waiter = userDAO.get(sessionEmployee.getEmployee_id());
+
+
+            Long newAvgService = (((waiter.getService_counter()*waiter.getAverage_time_service())+time)/(waiter.getService_counter()+1));
+            Long newAvgPay = (((waiter.getPay_counter()*waiter.getAverage_time_pay())+time)/(waiter.getPay_counter()+1));
+
+
+            if(action==0) {
+                waiter.setAverage_time_service(new Long(Integer.parseInt(newAvgService.toString())));
+                waiter.setService_counter(waiter.getService_counter() + 1);
+            }
+
+
+            if(action==1) {
+                waiter.setAverage_time_pay(new Long(Integer.parseInt(newAvgPay.toString())));
+                waiter.setPay_counter(waiter.getPay_counter() + 1);
+            }
+
+            userDAO.saveOrUpdate(waiter);
+
+
+
+
+
+
+
+
+
+
+
+
+
+            Statistic statistics = statisticsDAO.findByDate(result);
+
+            if (statistics == null) {
+                if(action==0) {
+                    statistics = new Statistic();
+                    statistics.setCounter_service(1);
+                    statistics.setDay(result);
+                    statistics.setAverage_time_service(time);
+                    statistics.setAverage_time_pay(0l);
+                    statisticsDAO.saveOrUpdate(statistics);
+                }
+                if(action==1) {
+                    statistics = new Statistic();
+                    statistics.setCounter_pay(1);
+                    statistics.setDay(result);
+                    statistics.setAverage_time_pay(time);
+                    statistics.setAverage_time_service(0l);
+                    statisticsDAO.saveOrUpdate(statistics);
+                }
+            } else {
+
+
+                Long service = (((statistics.getCounter_service()*statistics.getAverage_time_service())+time)/(statistics.getCounter_service()+1));
+                Long pay = (((statistics.getCounter_pay()*statistics.getAverage_time_pay())+time)/(statistics.getCounter_pay()+1));
+
+
+                int counterService = statistics.getCounter_service();
+                int counterPay = statistics.getCounter_pay();
+                counterService++;
+                counterPay++;
+                if(action==0) {
+                    statistics.setCounter_service(counterService);
+                    statistics.setAverage_time_service(service);
+                    statisticsDAO.saveOrUpdate(statistics);
+                }
+                if(action==1) {
+                    statistics.setCounter_pay(counterPay);
+                    statistics.setAverage_time_pay(pay);
+                    statisticsDAO.saveOrUpdate(statistics);
+                }
+            }
+
+
+
+
+
+
             Product kkk = productDAO.findByTicker(tttticker);
             String byServicesession = servicequeueDAO.renderByServicesession(kkk.getId());
             portfolioPosition.setLastBidder(byServicesession);
             portfolioService.getObjjj(portfolioPosition);
             messagingTemplate.convertAndSend("/topic/price.stock." + tttticker,
                     "{\"ticker\":\"" + tttticker + "\",\"price\":" + "100" + ",\"lastBidder\":\""
-                            + servicequeueDAO.renderByServicesession(sswa.getServicesession().getId()) + "\"" + ",\"isFinished\":\"" + "1" + "\"" + "} ");
+                            + byServicesession + "\"" + ",\"isFinished\":\"" + "1" + "\"" + "} ");
             Product pppp = productDAO.findByTicker(tttticker);
             pppp.setLast_bidder(beforeText + text);
             productDAO.saveOrUpdate(pppp);
         }
-    }
-
-    public void confirmTicket(String accept_ticket) throws SQLIntegrityConstraintViolationException {
-        String tttticker = servicequeueDAO.findTickerByAcceptTicket(accept_ticket);
-        Portfolio all = portfolioService.getAll();
-        PortfolioPosition portfolioPosition = all.getPortfolioPosition(tttticker);
-
-
-        Servicequeue performedSq = servicequeueDAO.findByAcceptTicket(accept_ticket);
-        System.out.println(performedSq.getAction() + "------------------");
-
-
-        servicequeueDAO.deleteByAcceptTicket(accept_ticket);
-        String beforeText;
-        if (portfolioPosition != null)
-            beforeText = portfolioPosition.getLastBidder();
-        else
-            beforeText = "";
-        String text = "";
-        Product sessionEmployee = productDAO.findByTicker(tttticker);
-
-
-        SimpleDateFormat formatter;
-        formatter = new SimpleDateFormat("yyyy-MM-dd");
-        Date today = new Date();
-        String result = formatter.format(today);
-
-
-
-
-        int action = performedSq.getAction();
-
-
-        long time=System.currentTimeMillis()/1000-performedSq.getCreated();
-
-
-        //Statistic stats = statisticsDAO.get(1);
-
-
-
-        //statisticsDAO.saveOrUpdate(stats);
-
-        //  System.out.println(stats.getValue());
-
-
-        StatisticsEmployee statisticsEmployee = statisticsEmployeeDAO.findByUserIdAndDate("" + sessionEmployee.getEmployee_id(), result);
-
-        if (statisticsEmployee == null) {
-            if(action==0) {
-                statisticsEmployee = new StatisticsEmployee();
-                statisticsEmployee.setCounter_service(1);
-                statisticsEmployee.setDay(result);
-                statisticsEmployee.setEmployee_id("" + sessionEmployee.getEmployee_id());
-                statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
-            }
-            if(action==1) {
-                statisticsEmployee = new StatisticsEmployee();
-                statisticsEmployee.setCounter_pay(1);
-                statisticsEmployee.setDay(result);
-                statisticsEmployee.setEmployee_id("" + sessionEmployee.getEmployee_id());
-                statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
-            }
-        } else {
-            int counterService = statisticsEmployee.getCounter_service();
-            int counterPay = statisticsEmployee.getCounter_pay();
-            counterService++;
-            counterPay++;
-            if(action==0) {
-                statisticsEmployee.setCounter_service(counterService);
-                statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
-            }
-            if(action==1) {
-                statisticsEmployee.setCounter_pay(counterPay);
-                statisticsEmployeeDAO.saveOrUpdate(statisticsEmployee);
-            }
-        }
-
-
-
-
-
-        User waiter = userDAO.get(sessionEmployee.getEmployee_id());
-
-
-        Long newAvgService = (((waiter.getService_counter()*waiter.getAverage_time_service())+time)/(waiter.getService_counter()+1));
-        Long newAvgPay = (((waiter.getPay_counter()*waiter.getAverage_time_pay())+time)/(waiter.getPay_counter()+1));
-
-
-        if(action==0) {
-            waiter.setAverage_time_service(new Long(Integer.parseInt(newAvgService.toString())));
-            waiter.setService_counter(waiter.getService_counter() + 1);
-        }
-
-
-        if(action==1) {
-            waiter.setAverage_time_pay(new Long(Integer.parseInt(newAvgPay.toString())));
-            waiter.setPay_counter(waiter.getPay_counter() + 1);
-        }
-
-        userDAO.saveOrUpdate(waiter);
-
-
-
-
-
-
-
-
-
-
-
-
-
-        Statistic statistics = statisticsDAO.findByDate(result);
-
-        if (statistics == null) {
-            if(action==0) {
-                statistics = new Statistic();
-                statistics.setCounter_service(1);
-                statistics.setDay(result);
-                statistics.setAverage_time_service(time);
-                statistics.setAverage_time_pay(0l);
-                statisticsDAO.saveOrUpdate(statistics);
-            }
-            if(action==1) {
-                statistics = new Statistic();
-                statistics.setCounter_pay(1);
-                statistics.setDay(result);
-                statistics.setAverage_time_pay(time);
-                statistics.setAverage_time_service(0l);
-                statisticsDAO.saveOrUpdate(statistics);
-            }
-        } else {
-
-
-            Long service = (((statistics.getCounter_service()*statistics.getAverage_time_service())+time)/(statistics.getCounter_service()+1));
-            Long pay = (((statistics.getCounter_pay()*statistics.getAverage_time_pay())+time)/(statistics.getCounter_pay()+1));
-
-
-            int counterService = statistics.getCounter_service();
-            int counterPay = statistics.getCounter_pay();
-            counterService++;
-            counterPay++;
-            if(action==0) {
-                statistics.setCounter_service(counterService);
-                statistics.setAverage_time_service(service);
-                statisticsDAO.saveOrUpdate(statistics);
-            }
-            if(action==1) {
-                statistics.setCounter_pay(counterPay);
-                statistics.setAverage_time_pay(pay);
-                statisticsDAO.saveOrUpdate(statistics);
-            }
-        }
-
-
-
-
-
-
-        Product kkk = productDAO.findByTicker(tttticker);
-        String byServicesession = servicequeueDAO.renderByServicesession(kkk.getId());
-        portfolioPosition.setLastBidder(byServicesession);
-        portfolioService.getObjjj(portfolioPosition);
-        messagingTemplate.convertAndSend("/topic/price.stock." + tttticker,
-                "{\"ticker\":\"" + tttticker + "\",\"price\":" + "100" + ",\"lastBidder\":\""
-                        + byServicesession + "\"" + ",\"isFinished\":\"" + "1" + "\"" + "} ");
-        Product pppp = productDAO.findByTicker(tttticker);
-        pppp.setLast_bidder(beforeText + text);
-        productDAO.saveOrUpdate(pppp);
-    }
-*/
+    */
     public String now() {
         GregorianCalendar gc = new GregorianCalendar();
         SimpleDateFormat format_time_now1 = new SimpleDateFormat("dd.MM.YYYY");

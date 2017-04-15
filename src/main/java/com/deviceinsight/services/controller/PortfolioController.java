@@ -45,12 +45,7 @@ public class PortfolioController {
         this.portfolioService = portfolioService;
         this.tradeService = tradeService;
         this.productDAO = productDAO;
-
         portfolioService.createPortfolio(productDAO);
-        System.out.println("ssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss > " + icnt);
-        logger.debug("sssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss > " + icnt);
-
-
     }
 
 	/*@Autowired
@@ -76,7 +71,6 @@ public class PortfolioController {
     }
     */
 /*	private void auctionWatch() {
-        System.out.println("WATCH!!!!!!!");
 
 	}*/
 

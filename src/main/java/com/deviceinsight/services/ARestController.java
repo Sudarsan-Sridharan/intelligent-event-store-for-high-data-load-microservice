@@ -62,7 +62,7 @@ public class ARestController {
         config.getNetworkConfig().getJoin().getMulticastConfig().setEnabled(false);
         config.getNetworkConfig().getJoin().getTcpIpConfig().addMember("172.17.0.3:5701");
         Hazelcast.newHazelcastInstance(config);*/
-       ////////////// client = (HazelcastInstance) new GenericXmlApplicationContext("applicationContext.xml").getBean("client");
+        ////////////// client = (HazelcastInstance) new GenericXmlApplicationContext("applicationContext.xml").getBean("client");
     }
 
 
@@ -81,9 +81,6 @@ public class ARestController {
 
     @RequestMapping(value = "/events/{NODE_ID}", method = RequestMethod.GET)
     public Set<String> getEvents(@PathVariable("NODE_ID") Long nodeId) throws ExecutionException, InterruptedException {
-
-
-
      /*   arangoDB = new ArangoDB.Builder().user("root").password("Ovjv3FrdKvf3CVfj").build();
         try {
             arangoDB.db(DB_NAME).drop();
@@ -93,13 +90,8 @@ public class ARestController {
         db = arangoDB.db(DB_NAME);
         db.createCollection(COLLECTION_NAME);
         collection = db.collection(COLLECTION_NAME);
-
-
 */
-
         IMap<Long, Set<String>> map = client.getMap("openedEventsNodeIdMapping");
-
-
         Set<String> openedEvents = map.get(nodeId);
         if (openedEvents == null) {
             return Collections.emptySet();
@@ -111,19 +103,9 @@ public class ARestController {
 
     @RequestMapping(value = "/createEvent", method = RequestMethod.POST)
     public String test(@RequestBody PanamaEventDto panamaEventDto) throws ExecutionException, InterruptedException {
-
-
-        //  System.out.println(">>>>> "+client.getPartitionService().getPartitions());
-
-
         IMap<Long, Set<String>> map = client.getMap("openedEventsNodeIdMapping");
         Set<String> openedEvents = map.get(panamaEventDto.getNodeId());
         if (panamaEventDto.getOnCome()) {
-
-
-//            System.out.println("#######  CLIENT BEGIN #######");
-
-
             if (openedEvents == null) {
                 openedEvents = new HashSet<>();
                 map.put(panamaEventDto.getNodeId(), openedEvents);
@@ -132,39 +114,25 @@ public class ARestController {
             map.put(panamaEventDto.getNodeId(), openedEvents);
             IMap<Long, Set<String>> resultMap = client.getMap("openedEventsNodeIdMapping");
             Set<String> openEventKeys = resultMap.get(panamaEventDto.getNodeId());
-            System.out.println(openEventKeys.toString());
-            // System.out.println("#######  CLIENT END #######");
-
-
         } else {
-
             if (openedEvents != null) {
                 openedEvents.remove(panamaEventDto.getEventKey());
                 map.put(panamaEventDto.getNodeId(), openedEvents);
-                System.out.println(openedEvents.toString());
             }
 
         }
-
-
         return "test";
     }
 
     @RequestMapping("/docker")
     public String docker() throws ExecutionException, InterruptedException {
-
-
         return "test";
-
-
     }
 
     @RequestMapping("/test2")
     public String test2() throws ExecutionException, InterruptedException {
         ApplicationContext context = new GenericXmlApplicationContext("applicationContext.xml");
-
         HazelcastInstance client = (HazelcastInstance) context.getBean("client");
-
         IMap<String, String> map = client.getMap("map");
         System.out.println("City: " + map.get("city"));
         return "ok";
