@@ -1,11 +1,7 @@
 package com.deviceinsight.services.model;
 
-import org.hibernate.validator.constraints.NotEmpty;
-
 import javax.persistence.*;
 import javax.persistence.Table;
-import javax.validation.constraints.NotNull;
-
 
 @Entity
 @Table(name = "users")
@@ -24,9 +20,6 @@ public class User {
     }
 
     private String avatar_url_gravatar_by_email;
-
-
-
 
     public Long getAverage_time_service() {
         return average_time_service;
@@ -98,30 +91,8 @@ public class User {
     }
 
     private String password_autologin;
-    // private Set<UserRole> userRole = new HashSet<UserRole>(0);
-    /*	@NotNull(message="You must enter a value")
-        @Size(min=2, max=2, message="You must enter 2 characters")
-        */
-///////////////////////////////////////	@Email(regexp="^\\S+@\\S+\\.\\S+$")
-//	@Length(max = 2)
 
-
-
-
-
-
-
-
-
-    /*    @NotNull(message = "")
-        @NotEmpty(message = "")*/
     private String email;
-
-
-
-
-    // private int userRole = 1;
-
 
     public String getTelephone() {
         return telephone;
@@ -147,8 +118,6 @@ public class User {
         this.reset_password_token = reset_password_token;
     }
 
-
-
     public String getFirst_name() {
         return first_name;
     }
@@ -164,9 +133,6 @@ public class User {
     public void setLast_name(String last_name) {
         this.last_name = last_name;
     }
-
-
-
 
     // @Column(name = "id")
     public int getId() {
@@ -200,7 +166,6 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-
 
 
     public String getUserRole() {

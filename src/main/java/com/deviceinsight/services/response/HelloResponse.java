@@ -1,13 +1,8 @@
 package com.deviceinsight.services.response;
 
-/**
- * Created by gabri on 10/6/2016.
- */
 public class HelloResponse {
 
-
     public HelloResponse() {
-
     }
 
     public String getMessage() {
@@ -19,6 +14,4 @@ public class HelloResponse {
     }
 
     String message;
-
-
 }

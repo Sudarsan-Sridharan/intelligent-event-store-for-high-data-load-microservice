@@ -6,13 +6,9 @@ import org.codehaus.jackson.annotate.JsonIgnore;
 import javax.persistence.*;
 import javax.persistence.Table;
 
-/**
- * Created by ebners on 18/01/16.
- */
 @Entity
 @Table(name = "servicequeues")
 public class Servicequeue {
-
 
     @Id
     private int id;
@@ -42,17 +38,6 @@ public class Servicequeue {
     public String getAccept_ticket() {
         return accept_ticket;
     }
-
-   /* public int getTable_id() {
-        return table_id;
-    }
-
-    public void setTable_id(int table_id) {
-        this.table_id = table_id;
-    }
-
-    private int table_id;
-*/
 
     public void setAccept_ticket(String accept_ticket) {
         this.accept_ticket = accept_ticket;
@@ -89,5 +74,4 @@ public class Servicequeue {
     public void setTable(com.deviceinsight.services.model.Table table) {
         this.table = table;
     }
-
 }

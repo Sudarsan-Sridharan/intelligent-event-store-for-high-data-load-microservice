@@ -5,10 +5,6 @@ import com.fasterxml.jackson.annotation.JsonTypeInfo;
 
 import java.io.Serializable;
 
-/**
- * Created by gabri on 10/7/2016.
- */
-//@JsonDeserialize(using = InstanceDeserializer.class)
 @JsonTypeInfo(use = JsonTypeInfo.Id.NAME, include = JsonTypeInfo.As.PROPERTY, property = "type")
 @JsonSubTypes({
         @JsonSubTypes.Type(value = GoodbyeRequest.class, name = "goodbye"),
@@ -24,6 +20,5 @@ public abstract class AbstractRequest implements Serializable {
         this.name = name;
     }
 
-    public  String name;
-
+    public String name;
 }

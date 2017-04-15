@@ -1,6 +1,5 @@
 package com.deviceinsight.services.config;
 
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -10,7 +9,6 @@ import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 
 @Configuration
 @EnableScheduling
-//@ComponentScan("org.springframework.samples")
 @EnableWebSocketMessageBroker
 public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
 
@@ -22,11 +20,7 @@ public class WebSocketConfig extends AbstractWebSocketMessageBrokerConfigurer {
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
         registry.enableSimpleBroker("/queue/", "/topic/", "/app", "/senders");
-        // registry.enableStompBrokerRelay("/queue/", "/topic/");
-
-
         registry.setApplicationDestinationPrefixes("/app");
-        //registry.enableSimpleBroker("/app");
     }
 
 }

@@ -1,13 +1,8 @@
 package com.deviceinsight.services.response;
 
-/**
- * Created by gabri on 10/6/2016.
- */
 public class GoodbyeResponse {
 
-
     public GoodbyeResponse() {
-
     }
 
     public String getMessage() {
@@ -19,8 +14,4 @@ public class GoodbyeResponse {
     }
 
     String message;
-
-
-
-
 }

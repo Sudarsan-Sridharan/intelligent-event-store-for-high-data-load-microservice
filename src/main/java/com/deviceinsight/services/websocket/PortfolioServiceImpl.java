@@ -1,9 +1,6 @@
 package com.deviceinsight.services.websocket;
 
 import com.deviceinsight.services.model.TopicItem;
-import com.deviceinsight.services.model.ServicequeuesDAO;
-import org.springframework.beans.factory.annotation.Autowired;
-
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
@@ -70,5 +67,4 @@ public class PortfolioServiceImpl implements PortfolioService {
         hhh.removePosition(ticker);
         this.portfolioLookup.put("fabrice", hhh);
     }
-
 }

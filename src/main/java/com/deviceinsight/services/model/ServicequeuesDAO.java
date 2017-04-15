@@ -4,7 +4,6 @@ package com.deviceinsight.services.model;
 import java.util.List;
 
 public interface ServicequeuesDAO {
-///	public List<Sender> list();
 
     public List<Servicequeue> list();
 

@@ -4,12 +4,10 @@ import com.deviceinsight.services.model.TopicItem;
 import org.codehaus.jackson.annotate.JsonIgnore;
 
 import javax.persistence.*;
-import javax.persistence.Table;
 
 @Entity
 @Table(name = "servicequeues")
 public class Servicequeue {
-
 
     @Id
     private int id;
@@ -39,8 +37,6 @@ public class Servicequeue {
     public String getAccept_ticket() {
         return accept_ticket;
     }
-
-
 
     public void setAccept_ticket(String accept_ticket) {
         this.accept_ticket = accept_ticket;
@@ -77,5 +73,4 @@ public class Servicequeue {
     public void setTable(com.deviceinsight.services.model.Table table) {
         this.table = table;
     }
-
 }

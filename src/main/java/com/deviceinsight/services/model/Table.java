@@ -9,7 +9,6 @@ public class Table {
     @Id
     private int id;
     private int capacity;
-
     private int workingarea;
     private String title;
 
@@ -44,5 +43,4 @@ public class Table {
     public void setWorkingarea(int workingarea) {
         this.workingarea = workingarea;
     }
-
 }

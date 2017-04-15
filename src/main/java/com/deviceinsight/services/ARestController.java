@@ -2,20 +2,13 @@ package com.deviceinsight.services;
 
 import com.arangodb.ArangoCollection;
 import com.arangodb.ArangoDB;
-import com.arangodb.ArangoDBException;
 import com.arangodb.ArangoDatabase;
-import com.hazelcast.client.HazelcastClient;
-import com.hazelcast.config.Config;
-import com.hazelcast.core.Hazelcast;
 import com.hazelcast.core.HazelcastInstance;
 import com.hazelcast.core.IMap;
-import com.hazelcast.jet.Jet;
-import com.hazelcast.jet.JetInstance;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.orm.hibernate5.HibernateTemplate;
@@ -23,7 +16,6 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.PostConstruct;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.HashSet;
 import java.util.Set;

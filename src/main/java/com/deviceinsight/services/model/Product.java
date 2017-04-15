@@ -1,6 +1,5 @@
 package com.deviceinsight.services.model;
 
-import com.deviceinsight.services.model.dao.BaseEntity;
 import com.deviceinsight.services.model.dao.BaseUUIDEntity;
 
 import javax.persistence.Entity;
@@ -9,7 +8,7 @@ import javax.persistence.Entity;
 @javax.persistence.Table(name = "products")
 public class Product extends BaseUUIDEntity implements IProduct {
 
-private String title;
+    private String title;
     private String name;
     private Float price;
 

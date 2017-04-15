@@ -17,7 +17,6 @@ public class BaseUUIDEntity {
     @Type(type = "uuid-char")
     protected UUID uuid;
 
-
     public UUID getUuid() {
         return uuid;
     }
@@ -25,19 +24,4 @@ public class BaseUUIDEntity {
     public void setUuid(UUID uuid) {
         this.uuid = uuid;
     }
-
-/*
-    @Id
-    private int id;
-
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-*/
-
 }

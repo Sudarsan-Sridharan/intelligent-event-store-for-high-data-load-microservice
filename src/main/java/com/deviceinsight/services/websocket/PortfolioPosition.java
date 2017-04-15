@@ -19,7 +19,6 @@ public class PortfolioPosition {
         this.ticker = ticker;
         this.price = price;
         this.shares = shares;
-
         this.updateTime = System.currentTimeMillis();
         this.lastBidder = lastBidder;
     }
@@ -28,15 +27,11 @@ public class PortfolioPosition {
         this.company = other.company;
         this.ticker = other.ticker;
         this.price = other.price;
-
         this.lastBidder = other.lastBidder;
         this.price = other.price + 0.01;
         this.price = Math.round(this.price * 100) / 100.0;
-
         this.shares = other.shares;
         this.updateTime = other.updateTime;
-        // this.shares = other.shares + sharesToAddOrSubtract;
-        // ebs5grb	this.updateTime = System.currentTimeMillis();
     }
 
     public PortfolioPosition() {
@@ -95,5 +90,4 @@ public class PortfolioPosition {
         return "PortfolioPosition [company=" + this.company + ", ticker=" + this.ticker + ", price=" + this.price
                 + ", shares=" + this.shares + "]";
     }
-
 }

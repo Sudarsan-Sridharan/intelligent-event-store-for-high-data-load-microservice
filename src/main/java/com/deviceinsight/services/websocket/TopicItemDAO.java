@@ -4,7 +4,6 @@ import com.deviceinsight.services.model.TopicItem;
 
 import java.util.List;
 
-
 public interface TopicItemDAO {
     public List<TopicItem> list();
 

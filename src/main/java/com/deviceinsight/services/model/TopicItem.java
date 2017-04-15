@@ -2,7 +2,7 @@ package com.deviceinsight.services.model;
 
 import com.deviceinsight.services.model.dao.BaseEntity;
 
-import javax.persistence.*;
+import javax.persistence.Entity;
 
 @Entity
 @javax.persistence.Table(name = "topic_items")
@@ -12,36 +12,17 @@ public class TopicItem extends BaseEntity implements IProduct {
         super();
     }
 
+    public void getAdminDtp() {
 
-
-
-
-
+    }
 
     private String name;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     private int isActive;
-    //////////@NotEmpty
     private String title;
     private String first_name;
     private String last_name;
     private int employee_id;
     private int isUpdated;
-    //@NotEmpty
     private String imagePath;
     private float credit;
     private String item;
@@ -50,14 +31,9 @@ public class TopicItem extends BaseEntity implements IProduct {
     private int finished;
     private String identifier;
     private String last_bidder;
-    /////////////////////////////@NotNull
-    //////////////////////////@NumberFormat(pattern="Style.CURRENCY")
     private float base_price;
-    ///////////////////////@NotEmpty
     private String mode;
     private int real_bids;
-    ////////////////////@NotNull
-    /////////////////@NumberFormat(pattern="Style.CURRENCY")
     private float ends_on_price;
 
     public String getTitle() {
@@ -100,14 +76,6 @@ public class TopicItem extends BaseEntity implements IProduct {
         this.ends_on_price = ends_on_price;
     }
 
-  /*  public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-*/
     public String getFirst_name() {
         return first_name;
     }
@@ -196,11 +164,6 @@ public class TopicItem extends BaseEntity implements IProduct {
         this.base_price = base_price;
     }
 
-    public void getAdminDtp() {
-
-    }
-
-
     public int getReal_bids() {
         return real_bids;
     }
@@ -216,7 +179,4 @@ public class TopicItem extends BaseEntity implements IProduct {
     public void setMode(String mode) {
         this.mode = mode;
     }
-
-
-
 }
