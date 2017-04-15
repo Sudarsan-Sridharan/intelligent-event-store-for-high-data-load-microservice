@@ -1,5 +1,6 @@
 package com.deviceinsight.services.ecommerce.api;
 
+import com.deviceinsight.services.model.Product;
 import com.deviceinsight.services.model.TopicItem;
 import com.deviceinsight.services.model.TopicItem;
 import com.deviceinsight.services.model.dao.ProductDao;
@@ -21,19 +22,19 @@ import java.util.UUID;
 public class ProductRestController {
 
     @Autowired
-    private ProductDao<TopicItem> productDao;
+    private ProductDao<Product> productDao;
 
     @Transactional
     @RequestMapping(method = RequestMethod.POST)
     public void saveProduct() {
-        TopicItem product = new TopicItem();
+        Product product = new Product();
         product.setTitle("the title");
         productDao.save(product);
     }
 
     @Transactional
     @RequestMapping(method = RequestMethod.GET)
-    public TopicItem get() {
+    public Product get() {
         return productDao.getByUUID("b77d8fe6-c61b-49a9-9edd-6c627fcec6c7");
     }
 

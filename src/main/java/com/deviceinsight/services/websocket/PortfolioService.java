@@ -6,7 +6,7 @@ package com.deviceinsight.services.websocket;
 public interface PortfolioService {
     Portfolio findPortfolio(String username);
 
-    void createPortfolio(ProductDAO productDAO);
+    void createPortfolio(TopicItemDAO productDAO);
 
     void getObjjj(PortfolioPosition newPosition);
 

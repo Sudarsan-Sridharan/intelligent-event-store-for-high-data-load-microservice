@@ -1,7 +1,7 @@
 package com.deviceinsight.services.websocket;
 
 import com.deviceinsight.services.model.TopicItem;
-import com.deviceinsight.services.websocket.ProductDAO;
+import com.deviceinsight.services.websocket.TopicItemDAO;
 import org.hibernate.Criteria;
 import org.hibernate.Query;
 import org.hibernate.Session;
@@ -14,16 +14,16 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 @Repository
-public class ProductDAOImpl implements ProductDAO {
+public class TopicItemDAOImpl implements TopicItemDAO {
     @Autowired
     private SessionFactory sessionFactory;
 
 
-    public ProductDAOImpl() {
+    public TopicItemDAOImpl() {
 
     }
 
-    public ProductDAOImpl(SessionFactory sessionFactory) {
+    public TopicItemDAOImpl(SessionFactory sessionFactory) {
         this.sessionFactory = sessionFactory;
     }
 

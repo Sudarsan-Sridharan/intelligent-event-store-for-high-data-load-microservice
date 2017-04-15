@@ -18,7 +18,7 @@ package com.deviceinsight.services.controller;
 import com.deviceinsight.services.websocket.Portfolio;
 import com.deviceinsight.services.websocket.PortfolioPosition;
 import com.deviceinsight.services.websocket.PortfolioService;
-import com.deviceinsight.services.websocket.ProductDAO;
+import com.deviceinsight.services.websocket.TopicItemDAO;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,10 +38,10 @@ public class PortfolioController {
     private static int icnt = 0;
     private final PortfolioService portfolioService;
     private final TradeService tradeService;
-    private final ProductDAO productDAO;
+    private final TopicItemDAO productDAO;
 
     @Autowired
-    public PortfolioController(PortfolioService portfolioService, TradeService tradeService, ProductDAO productDAO) {
+    public PortfolioController(PortfolioService portfolioService, TradeService tradeService, TopicItemDAO productDAO) {
         this.portfolioService = portfolioService;
         this.tradeService = tradeService;
         this.productDAO = productDAO;

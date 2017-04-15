@@ -4,10 +4,8 @@ import com.deviceinsight.services.model.TopicItem;
 
 import java.util.List;
 
-/**
- * Created by ebners on 14.04.17.
- */
-public interface ProductDAO {
+
+public interface TopicItemDAO {
     public List<TopicItem> list();
 
     public TopicItem get(int id);

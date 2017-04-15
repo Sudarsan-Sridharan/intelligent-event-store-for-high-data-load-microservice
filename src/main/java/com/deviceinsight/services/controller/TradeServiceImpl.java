@@ -9,7 +9,8 @@ import com.deviceinsight.services.model.TopicItem;
 import com.deviceinsight.services.websocket.Portfolio;
 import com.deviceinsight.services.websocket.PortfolioPosition;
 import com.deviceinsight.services.websocket.PortfolioService;
-import com.deviceinsight.services.websocket.ProductDAO;
+import com.deviceinsight.services.websocket.TopicItemDAO;
+import com.deviceinsight.services.websocket.TopicItemDAO;
 import com.google.gson.Gson;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -54,7 +55,7 @@ public class TradeServiceImpl implements TradeService {
     @Autowired
     private TablesWorkingareasDAO tablesWorkingareasDAO;
 */    @Autowired
-    private ProductDAO productDAO;
+    private TopicItemDAO productDAO;
   /*  @Autowired
     private ServicesessionsWorkingareasDAO servicesessionsWorkingareasDAO;
     @Autowired

@@ -11,9 +11,9 @@ import java.util.Map;
 public class Portfolio {
 
     private final Map<String, PortfolioPosition> positionLookup = new LinkedHashMap<String, PortfolioPosition>();
-    private ProductDAO productDAO;
+    private TopicItemDAO productDAO;
 
-    public Portfolio(ProductDAO productDAO) {
+    public Portfolio(TopicItemDAO productDAO) {
         this.productDAO = productDAO;
     }
 
