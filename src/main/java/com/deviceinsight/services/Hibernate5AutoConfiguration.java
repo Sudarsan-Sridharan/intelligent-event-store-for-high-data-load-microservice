@@ -49,7 +49,7 @@ public class Hibernate5AutoConfiguration {
     public DataSource getDataSource() {
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/event_store");
+        dataSource.setUrl("jdbc:mysql://127.0.0.1:3306/event_store?autoReconnect=true&useSSL=false");
         dataSource.setUsername("event_store");
         dataSource.setPassword("event_store");
         return dataSource;
