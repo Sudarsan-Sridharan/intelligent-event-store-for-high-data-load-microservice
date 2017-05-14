@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;
 
-@Component
+/*@Component
 public class CamelKafkaConsumerTest {
 
     public CamelKafkaConsumerTest() throws Exception {
@@ -20,7 +20,7 @@ public class CamelKafkaConsumerTest {
         main.addRouteBuilder(new MyCamelJettyBuilder());
         main.run();
     }
-}
+}*/
 
 @Component
 class MyCamelJettyBuilder extends RouteBuilder {
