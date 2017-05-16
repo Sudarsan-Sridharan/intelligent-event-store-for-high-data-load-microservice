@@ -8,7 +8,6 @@ import com.hazelcast.core.IMap;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.GenericXmlApplicationContext;
 import org.springframework.orm.hibernate5.HibernateTemplate;
@@ -23,7 +22,6 @@ import java.util.concurrent.ExecutionException;
 
 
 //@SpringBootApplication
-@EnableAutoConfiguration
 @RestController
 public class ARestController {
 

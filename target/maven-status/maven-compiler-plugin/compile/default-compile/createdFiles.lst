@@ -2,7 +2,6 @@ com/deviceinsight/services/model/dao/ProductDao.class
 com/deviceinsight/services/websocket/Servicequeue.class
 com/deviceinsight/services/request/GoodbyeRequest.class
 com/deviceinsight/services/controller/security/MyUserDetailsService.class
-com/deviceinsight/services/config/MyCamelJettyBuilder$2.class
 com/deviceinsight/services/response/GoodbyeResponse.class
 com/deviceinsight/services/model/dao/BaseDao.class
 com/deviceinsight/services/model/Servicequeue.class
@@ -27,7 +26,6 @@ com/deviceinsight/services/controller/PortfolioController.class
 com/deviceinsight/services/KafkaPartitionUtil.class
 com/deviceinsight/services/model/dao/BaseDaoImpl.class
 com/deviceinsight/services/model/Product.class
-com/deviceinsight/services/config/MyCamelJettyBuilder.class
 com/deviceinsight/services/controller/GreetingController.class
 com/deviceinsight/services/model/dao/UUIDHolder.class
 com/deviceinsight/services/PanamaEventDto.class
@@ -50,13 +48,11 @@ com/deviceinsight/services/Hibernate5AutoConfiguration.class
 com/deviceinsight/services/model/UserRole.class
 com/deviceinsight/services/model/dao/ProductDaoImpl.class
 com/deviceinsight/services/PrometheusAutoConfiguration.class
-com/deviceinsight/services/config/MyCamelJettyBuilder$1.class
 com/deviceinsight/services/controller/security/HttpLogoutSuccessHandler.class
 com/deviceinsight/services/ARestController.class
 com/deviceinsight/services/SpringClient.class
 com/deviceinsight/services/HazelcastConfiguration.class
 com/deviceinsight/services/websocket/TopicItemDAO.class
-com/deviceinsight/services/config/CamelKafkaConsumerTest.class
 com/deviceinsight/services/config/WebSocketConfig.class
 com/deviceinsight/services/ecommerce/api/RestaurantRestController.class
 com/deviceinsight/services/controller/security/AuthSuccessHandler.class

@@ -50,7 +50,6 @@
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/response/GoodbyeResponse.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/websocket/PortfolioPosition.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/security/UsernamePasspwdUpgradeRequest.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/CamelKafkaConsumerTest.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/TradeServiceImpl.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ecommerce/api/ProductSaveDto.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/Trade.java
