@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="726b6499-5bf5-4486-b0da-3f8599752544" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaOutputBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/Notification.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intelligent-event-store-for-high-data-load.iml" afterPath="$PROJECT_DIR$/intelligent-event-store-for-high-data-load.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java" />
     </list>
     <ignored path="intelligent-event-store-for-high-data-load.iws" />
@@ -39,11 +37,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="KafkaCamelRoute.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="KafkaCamelRoute.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
+            <state relative-caret-position="450">
+              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="606">
+              <caret line="147" column="20" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ProcessorDefinition.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/camel/camel-core/2.19.0/camel-core-2.19.0-sources.jar!/org/apache/camel/model/ProcessorDefinition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="200" column="16" selection-start-line="200" selection-start-column="16" selection-end-line="200" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringSerializer.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.2.1/kafka-clients-0.10.2.1.jar!/org/apache/kafka/common/serialization/StringSerializer.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="5" column="45" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -59,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RestaurantRestController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RestaurantRestController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state relative-caret-position="33">
+              <caret line="51" column="2" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -72,8 +100,8 @@
       <file leaf-file-name="intelligent-event-store-for-high-data-load.iml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/intelligent-event-store-for-high-data-load.iml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            <state relative-caret-position="390">
+              <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -89,31 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CamelContext.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/apache/camel/camel-core/2.19.0/camel-core-2.19.0-sources.jar!/org/apache/camel/CamelContext.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="426" column="13" selection-start-line="426" selection-start-column="13" selection-end-line="426" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="DefaultCamelContext.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/org/apache/camel/camel-core/2.19.0/camel-core-2.19.0-sources.jar!/org/apache/camel/impl/DefaultCamelContext.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="360">
               <caret line="213" column="47" selection-start-line="213" selection-start-column="47" selection-end-line="213" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Notification.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/Notification.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -206,8 +214,8 @@
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/MyAppConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ARestController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/Application.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java" />
       </list>
     </option>
@@ -1091,7 +1099,7 @@
       <workItem from="1494074648313" duration="458000" />
       <workItem from="1494080752135" duration="9961000" />
       <workItem from="1494761288222" duration="1642000" />
-      <workItem from="1494912829182" duration="8444000" />
+      <workItem from="1494912829182" duration="9717000" />
     </task>
     <task id="LOCAL-00001" summary="arango db connector added with sample request to create a new graph db">
       <created>1487431686224</created>
@@ -1289,7 +1297,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494954403028</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="camel publishes a test message to kafka queue via rest that can be received in the terminal with ./kafka-console-consumer --zookeeper localhost:2181 --topic test">
+      <created>1494961426437</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1494961426437</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1319,7 +1334,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146032000" />
+    <option name="totallyTimeSpent" value="147305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="174" y="23" width="1523" height="1104" extended-state="0" />
@@ -1405,7 +1420,8 @@
     <MESSAGE value="rest endpoint added" />
     <MESSAGE value="context" />
     <MESSAGE value="upgrade to spring boot 1.5.3 release" />
-    <option name="LAST_COMMIT_MESSAGE" value="upgrade to spring boot 1.5.3 release" />
+    <MESSAGE value="camel publishes a test message to kafka queue via rest that can be received in the terminal with ./kafka-console-consumer --zookeeper localhost:2181 --topic test" />
+    <option name="LAST_COMMIT_MESSAGE" value="camel publishes a test message to kafka queue via rest that can be received in the terminal with ./kafka-console-consumer --zookeeper localhost:2181 --topic test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1418,7 +1434,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java</url>
-          <line>91</line>
+          <line>95</line>
           <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
@@ -1434,11 +1450,17 @@
           <properties />
           <option name="timeStamp" value="93" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java</url>
+          <line>44</line>
+          <properties />
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="95" />
+      <option name="time" value="96" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1447,7 +1469,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/AsyncGetCommand.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/Test.java" />
     <entry file="file://$PROJECT_DIR$/docs.rtf">
       <provider selected="true" editor-type-id="text-editor">
@@ -1671,14 +1692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/camel/camel-core/2.19.0/camel-core-2.19.0-sources.jar!/org/apache/camel/model/ProcessorDefinition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="2709" column="16" selection-start-line="2709" selection-start-column="16" selection-end-line="2709" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/apache/camel/camel-kafka/2.19.0/camel-kafka-2.19.0-sources.jar!/org/apache/camel/component/kafka/KafkaConstants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -1706,14 +1719,6 @@
             <element signature="e#33720#33721#0" expanded="false" />
             <element signature="e#33750#33751#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="119" column="55" selection-start-line="119" selection-start-column="55" selection-end-line="119" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1783,8 +1788,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/intelligent-event-store-for-high-data-load.iml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+        <state relative-caret-position="390">
+          <caret line="26" column="14" selection-start-line="26" selection-start-column="14" selection-end-line="26" selection-end-column="14" />
           <folding />
         </state>
       </provider>
@@ -1813,25 +1818,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
-          <folding />
-        </state>
+    <entry file="file://$PROJECT_DIR$/logfile.log">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+        <state relative-caret-position="33">
+          <caret line="51" column="2" selection-start-line="51" selection-start-column="2" selection-end-line="51" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/logfile.log">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.2.1/kafka-clients-0.10.2.1.jar!/org/apache/kafka/common/serialization/StringSerializer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="606">
+          <caret line="147" column="20" selection-start-line="147" selection-start-column="20" selection-end-line="147" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/camel/camel-core/2.19.0/camel-core-2.19.0-sources.jar!/org/apache/camel/model/ProcessorDefinition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="200" column="16" selection-start-line="200" selection-start-column="16" selection-end-line="200" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

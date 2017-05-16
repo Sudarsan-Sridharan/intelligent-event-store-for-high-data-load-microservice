@@ -31,7 +31,6 @@
     <orderEntry type="library" name="Maven: org.apache.camel:camel-kafka:2.16.3" level="project" />
     <orderEntry type="library" name="Maven: org.apache.kafka:kafka_2.11:0.8.2.2" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-xml_2.11:1.0.2" level="project" />
-    <orderEntry type="library" name="Maven: com.yammer.metrics:metrics-core:2.2.0" level="project" />
     <orderEntry type="library" name="Maven: net.sf.jopt-simple:jopt-simple:3.2" level="project" />
     <orderEntry type="library" name="Maven: org.scala-lang.modules:scala-parser-combinators_2.11:1.0.2" level="project" />
     <orderEntry type="library" name="Maven: com.101tec:zkclient:0.3" level="project" />
@@ -64,6 +63,7 @@
     <orderEntry type="library" name="Maven: org.apache.camel:camel-spring-javaconfig:2.19.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.servicemix.bundles:org.apache.servicemix.bundles.cglib:3.2.4_1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.5" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-stream:2.19.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.kafka:kafka_2.10:0.10.2.1" level="project" />
     <orderEntry type="library" name="Maven: org.apache.kafka:kafka-clients:0.10.2.1" level="project" />

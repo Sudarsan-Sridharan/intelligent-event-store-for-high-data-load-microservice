@@ -3,6 +3,7 @@ package com.deviceinsight.services.ecommerce.api;
 import com.deviceinsight.services.model.Restaurant;
 import com.deviceinsight.services.model.dao.RestaurantDao;
 import org.apache.camel.CamelContext;
+import org.apache.camel.ConsumerTemplate;
 import org.apache.camel.ExchangePattern;
 import org.apache.camel.ProducerTemplate;
 import org.apache.camel.builder.RouteBuilder;
@@ -36,6 +37,9 @@ public class RestaurantRestController {
     @Autowired
     ProducerTemplate producerTemplate;
 
+
+    @Autowired
+    ConsumerTemplate consumerTemplate;
 
     /*@Autowired
     @Qualifier("KafkaRouteConsumer")

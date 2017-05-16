@@ -33,29 +33,11 @@ public class KafkaCamelRoute {
     public RouteBuilder kafkaRouteProducer() {
         return new RouteBuilder() {
             public void configure() {
-               /* from("jetty:http://localhost:8182/mytestservice").process(
-                        new Processor() {
-                            public void process(Exchange exchange) throws Exception {
-                                String message = exchange.getIn().getBody(String.class);
-                                exchange.getIn().setBody(message, String.class);
-                                exchange.getIn().setHeader(KafkaConstants.PARTITION_KEY,
-                                        0);
-                                exchange.getIn().setHeader(KafkaConstants.KEY, "1");
-                            }
-                        }).to(toKafka);*/
-
-         /*       from("direct:start")
-                        .setHeader(Exchange.HTTP_METHOD,simple("GET"))
-                        .to("https://www.next-cloud.de");
-*/
-
-
-
                 from("direct:start").process(
                         new Processor() {
                             public void process(Exchange exchange) throws Exception {
                                 //String message = exchange.getIn().getBody(String.class);
-                                exchange.getIn().setBody("test", String.class);
+                                exchange.getIn().setBody("this is a test", String.class);
                                 exchange.getIn().setHeader(KafkaConstants.PARTITION_KEY,
                                         0);
                                 exchange.getIn().setHeader(KafkaConstants.KEY, "1");
@@ -65,6 +47,25 @@ public class KafkaCamelRoute {
             }
         };
     }
+
+
+
+
+
+    @Bean(name = "KafkaRouteConsumer")
+    public RouteBuilder kafkaRouteConsumer() {
+        return new RouteBuilder() {
+        public void configure() {
+        //    from("kafka:localhost:9092?topic=test&zookeeperHost=localhost&zookeeperPort=2181&groupId=group1&serializerClass=org.apache.kafka.common.serialization.StringSerializer")
+            from("kafka:localhost:9092?topic=test&brokers=localhost:9092&groupId=1")
+                    //   .marshal().avro()
+                    //.to("bean:testBean?method=hello")
+                    .to("stream:out");
+
+        }
+        };
+    }
+
 
 /*    @Override
     public void configure() throws Exception {
