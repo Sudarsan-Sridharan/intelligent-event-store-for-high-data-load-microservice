@@ -62,6 +62,9 @@
     <orderEntry type="library" name="Maven: org.apache.camel:camel-spring-boot:2.19.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.camel:camel-spring-javaconfig:2.19.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.servicemix.bundles:org.apache.servicemix.bundles.cglib:3.2.4_1" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:camel-facebook:2.19.0" level="project" />
+    <orderEntry type="library" name="Maven: org.apache.camel:spi-annotations:2.19.0" level="project" />
+    <orderEntry type="library" name="Maven: org.facebook4j:facebook4j-core:2.4.8" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-api:2.5" level="project" />
     <orderEntry type="library" name="Maven: org.apache.camel:camel-stream:2.19.0" level="project" />
     <orderEntry type="library" name="Maven: org.apache.logging.log4j:log4j-core:2.5" level="project" />

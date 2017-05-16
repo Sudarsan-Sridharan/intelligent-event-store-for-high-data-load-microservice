@@ -44,7 +44,7 @@ public class KafkaCamelRoute {
                         new Processor() {
                             public void process(Exchange exchange) throws Exception {
                                 //String message = exchange.getIn().getBody(String.class);
-                                exchange.getIn().setBody("this is a test", String.class);
+                                exchange.getIn().setBody("this is a new test", String.class);
                                 exchange.getIn().setHeader(KafkaConstants.PARTITION_KEY,
                                         0);
                                 exchange.getIn().setHeader(KafkaConstants.KEY, "1");
@@ -67,11 +67,13 @@ public class KafkaCamelRoute {
             from("kafka:localhost:9092?topic=test&brokers=localhost:9092&groupId=1").process(new Processor() {
                 public void process(Exchange exchange) throws Exception {
                     String payload = exchange.getIn().getBody(String.class);
+                    exchange.getIn().setBody("HOT! "+payload);
                     // do something with the payload and/or exchange here
                     System.out.println(payload);
 //                    exchange.getIn().setBody("Changed body");
+
                 }
-            });//.to("activemq:myOtherQueue");
+            }).to("facebook://postFeed?inBody=postUpdate&oAuthAppId=XXXXXXXXXXXXXXX&oAuthAppSecret=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&userId=XXXXXXXXXXXXXXX");//.to("activemq:myOtherQueue");
 
         }
         };
