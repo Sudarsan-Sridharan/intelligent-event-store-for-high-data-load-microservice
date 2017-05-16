@@ -1,6 +1,8 @@
 package com.deviceinsight.services.config;
 
+import com.deviceinsight.services.model.dao.ProductDao;
 import org.apache.camel.builder.RouteBuilder;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.apache.camel.Exchange;
@@ -15,6 +17,11 @@ import org.apache.camel.component.kafka.KafkaConstants;
 
 @Configuration
 public class KafkaCamelRoute {
+
+    @Autowired
+    ProductDao productDao;
+
+
     String topicName = "topic=test";
     String kafkaServer = "kafka:localhost:9092";
     String zooKeeperHost = "";
@@ -57,10 +64,14 @@ public class KafkaCamelRoute {
         return new RouteBuilder() {
         public void configure() {
         //    from("kafka:localhost:9092?topic=test&zookeeperHost=localhost&zookeeperPort=2181&groupId=group1&serializerClass=org.apache.kafka.common.serialization.StringSerializer")
-            from("kafka:localhost:9092?topic=test&brokers=localhost:9092&groupId=1")
-                    //   .marshal().avro()
-                    //.to("bean:testBean?method=hello")
-                    .to("stream:out");
+            from("kafka:localhost:9092?topic=test&brokers=localhost:9092&groupId=1").process(new Processor() {
+                public void process(Exchange exchange) throws Exception {
+                    String payload = exchange.getIn().getBody(String.class);
+                    // do something with the payload and/or exchange here
+                    System.out.println(payload);
+//                    exchange.getIn().setBody("Changed body");
+                }
+            });//.to("activemq:myOtherQueue");
 
         }
         };
