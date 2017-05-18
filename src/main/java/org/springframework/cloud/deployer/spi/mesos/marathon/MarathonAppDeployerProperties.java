@@ -1,4 +1,3 @@
-
 package org.springframework.cloud.deployer.spi.mesos.marathon;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;

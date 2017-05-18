@@ -3,7 +3,31 @@
   <component name="ChangeListManager">
     <list default="true" id="726b6499-5bf5-4486-b0da-3f8599752544" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ARestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ARestController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/Notification.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/Notification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/GraphApiController.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/GraphApiController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/WebSecurityConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/WebSecurityConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/security/AuthSuccessHandler.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/security/AuthSuccessHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/security/MyUserDetailsService.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/security/MyUserDetailsService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/security/UsernamePasspwdUpgradeRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/controller/security/UsernamePasspwdUpgradeRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/Servicequeue.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/Servicequeue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/TopicItem.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/TopicItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/BaseDaoImpl.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/BaseDaoImpl.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/request/AbstractRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/request/AbstractRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/request/GoodbyeRequest.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/request/GoodbyeRequest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/response/GoodbyeResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/response/GoodbyeResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/response/HelloResponse.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/response/HelloResponse.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/Servicequeue.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/websocket/Servicequeue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/org/springframework/cloud/deployer/spi/mesos/marathon/MarathonAppDeployerProperties.java" afterPath="$PROJECT_DIR$/src/main/java/org/springframework/cloud/deployer/spi/mesos/marathon/MarathonAppDeployerProperties.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/src/main/resources/applicationContext.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/deviceinsight/services/ApplicationTestDocumentation.java" afterPath="$PROJECT_DIR$/src/test/java/com/deviceinsight/services/ApplicationTestDocumentation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
     </list>
     <ignored path="intelligent-event-store-for-high-data-load.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,8 +61,8 @@
       <file leaf-file-name="KafkaCamelRoute.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+            <state relative-caret-position="945">
+              <caret line="75" column="77" selection-start-line="75" selection-start-column="77" selection-end-line="75" selection-end-column="77" />
               <folding />
             </state>
           </provider>
@@ -48,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="355">
-              <caret line="107" column="47" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
+              <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -392,60 +416,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="delivery-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delivery-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delivery-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delivery-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delivery-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delivery-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delivery-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1070,7 +1040,7 @@
       <workItem from="1494074648313" duration="458000" />
       <workItem from="1494080752135" duration="9961000" />
       <workItem from="1494761288222" duration="1642000" />
-      <workItem from="1494912829182" duration="19722000" />
+      <workItem from="1494912829182" duration="21618000" />
     </task>
     <task id="LOCAL-00001" summary="arango db connector added with sample request to create a new graph db">
       <created>1487431686224</created>
@@ -1296,7 +1266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494967785108</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="DAO write operation in camel kafka consumer">
+      <created>1495054427275</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1495054427275</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1326,7 +1303,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="157310000" />
+    <option name="totallyTimeSpent" value="159206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="488" y="23" width="1432" height="1104" extended-state="0" />
@@ -1341,7 +1318,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38339922" sideWeight="0.3311828" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13956834" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30237153" sideWeight="0.61097413" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38339922" sideWeight="0.6688172" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.50395256" sideWeight="0.6688172" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328807" sideWeight="0.49199507" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33786407" sideWeight="0.68146026" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1416,7 +1393,8 @@
     <MESSAGE value="kafka consumer to std out added" />
     <MESSAGE value="adding process logic in camel route service to be able to hand over to another service like a DAO" />
     <MESSAGE value="working facebook integration (adapt oAuthId, oAuthAppSecret of your app &amp; userId with authorized app request)" />
-    <option name="LAST_COMMIT_MESSAGE" value="working facebook integration (adapt oAuthId, oAuthAppSecret of your app &amp; userId with authorized app request)" />
+    <MESSAGE value="DAO write operation in camel kafka consumer" />
+    <option name="LAST_COMMIT_MESSAGE" value="DAO write operation in camel kafka consumer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1429,7 +1407,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java</url>
-          <line>95</line>
+          <line>87</line>
           <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
@@ -1447,19 +1425,19 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java</url>
-          <line>62</line>
+          <line>56</line>
           <properties />
           <option name="timeStamp" value="95" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java</url>
-          <line>84</line>
+          <line>76</line>
           <properties />
           <option name="timeStamp" value="97" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java</url>
-          <line>91</line>
+          <line>83</line>
           <properties />
           <option name="timeStamp" value="98" />
         </line-breakpoint>
@@ -1875,15 +1853,15 @@
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
-          <caret line="107" column="47" selection-start-line="107" selection-start-column="47" selection-end-line="107" selection-end-column="47" />
+          <caret line="102" column="47" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="93" column="5" selection-start-line="93" selection-start-column="5" selection-end-line="93" selection-end-column="5" />
+        <state relative-caret-position="945">
+          <caret line="75" column="77" selection-start-line="75" selection-start-column="77" selection-end-line="75" selection-end-column="77" />
           <folding />
         </state>
       </provider>

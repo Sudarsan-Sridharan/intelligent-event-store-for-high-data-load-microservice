@@ -2,6 +2,8 @@ package com.deviceinsight.services.response;
 
 public class HelloResponse {
 
+    String message;
+
     public HelloResponse() {
     }
 
@@ -12,6 +14,4 @@ public class HelloResponse {
     public void setMessage(String name) {
         this.message = "hello " + name;
     }
-
-    String message;
 }

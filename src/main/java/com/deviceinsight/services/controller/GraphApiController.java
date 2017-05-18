@@ -20,19 +20,15 @@ import java.io.IOException;
 @Controller
 public class GraphApiController {
 
+    protected static final String DB_NAME = "event_store";
+    protected static final String COLLECTION_NAME = "eventTransition";
     static final Counter requests = Counter.build()
             .name("hello_worlds_total")
             .help("Number of hello worlds served.").register();
-
     static final Histogram time = Histogram.build()
             .name("hello_worlds_total2")
             .help("Number of hello worlds served.2").register();
-
     protected static ArangoDB arangoDB;
-
-    protected static final String DB_NAME = "event_store";
-    protected static final String COLLECTION_NAME = "eventTransition";
-
     protected static ArangoDatabase db;
     protected static ArangoCollection collection;
 

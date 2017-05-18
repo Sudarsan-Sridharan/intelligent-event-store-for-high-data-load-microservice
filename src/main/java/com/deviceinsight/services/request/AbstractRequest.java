@@ -12,6 +12,8 @@ import java.io.Serializable;
 })
 public abstract class AbstractRequest implements Serializable {
 
+    public String name;
+
     public String getName() {
         return name;
     }
@@ -19,6 +21,4 @@ public abstract class AbstractRequest implements Serializable {
     public void setName(String name) {
         this.name = name;
     }
-
-    public String name;
 }

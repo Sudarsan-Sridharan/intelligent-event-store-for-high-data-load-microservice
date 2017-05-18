@@ -2,16 +2,13 @@ package com.deviceinsight.services.config;
 
 import com.deviceinsight.services.model.Product;
 import com.deviceinsight.services.model.dao.ProductDao;
-import org.apache.camel.builder.RouteBuilder;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.apache.camel.Exchange;
-import org.apache.camel.Main;
-import org.apache.camel.Message;
 import org.apache.camel.Processor;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.component.kafka.KafkaConstants;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
@@ -30,22 +27,19 @@ public class KafkaCamelRoute {
 
     @Autowired
     ProductDao productDao;
-
-    private int i = 0;
-
     String topicName = "topic=test";
     String kafkaServer = "kafka:localhost:9092";
     String zooKeeperHost = "";
     String serializerClass = "serializerClass=kafka.serializer.StringEncoder";
     String autoOffsetOption = "autoOffsetReset=smallest";
     String groupId = "groupId=testingvinod";
-//.append(zooKeeperHost)
+    //.append(zooKeeperHost)
     String toKafka = new StringBuilder().append(kafkaServer).append("?").append(
             topicName).append("&brokers=localhost:9092").toString();/*.append("&").append(
             serializerClass).toString();*/
-
     String fromKafka = new StringBuilder().append(toKafka).append("&").append(
             autoOffsetOption).append("&").append(groupId).toString();
+    private int i = 0;
 
     @Bean(name = "KafkaRouteProducer")
     public RouteBuilder kafkaRouteProducer() {
@@ -67,29 +61,27 @@ public class KafkaCamelRoute {
     }
 
 
-
-
-@Transactional
+    @Transactional
     @Bean(name = "KafkaRouteConsumer")
     public RouteBuilder kafkaRouteConsumer() {
         return new RouteBuilder() {
-        public void configure() {
-        //    from("kafka:localhost:9092?topic=test&zookeeperHost=localhost&zookeeperPort=2181&groupId=group1&serializerClass=org.apache.kafka.common.serialization.StringSerializer")
-            from("kafka:localhost:9092?topic=test&brokers=localhost:9092&groupId=1").transacted().process(new Processor() {
-               @Transactional
-                public void process(Exchange exchange) throws Exception {
-                   i++;
-                    String payload = exchange.getIn().getBody(String.class);
-                    exchange.getIn().setBody("HOT! "+payload);
-                    // do something with the payload and/or exchange here
-                    System.out.println(payload);
+            public void configure() {
+                //    from("kafka:localhost:9092?topic=test&zookeeperHost=localhost&zookeeperPort=2181&groupId=group1&serializerClass=org.apache.kafka.common.serialization.StringSerializer")
+                from("kafka:localhost:9092?topic=test&brokers=localhost:9092&groupId=1").transacted().process(new Processor() {
+                    @Transactional
+                    public void process(Exchange exchange) throws Exception {
+                        i++;
+                        String payload = exchange.getIn().getBody(String.class);
+                        exchange.getIn().setBody("HOT! " + payload);
+                        // do something with the payload and/or exchange here
+                        System.out.println(payload);
 //                    exchange.getIn().setBody("Changed body");
-System.out.println("consumed messages so far =========> "+i);
-                    productDao.save(new Product(payload, payload, 0f));
-                }
-            });// .to("facebook://postFeed?inBody=postUpdate&oAuthAppId=XXXXXXXXXXXXXXX&oAuthAppSecret=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&userId=XXXXXXXXXXXXXXX");//.to("activemq:myOtherQueue");
+                        System.out.println("consumed messages so far =========> " + i);
+                        productDao.save(new Product(payload, payload, 0f));
+                    }
+                });// .to("facebook://postFeed?inBody=postUpdate&oAuthAppId=XXXXXXXXXXXXXXX&oAuthAppSecret=XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&userId=XXXXXXXXXXXXXXX");//.to("activemq:myOtherQueue");
 
-        }
+            }
         };
     }
 

@@ -4,11 +4,9 @@ import com.deviceinsight.services.model.Restaurant;
 import com.deviceinsight.services.model.dao.RestaurantDao;
 import org.apache.camel.CamelContext;
 import org.apache.camel.ConsumerTemplate;
-import org.apache.camel.ExchangePattern;
 import org.apache.camel.ProducerTemplate;
 import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.DefaultCamelContext;
-import org.apache.camel.impl.DefaultExchange;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,12 +64,6 @@ public class RestaurantRestController {
 */
 
 
-
-
-
-
-
-
     @Autowired
     private RestaurantDao<Restaurant> restaurantDao;
 //    private RestaurantDao<Restaurant> restaurantDao;//    private RestaurantDao<Restaurant> restaurantDao;//    private RestaurantDao<Restaurant> restaurantDao;//    private RestaurantDao<Restaurant> restaurantDao;//    private RestaurantDao<Restaurant> restaurantDao;//    private RestaurantDao<Restaurant> restaurantDao;//    private RestaurantDao<Restaurant> restaurantDao;//    private RestaurantDao<Restau
@@ -83,15 +75,15 @@ public class RestaurantRestController {
         ProducerTemplate template = context.createProducerTemplate();
 
         kafkaRouteProducer.getContext().start();
-       // kafkaRouteProducer.from("direct:start", "test");
+        // kafkaRouteProducer.from("direct:start", "test");
 
 
 //        kafkaRouteProducer.getContext().getEndpoint("direct:start").createProducer().process(new DefaultExchange(kafkaRouteProducer.getContext()));
 
 
-     //   kafkaRouteProducer.getContext().getEndpoint("direct:a").createProducer().process(new DefaultExchange(kafkaRouteProducer.getContext()));
+        //   kafkaRouteProducer.getContext().getEndpoint("direct:a").createProducer().process(new DefaultExchange(kafkaRouteProducer.getContext()));
 
-        producerTemplate.sendBody("direct:start","s");
+        producerTemplate.sendBody("direct:start", "s");
 
         LOG.debug("This will be printed on debug");
         LOG.info("This will be printed on info");
@@ -99,7 +91,7 @@ public class RestaurantRestController {
         LOG.error("This will be printed on error");
         LOG.fatal("This will be printed on fatal");
 
-       // LOG.info("Appending string: {}.", "Hello, World");
+        // LOG.info("Appending string: {}.", "Hello, World");
         return restaurantDao.list();
     }
 }

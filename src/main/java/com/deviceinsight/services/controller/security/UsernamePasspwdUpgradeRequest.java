@@ -4,6 +4,9 @@ package com.deviceinsight.services.controller.security;
  * Created by ebners on 08/05/16.
  */
 public class UsernamePasspwdUpgradeRequest {
+    private String username;
+    private String passwd;
+
     public String getUsername() {
         return username;
     }
@@ -19,8 +22,5 @@ public class UsernamePasspwdUpgradeRequest {
     public void setPasswd(String passwd) {
         this.passwd = passwd;
     }
-
-    private String username;
-    private String passwd;
 
 }

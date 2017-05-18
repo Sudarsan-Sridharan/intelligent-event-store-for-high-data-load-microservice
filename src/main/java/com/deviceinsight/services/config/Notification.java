@@ -1,7 +1,5 @@
 package com.deviceinsight.services.config;
 
-import org.xbill.DNS.Serial;
-
 import java.io.Serializable;
 
 /**
@@ -9,7 +7,7 @@ import java.io.Serializable;
  */
 public class Notification implements Serializable {
 
-public Long id;
+    public Long id;
 
     public Long getId() {
         return id;

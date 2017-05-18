@@ -18,6 +18,12 @@ public class Servicequeue {
     @ManyToOne(fetch = FetchType.EAGER)
     private TopicItem servicesession;
     private String accept_ticket;
+    private Long created;
+    private int action;
+    @JsonIgnore
+    @com.fasterxml.jackson.annotation.JsonIgnore
+    @ManyToOne(fetch = FetchType.EAGER)
+    private com.deviceinsight.services.model.Table table;
 
     public Long getCreated() {
         return created;
@@ -26,14 +32,6 @@ public class Servicequeue {
     public void setCreated(Long created) {
         this.created = created;
     }
-
-    private Long created;
-
-    private int action;
-    @JsonIgnore
-    @com.fasterxml.jackson.annotation.JsonIgnore
-    @ManyToOne(fetch = FetchType.EAGER)
-    private com.deviceinsight.services.model.Table table;
 
     public String getAccept_ticket() {
         return accept_ticket;

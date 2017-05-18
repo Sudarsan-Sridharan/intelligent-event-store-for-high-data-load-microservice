@@ -11,12 +11,15 @@ import java.util.UUID;
 public class BaseDaoImpl<T> extends UUIDHolder implements BaseDao<T> {
 
     private Class<T> type;
+    @Autowired
+    private SessionFactory sessionFactory;
 
     public BaseDaoImpl() {
     }
 
-    @Autowired
-    private SessionFactory sessionFactory;
+    public BaseDaoImpl(Class<T> type) {
+        this.type = type;
+    }
 
     @Override
     public T getByUUID(String uuidAsString) {
@@ -25,10 +28,6 @@ public class BaseDaoImpl<T> extends UUIDHolder implements BaseDao<T> {
         BigInteger bi2 = new BigInteger(withoutDashes.substring(16, 32), 16);
         UUID uuid = new UUID(bi1.longValue(), bi2.longValue());
         return sessionFactory.getCurrentSession().get(getMyType(), uuid);
-    }
-
-    public BaseDaoImpl(Class<T> type) {
-        this.type = type;
     }
 
     public Class<T> getMyType() {

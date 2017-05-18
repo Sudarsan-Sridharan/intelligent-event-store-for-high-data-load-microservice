@@ -27,17 +27,14 @@ import org.springframework.security.web.header.writers.frameoptions.XFrameOption
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Autowired
-    private AuthSuccessHandler authSuccessHandler;
-
-    @Autowired
-    private AuthFailureHandler authFailureHandler;
-
-    @Autowired
-    private HttpAuthenticationEntryPoint authenticationEntryPoint;
-
-    @Autowired
     @Qualifier("userDetailsService")
     UserDetailsService userDetailsService;
+    @Autowired
+    private AuthSuccessHandler authSuccessHandler;
+    @Autowired
+    private AuthFailureHandler authFailureHandler;
+    @Autowired
+    private HttpAuthenticationEntryPoint authenticationEntryPoint;
 
     @Bean(name = "myAuthenticationManager")
     @Override

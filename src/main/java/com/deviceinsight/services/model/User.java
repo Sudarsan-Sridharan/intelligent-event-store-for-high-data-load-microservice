@@ -10,6 +10,32 @@ public class User {
     @Id
     @GeneratedValue
     private int id;
+    private String avatar_url_gravatar_by_email;
+    private Long average_time_service;
+    private Long average_time_pay;
+    private int service_counter;
+    private int pay_counter;
+    private String reset_password_token;
+    private String telephone;
+    private int last_token_timestamp = 0;
+    private boolean enabled;
+    ///@Transient
+//	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    private String user_role;
+    /*	@Length(min = 4, max=16)
+
+        @NotNull(message="")
+        @NotEmpty(message="")
+        @Pattern(regexp="^[a-z0-9_-]*$", message="enthält unzulässige Zeichen")*/
+    private String username;
+    private String first_name;
+    private String last_name;
+    /*@Length(min = 8, max=255)
+    @NotNull(message="")
+    @NotEmpty(message="")*/
+    private String password;
+    private String password_autologin;
+    private String email;
 
     public String getAvatar_url_gravatar_by_email() {
         return avatar_url_gravatar_by_email;
@@ -18,8 +44,6 @@ public class User {
     public void setAvatar_url_gravatar_by_email(String avatar_url_gravatar_by_email) {
         this.avatar_url_gravatar_by_email = avatar_url_gravatar_by_email;
     }
-
-    private String avatar_url_gravatar_by_email;
 
     public Long getAverage_time_service() {
         return average_time_service;
@@ -37,11 +61,6 @@ public class User {
         this.average_time_pay = average_time_pay;
     }
 
-    private Long average_time_service;
-    private Long average_time_pay;
-
-    private int service_counter;
-
     public int getService_counter() {
         return service_counter;
     }
@@ -58,30 +77,6 @@ public class User {
         this.pay_counter = pay_counter;
     }
 
-    private int pay_counter;
-
-
-    private String reset_password_token;
-    private String telephone;
-    private int last_token_timestamp = 0;
-    private boolean enabled;
-    ///@Transient
-//	@OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
-    private String user_role;
-
-    /*	@Length(min = 4, max=16)
-
-        @NotNull(message="")
-        @NotEmpty(message="")
-        @Pattern(regexp="^[a-z0-9_-]*$", message="enthält unzulässige Zeichen")*/
-    private String username;
-    private String first_name;
-    private String last_name;
-    /*@Length(min = 8, max=255)
-    @NotNull(message="")
-    @NotEmpty(message="")*/
-    private String password;
-
     public String getPassword_autologin() {
         return password_autologin;
     }
@@ -89,10 +84,6 @@ public class User {
     public void setPassword_autologin(String password_autologin) {
         this.password_autologin = password_autologin;
     }
-
-    private String password_autologin;
-
-    private String email;
 
     public String getTelephone() {
         return telephone;

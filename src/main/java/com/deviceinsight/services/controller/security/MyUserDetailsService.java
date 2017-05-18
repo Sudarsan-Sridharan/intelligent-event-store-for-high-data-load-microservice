@@ -1,7 +1,7 @@
 package com.deviceinsight.services.controller.security;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import com.deviceinsight.services.model.dao.UserDAO;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.User;
@@ -32,7 +32,7 @@ public class MyUserDetailsService implements UserDetailsService {
             user = UserDAO.findByUsername(username); // NC-29-11-2015 ... findbyusername
         }
         /*
-		 * UserRole j = new UserRole(); j.setRole("fabrice");
+         * UserRole j = new UserRole(); j.setRole("fabrice");
 		 * j.setUserRoleId(1);
 		 * 
 		 * Set<UserRole> r = new TreeSet<>(); r.add(j);

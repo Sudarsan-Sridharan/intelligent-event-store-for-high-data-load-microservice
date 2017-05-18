@@ -8,14 +8,6 @@ import javax.persistence.Entity;
 @javax.persistence.Table(name = "topic_items")
 public class TopicItem extends BaseEntity implements IProduct {
 
-    public TopicItem() {
-        super();
-    }
-
-    public void getAdminDtp() {
-
-    }
-
     private String name;
     private int isActive;
     private String title;
@@ -35,6 +27,13 @@ public class TopicItem extends BaseEntity implements IProduct {
     private String mode;
     private int real_bids;
     private float ends_on_price;
+    public TopicItem() {
+        super();
+    }
+
+    public void getAdminDtp() {
+
+    }
 
     public String getTitle() {
         return title;

@@ -16,7 +16,7 @@ import java.io.IOException;
 public class AuthSuccessHandler extends SavedRequestAwareAuthenticationSuccessHandler {
     private static final Logger LOGGER = LoggerFactory.getLogger(AuthSuccessHandler.class);
 
-  //  private final ObjectMapper mapper;
+    //  private final ObjectMapper mapper;
 
    /* @Autowired
     AuthSuccessHandler(MappingJackson2HttpMessageConverter messageConverter) {

@@ -25,18 +25,12 @@ import java.util.concurrent.ExecutionException;
 @RestController
 public class ARestController {
 
-    private HazelcastInstance client;
-
-
-    protected static ArangoDB arangoDB;
-
     protected static final String DB_NAME = "eventstore";
     protected static final String COLLECTION_NAME = "json_example_collection";
-
-
+    protected static ArangoDB arangoDB;
     protected static ArangoDatabase db;
     protected static ArangoCollection collection;
-
+    private HazelcastInstance client;
     @Autowired
     private SessionFactory sessionFactory;
 
