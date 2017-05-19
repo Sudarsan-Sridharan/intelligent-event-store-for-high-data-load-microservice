@@ -40,6 +40,16 @@
         <dependencies>
 
 
+            <!-- https://mvnrepository.com/artifact/org.tensorflow/tensorflow -->
+            <dependency>
+                <groupId>org.tensorflow</groupId>
+                <artifactId>tensorflow</artifactId>
+                <version>1.1.0</version>
+            </dependency>
+
+
+
+
             <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-servlets -->
             <dependency>
                 <groupId>org.eclipse.jetty</groupId>
