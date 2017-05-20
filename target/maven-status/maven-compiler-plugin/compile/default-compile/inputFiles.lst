@@ -2,6 +2,7 @@
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/UserRole.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/FriendsGraphDoc.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/Test.java
+/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/Notification.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/WebSocketConfig.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/BaseEntity.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/PortfolioController.java
@@ -14,6 +15,7 @@
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/websocket/Servicequeue.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ARestController.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/request/AbstractRequest.java
+/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/KafkaOutputBean.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ecommerce/api/ProductRestController.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/TopicItem.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/request/HelloRequest.java
@@ -36,6 +38,7 @@
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/security/AuthSuccessHandler.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/BaseDaoImpl.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/PanamaEventDto.java
+/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/TradeService.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/security/UserRole.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/response/HelloResponse.java

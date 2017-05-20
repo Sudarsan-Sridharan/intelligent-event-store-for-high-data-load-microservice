@@ -39,7 +39,6 @@
     <dependencyManagement>
         <dependencies>
 
-
             <!-- https://mvnrepository.com/artifact/org.tensorflow/tensorflow -->
             <dependency>
                 <groupId>org.tensorflow</groupId>
@@ -48,6 +47,22 @@
             </dependency>
 
 
+            <dependency>
+                <groupId>org.elasticsearch.client</groupId>
+                <artifactId>transport</artifactId>
+                <version>6.0.0-alpha1</version>
+            </dependency>
+
+            <dependency>
+                <groupId>io.searchbox</groupId>
+                <artifactId>jest-parent</artifactId>
+                <version>2.4.0</version>
+            </dependency>
+            <dependency>
+                <groupId>io.gsonfire</groupId>
+                <artifactId>gson-fire</artifactId>
+                <version>1.8.0</version>
+            </dependency>
 
 
             <!-- https://mvnrepository.com/artifact/org.eclipse.jetty/jetty-servlets -->
@@ -100,11 +115,8 @@
             <version>2.19.0</version>
         </dependency>
         <dependency>
-                
             <groupId>org.apache.camel</groupId>
-                
             <artifactId>camel-http</artifactId>
-                
             <version>2.19.0</version>
         </dependency>
 
@@ -578,6 +590,11 @@
             <groupId>org.springframework.integration</groupId>
             <artifactId>spring-integration-kafka</artifactId>
             <version>2.1.0.RELEASE</version>
+        </dependency>
+        <dependency>
+            <groupId>io.searchbox</groupId>
+            <artifactId>jest</artifactId>
+            <version>2.0.4</version>
         </dependency>
 
 

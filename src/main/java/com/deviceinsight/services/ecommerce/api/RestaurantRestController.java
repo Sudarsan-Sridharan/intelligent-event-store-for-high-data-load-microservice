@@ -1,7 +1,17 @@
 package com.deviceinsight.services.ecommerce.api;
 
+import com.deviceinsight.services.config.JestClientService;
+import com.deviceinsight.services.model.Product;
 import com.deviceinsight.services.model.Restaurant;
 import com.deviceinsight.services.model.dao.RestaurantDao;
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonParser;
+import io.searchbox.client.JestClient;
+import io.searchbox.client.http.JestHttpClient;
+import io.searchbox.core.Index;
+import io.searchbox.core.Search;
+import io.searchbox.core.SearchResult;
 import org.apache.camel.CamelContext;
 import org.apache.camel.ConsumerTemplate;
 import org.apache.camel.ProducerTemplate;
@@ -34,6 +44,9 @@ public class RestaurantRestController {
 
     @Autowired
     ProducerTemplate producerTemplate;
+
+    @Autowired
+    private JestClientService jestClientService;
 
 
     @Autowired
@@ -73,6 +86,34 @@ public class RestaurantRestController {
     public List<Restaurant> get() throws Exception {
 
         ProducerTemplate template = context.createProducerTemplate();
+
+
+
+        JestClient jestHttpClient = (JestClient) jestClientService.getClient();
+
+
+        String query = "{\n" +
+                "    \"query\": {\n" +
+                "        \"exists\" : { \"field\" : \"talk\" }\n" +
+                "    }\n" +
+                "}";
+        Search.Builder searchBuilder = new Search.Builder(query).addIndex("nextcloud");
+        SearchResult result = jestHttpClient.execute(searchBuilder.build());
+
+
+        Product people = new Product();
+        people.setTitle("test product");
+
+        String json = "[{\"fname\": \"Bob\",\"lname\": \"Smith\"},{\"fname\": \"Mike\",\"lname\": \"Johnson\"}]";
+        JsonParser jsonParser = new JsonParser();
+        JsonElement jsonElement = jsonParser.parse(json);
+        JsonArray jsonArray = jsonElement.getAsJsonArray();
+        people.setTitle("aaaa");
+
+        Index index = new Index.Builder(people).index("nextcloud").type("aType").build();
+        jestHttpClient.execute(index);
+
+
 
         kafkaRouteProducer.getContext().start();
         // kafkaRouteProducer.from("direct:start", "test");

@@ -17,6 +17,7 @@ com/deviceinsight/services/model/dao/BaseEntity.class
 com/deviceinsight/services/model/Restaurant.class
 com/deviceinsight/services/request/AbstractRequest.class
 com/deviceinsight/services/controller/FriendsGraphDoc.class
+com/deviceinsight/services/config/KafkaCamelRoute$1$1.class
 com/deviceinsight/services/controller/GraphApiController.class
 com/deviceinsight/services/model/User.class
 com/deviceinsight/services/controller/Trade$TradeAction.class
@@ -27,6 +28,7 @@ com/deviceinsight/services/KafkaPartitionUtil.class
 com/deviceinsight/services/model/dao/BaseDaoImpl.class
 com/deviceinsight/services/model/Product.class
 com/deviceinsight/services/controller/GreetingController.class
+com/deviceinsight/services/config/KafkaCamelRoute$2.class
 com/deviceinsight/services/model/dao/UUIDHolder.class
 com/deviceinsight/services/PanamaEventDto.class
 com/deviceinsight/services/ecommerce/api/ProductRestController.class
@@ -41,6 +43,7 @@ com/deviceinsight/services/controller/security/HttpAuthenticationEntryPoint.clas
 com/deviceinsight/services/controller/security/AuthFailureHandler.class
 com/deviceinsight/services/model/dao/RestaurantDaoImpl.class
 com/deviceinsight/services/response/HelloResponse.class
+com/deviceinsight/services/config/KafkaOutputBean.class
 com/deviceinsight/services/model/dao/UserDAO.class
 com/deviceinsight/services/request/HelloRequest.class
 com/deviceinsight/services/controller/WebSecurityConfig.class
@@ -51,6 +54,8 @@ com/deviceinsight/services/PrometheusAutoConfiguration.class
 com/deviceinsight/services/controller/security/HttpLogoutSuccessHandler.class
 com/deviceinsight/services/ARestController.class
 com/deviceinsight/services/SpringClient.class
+com/deviceinsight/services/config/KafkaCamelRoute$2$1.class
+com/deviceinsight/services/config/KafkaCamelRoute$1.class
 com/deviceinsight/services/HazelcastConfiguration.class
 com/deviceinsight/services/websocket/TopicItemDAO.class
 com/deviceinsight/services/config/WebSocketConfig.class
@@ -58,9 +63,12 @@ com/deviceinsight/services/ecommerce/api/RestaurantRestController.class
 com/deviceinsight/services/controller/security/AuthSuccessHandler.class
 com/deviceinsight/services/controller/TradeServiceImpl$TradeResult.class
 com/deviceinsight/services/controller/security/UserRole.class
+com/deviceinsight/services/config/KafkaCamelRoute$kafkaOutputBean.class
 com/deviceinsight/services/ecommerce/api/ProductSaveDto.class
 com/deviceinsight/services/model/dao/BaseUUIDEntity.class
+com/deviceinsight/services/config/KafkaCamelRoute.class
 com/deviceinsight/services/model/dao/RestaurantDao.class
+com/deviceinsight/services/config/Notification.class
 com/deviceinsight/services/controller/TradeService.class
 com/deviceinsight/services/Application.class
 com/deviceinsight/services/controller/security/UsernamePasspwdUpgradeRequest.class
