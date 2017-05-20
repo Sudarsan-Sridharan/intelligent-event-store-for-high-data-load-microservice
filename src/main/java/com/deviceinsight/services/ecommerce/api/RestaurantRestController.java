@@ -8,11 +8,11 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
 import io.searchbox.client.JestClient;
+import io.searchbox.client.JestResult;
 import io.searchbox.client.http.JestHttpClient;
-import io.searchbox.core.Index;
-import io.searchbox.core.Search;
-import io.searchbox.core.SearchResult;
-import io.searchbox.core.Update;
+import io.searchbox.core.*;
+import io.searchbox.indices.CreateIndex;
+import io.searchbox.indices.mapping.PutMapping;
 import org.apache.camel.CamelContext;
 import org.apache.camel.ConsumerTemplate;
 import org.apache.camel.ProducerTemplate;
@@ -20,7 +20,13 @@ import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.DefaultCamelContext;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.xcontent.XContentFactory;
+import org.elasticsearch.index.mapper.DocumentMapper;
+import org.elasticsearch.index.mapper.RootObjectMapper;
+import org.elasticsearch.index.mapper.StringFieldMapper;
+import org.elasticsearch.index.query.QueryBuilders;
+import org.elasticsearch.search.builder.SearchSourceBuilder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.transaction.annotation.Transactional;
@@ -29,6 +35,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
+
+import static junit.framework.TestCase.assertTrue;
+import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
 
 @RestController
 @RequestMapping(value = "/api/restaurant")
@@ -107,7 +116,7 @@ public class RestaurantRestController {
 
 
 
-        new Update.Builder(XContentFactory.jsonBuilder().startObject().field("title", true).startObject("doc").field("foo", "bar").endObject().endObject().string());
+        new Update.Builder(jsonBuilder().startObject().field("title", true).startObject("doc").field("foo", "bar").endObject().endObject().string());
 
 
 
@@ -126,7 +135,268 @@ public class RestaurantRestController {
         jestHttpClient.execute(index);
 
 
+/*
 
+        PutMapping putMapping = new PutMapping.Builder("nextcloud",
+                "aType",
+                "{ \"document\" : { \"properties\" : { \"message\" : {\"type\" : \"string\", \"store\" : \"yes\"} } } }"
+        ).build();
+
+        JestResult resulta = jestHttpClient.execute(putMapping);
+        assertTrue(resulta.getErrorMessage(), resulta.isSucceeded());
+*/
+
+
+
+
+        //////////////////// https://github.com/searchbox-io/Jest/blob/master/jest/README.md
+
+        jestHttpClient.execute(new CreateIndex.Builder("deliverysystem").build());
+
+
+///
+
+
+      /*  String settings = "\"settings\" : {\n" +
+                "        \"number_of_shards\" : 5,\n" +
+                "        \"number_of_replicas\" : 1\n" +
+                "    }\n";
+
+        jestHttpClient.execute(new CreateIndex.Builder("articles").settings(Settings.builder().loadFromSource(settings).build().getAsMap()).build());
+*/
+
+
+
+//
+
+
+        Settings.Builder settingsBuilder = Settings.builder();
+        settingsBuilder.put("number_of_shards",5);
+        settingsBuilder.put("number_of_replicas",1);
+
+        jestHttpClient.execute(new CreateIndex.Builder("articles").settings(settingsBuilder.build().getAsMap()).build());
+
+
+//
+
+        PutMapping putMapping = new PutMapping.Builder(
+                "twitter2",
+                "tweet",
+                "{ \"tweet\" : { \"properties\" : { \"usera\" : {\"type\": \"string\",\n" +
+                        "        \"analyzer\": \"simple\"} } } }"
+        ).build();
+        jestHttpClient.execute(putMapping);
+
+
+//
+
+
+    /* does not work    RootObjectMapper.Builder rootObjectMapperBuilder = new RootObjectMapper.Builder("my_mapping_name").add(
+                new StringFieldMapper.Builder("message").store(true)
+        );
+        DocumentMapper documentMapper = new DocumentMapper.Builder("my_index", null, rootObjectMapperBuilder).build(null);
+        String expectedMappingSource = documentMapper.mappingSource().toString();
+        PutMapping putMapping2 = new PutMapping.Builder(
+                "my_index",
+                "my_type",
+                expectedMappingSource
+        ).build();
+        jestHttpClient.execute(putMapping2);
+*/
+
+
+
+//
+
+
+        //String source = "{\"user\":\"kimchy\"}";
+        String source = jsonBuilder()
+                .startObject()
+                .field("user", "kimchy")
+
+                .field("usera", "kimchy")
+
+                .field("postDate", "date")
+                .field("message", "trying out Elastic Search")
+                .endObject().string();
+
+/*
+Map<String, String> source = new LinkedHashMap<String,String>();
+source.put("user", "kimchy");
+ */
+
+
+/*
+Article source = new Article();
+source.setAuthor("John Ronald Reuel Tolkien");
+source.setContent("The Lord of the Rings is an epic high fantasy novel");
+ */
+
+
+        Index index2 = new Index.Builder(source).index("twitter2").type("tweet").build();
+        jestHttpClient.execute(index2);
+
+
+
+        Index index3 = new Index.Builder(source).index("twitter2").type("tweet").id("1").build();
+        jestHttpClient.execute(index3);
+
+        /////////////// ------------------
+
+
+
+
+/*
+        String query = "{\n" +
+                "    \"query\": {\n" +
+                "        \"filtered\" : {\n" +
+                "            \"query\" : {\n" +
+                "                \"query_string\" : {\n" +
+                "                    \"query\" : \"test\"\n" +
+                "                }\n" +
+                "            },\n" +
+                "            \"filter\" : {\n" +
+                "                \"term\" : { \"user\" : \"kimchy\" }\n" +
+                "            }\n" +
+                "        }\n" +
+                "    }\n" +
+                "}";
+
+        Search search = new Search.Builder(query)
+                // multiple index or types can be added.
+                .addIndex("twitter2")
+                .addType("tweet")
+                .build();
+
+        SearchResult result = client.execute(search);
+
+*/
+/*
+String query = "{\n" +
+            "    \"id\": \"myTemplateId\"," +
+            "    \"params\": {\n" +
+            "        \"query_string\" : \"search for this\"" +
+            "    }\n" +
+            "}";
+
+Search search = new Search.TemplateBuilder(query)
+                // multiple index or types can be added.
+                .addIndex("twitter2")
+                .addType("tweet")
+                .build();
+
+SearchResult result = client.execute(search);
+ */
+
+
+
+
+        SearchSourceBuilder searchSourceBuilder = new SearchSourceBuilder();
+        searchSourceBuilder.query(QueryBuilders.matchQuery("user", "kimchy"));
+
+        Search search = new Search.Builder(searchSourceBuilder.toString())
+                // multiple index or types can be added.
+                .addIndex("twitter2")
+                .addType("tweet")
+                .build();
+
+        SearchResult result9 = jestHttpClient.execute(search);
+
+
+
+
+        /*
+//
+        SearchResult result8 = jestHttpClient.execute(search);
+        List<SearchResult.Hit<Article, Void>> hits = result8.getHits(Article.class);
+// or
+        List<Article> articles = result8.getSourceAsObjectList(Article.class);
+*/
+
+
+        Get get = new Get.Builder("twitter2", "1").type("tweet").build();
+
+        JestResult result8 = jestHttpClient.execute(get);
+
+
+
+
+// update
+        String script = "{\n" +
+                "    \"script\" : \"ctx._source.tags += tag\",\n" +
+                "    \"params\" : {\n" +
+                "        \"tag\" : \"blue\"\n" +
+                "    }\n" +
+                "}";
+
+        jestHttpClient.execute(new Update.Builder(script).index("twitter2").type("tweet").id("1").build());
+
+
+
+
+
+
+
+
+
+
+
+        String source6 = jsonBuilder()
+                .startObject()
+                .field("user", "kimchyaaaa")
+                .field("postDate", "date")
+                .field("message", "trying out Elastic Search")
+                .endObject().string();
+
+
+        Index index63 = new Index.Builder(source6).index("twitter2").type("tweet").id("1").build();
+        jestHttpClient.execute(index63);
+
+
+        Get get2 = new Get.Builder("twitter2", "1").type("tweet").build();
+
+        JestResult result82 = jestHttpClient.execute(get2);
+
+
+
+
+
+        /* // DELETE
+        client.execute(new Delete.Builder("1")
+                .index("twitter2")
+                .type("tweet")
+                .build());
+         */
+
+        /* bulk 1
+        Bulk bulk = new Bulk.Builder()
+    .defaultIndex("twitter2")
+    .defaultType("tweet")
+    .addAction(new Index.Builder(article1).build())
+    .addAction(new Index.Builder(article2).build())
+    .addAction(new Delete.Builder("1").index("twitter2").type("tweet").build())
+    .build();
+
+client.execute(bulk);
+         */
+
+        /* bulk 2
+        String article1 = "tweet1";
+String article2 = "tweet2";
+
+Bulk bulk = new Bulk.Builder()
+                .defaultIndex("twitter2")
+                .defaultType("tweet")
+                .addAction(Arrays.asList(
+                    new Index.Builder(article1).build(),
+                    new Index.Builder(article2).build()))
+                .build();
+
+client.execute(bulk);
+         */
+
+
+/////////////////////////
         kafkaRouteProducer.getContext().start();
         // kafkaRouteProducer.from("direct:start", "test");
 

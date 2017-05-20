@@ -1,0 +1,14 @@
+
+curl -XPOST "http://localhost:9200/twitter2/tweet/_search?pretty" -d '
+{
+  "query": {
+    "match": {
+      "usera": {
+        "query": "kimche",
+        "fuzziness": 3,
+        "prefix_length": 3
+      }
+    }
+  }
+}
+'
