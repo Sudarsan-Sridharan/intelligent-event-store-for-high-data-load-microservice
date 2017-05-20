@@ -7,6 +7,7 @@ import com.deviceinsight.services.model.dao.RestaurantDao;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonParser;
+import com.google.gson.internal.LinkedTreeMap;
 import io.searchbox.client.JestClient;
 import io.searchbox.client.JestResult;
 import io.searchbox.client.http.JestHttpClient;
@@ -397,6 +398,45 @@ client.execute(bulk);
 
 
 /////////////////////////
+
+
+
+
+
+
+        String query22 = "{\n" +
+                "  \"query\": {\n" +
+                "    \"match\": {\n" +
+                "      \"usera\": {\n" +
+                "        \"query\": \"kimche\",\n" +
+                "        \"fuzziness\": 3,\n" +
+                "        \"prefix_length\": 3\n" +
+                "      }\n" +
+                "    }\n" +
+                "  }\n" +
+                "}";
+        Search.Builder searchBuilder6 = new Search.Builder(query22).addIndex("twitter2");
+        SearchResult result6 = jestHttpClient.execute(searchBuilder6.build());
+
+
+
+
+
+        for(int i=1; i<=result6.getHits(ESExampleObject.class).size(); i++) {
+            System.out.println("fuzzy search result (usera) "+i+" ====> "+((LinkedTreeMap<String, String>) result6.getHits(Object.class).get(i-1).source).get("usera"));
+        }
+
+
+
+
+
+
+
+
+
+
+
+
         kafkaRouteProducer.getContext().start();
         // kafkaRouteProducer.from("direct:start", "test");
 
