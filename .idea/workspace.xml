@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="726b6499-5bf5-4486-b0da-3f8599752544" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/JestClientService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intelligent-event-store-for-high-data-load.iml" afterPath="$PROJECT_DIR$/intelligent-event-store-for-high-data-load.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/application.properties" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
     </list>
     <ignored path="intelligent-event-store-for-high-data-load.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -43,18 +39,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="595" column="28" selection-start-line="595" selection-start-column="24" selection-end-line="595" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JestClientService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/JestClientService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+            <state relative-caret-position="574">
+              <caret line="603" column="26" selection-start-line="603" selection-start-column="26" selection-end-line="603" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -63,8 +49,30 @@
       <file leaf-file-name="RestaurantRestController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="573">
-              <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Index.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/searchbox/jest-common/2.0.4/jest-common-2.0.4-sources.jar!/io/searchbox/core/Index.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="560">
+              <caret line="75" column="42" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AbstractAction.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/io/searchbox/jest-common/2.0.4/jest-common-2.0.4-sources.jar!/io/searchbox/action/AbstractAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="621">
+              <caret line="280" column="17" selection-start-line="280" selection-start-column="17" selection-end-line="280" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -102,16 +110,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JestClient.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/io/searchbox/jest-common/2.0.4/jest-common-2.0.4-sources.jar!/io/searchbox/client/JestClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Action.java" pinned="false" current-in-tab="false">
         <entry file="jar://$MAVEN_REPOSITORY$/io/searchbox/jest-common/2.0.4/jest-common-2.0.4-sources.jar!/io/searchbox/action/Action.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -127,16 +125,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-30">
               <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
-              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -161,6 +149,7 @@
     </option>
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="SOFT" />
     <option name="FORCE_PUSH_ALLOWED" value="true" />
   </component>
   <component name="GradleLocalSettings">
@@ -218,9 +207,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/EsConfig.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/JestClientService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java" />
       </list>
     </option>
@@ -1156,7 +1145,7 @@
       <workItem from="1494080752135" duration="9961000" />
       <workItem from="1494761288222" duration="1642000" />
       <workItem from="1494912829182" duration="22267000" />
-      <workItem from="1495290408757" duration="6933000" />
+      <workItem from="1495290408757" duration="7951000" />
     </task>
     <task id="LOCAL-00001" summary="arango db connector added with sample request to create a new graph db">
       <created>1487431686224</created>
@@ -1417,7 +1406,21 @@
       <option name="project" value="LOCAL" />
       <updated>1495311867364</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="adding elastic search with sample using jest to be able to communicate with elastic search 5.4">
+      <created>1495316508529</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1495316508529</updated>
+    </task>
+    <task id="LOCAL-00039" summary="more es">
+      <created>1495317467802</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1495317467802</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1447,7 +1450,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166788000" />
+    <option name="totallyTimeSpent" value="167806000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1104" extended-state="0" />
@@ -1474,7 +1477,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36956522" sideWeight="0.5655914" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23320158" sideWeight="0.5655914" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1514,8 +1517,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="fixed docker base dir" />
-    <MESSAGE value="finally fixed docker dir" />
     <MESSAGE value="fixed docker file" />
     <MESSAGE value="------cfg" />
     <MESSAGE value="hibernate 5 integration" />
@@ -1539,7 +1540,9 @@
     <MESSAGE value="aaaa" />
     <MESSAGE value="nnn" />
     <MESSAGE value="nnnsdsdsd" />
-    <option name="LAST_COMMIT_MESSAGE" value="nnnsdsdsd" />
+    <MESSAGE value="adding elastic search with sample using jest to be able to communicate with elastic search 5.4" />
+    <MESSAGE value="more es" />
+    <option name="LAST_COMMIT_MESSAGE" value="more es" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1552,7 +1555,7 @@
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java</url>
-          <line>128</line>
+          <line>140</line>
           <properties />
           <option name="timeStamp" value="84" />
         </line-breakpoint>
@@ -1576,15 +1579,27 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java</url>
-          <line>117</line>
+          <line>129</line>
           <properties />
           <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java</url>
+          <line>109</line>
+          <properties />
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java</url>
+          <line>115</line>
+          <properties />
+          <option name="timeStamp" value="104" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="103" />
+      <option name="time" value="105" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1593,26 +1608,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/KafkaOutputBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="30" column="32" selection-start-line="30" selection-start-column="32" selection-end-line="30" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/logfile.log">
-      <provider selected="true" editor-type-id="LargeFileEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/kafka/kafka-clients/0.10.2.1/kafka-clients-0.10.2.1.jar!/org/apache/kafka/common/serialization/StringSerializer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="5" column="45" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/ProductDao.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -2079,14 +2074,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="595" column="28" selection-start-line="595" selection-start-column="24" selection-end-line="595" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/io/searchbox/jest-common/2.0.4/jest-common-2.0.4-sources.jar!/io/searchbox/client/JestClient.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -2137,11 +2124,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/searchbox/jest-common/2.0.4/jest-common-2.0.4-sources.jar!/io/searchbox/action/AbstractAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="621">
+          <caret line="280" column="17" selection-start-line="280" selection-start-column="17" selection-end-line="280" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/io/searchbox/jest-common/2.0.4/jest-common-2.0.4-sources.jar!/io/searchbox/core/Index.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="75" column="42" selection-start-line="75" selection-start-column="36" selection-end-line="75" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="574">
+          <caret line="603" column="26" selection-start-line="603" selection-start-column="26" selection-end-line="603" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/5.4.0/elasticsearch-5.4.0.jar!/org/elasticsearch/common/xcontent/XContentFactory.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="120" column="0" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="110" column="0" selection-start-line="110" selection-start-column="0" selection-end-line="110" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -598,6 +598,13 @@
         </dependency>
 
 
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>5.4.0</version>
+        </dependency>
+
+
     </dependencies>
 
     <properties>

@@ -12,6 +12,7 @@ import io.searchbox.client.http.JestHttpClient;
 import io.searchbox.core.Index;
 import io.searchbox.core.Search;
 import io.searchbox.core.SearchResult;
+import io.searchbox.core.Update;
 import org.apache.camel.CamelContext;
 import org.apache.camel.ConsumerTemplate;
 import org.apache.camel.ProducerTemplate;
@@ -19,6 +20,7 @@ import org.apache.camel.builder.RouteBuilder;
 import org.apache.camel.impl.DefaultCamelContext;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+import org.elasticsearch.common.xcontent.XContentFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.transaction.annotation.Transactional;
@@ -99,6 +101,16 @@ public class RestaurantRestController {
                 "}";
         Search.Builder searchBuilder = new Search.Builder(query).addIndex("nextcloud");
         SearchResult result = jestHttpClient.execute(searchBuilder.build());
+
+
+
+
+
+
+        new Update.Builder(XContentFactory.jsonBuilder().startObject().field("title", true).startObject("doc").field("foo", "bar").endObject().endObject().string());
+
+
+
 
 
         Product people = new Product();
