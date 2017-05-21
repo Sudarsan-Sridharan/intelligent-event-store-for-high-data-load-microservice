@@ -46,12 +46,13 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 // Sample test class for spring mvc app using Spring Rest Docs to generate API documentation.
 // One important thing to note here is that the client is able to send different objects to the same endpoint (greeting)
-@RunWith(SpringRunner.class)
+/*@RunWith(SpringRunner.class)
 @SpringBootTest
 @AutoConfigureMockMvc
+*/
 public class ApplicationTestDocumentation {
 
-    @Rule
+/*    @Rule
     public JUnitRestDocumentation restDocumentation =
             new JUnitRestDocumentation("target/generated-snippets");
 
@@ -83,10 +84,10 @@ public class ApplicationTestDocumentation {
     @Test
     public void getGreeting() throws Exception {
 
-        /*RestDocumentationResultHandler document = documentPrettyPrintReqResp("getGreeting");
+        //RestDocumentationResultHandler document = documentPrettyPrintReqResp("getGreeting");
         document.snippets(
-                pathParameters(greetingPathParams())
-        );*/
+          //      pathParameters(greetingPathParams())
+        //);
 
         HelloRequest req = new HelloRequest();
         req.setName("Will");
@@ -124,9 +125,9 @@ public class ApplicationTestDocumentation {
     public void getGoodbye() throws Exception {
 
         //RestDocumentationResultHandler document = documentPrettyPrintReqResp("getGoodbye");
-        /*document.snippets(
-                pathParameters(greetingPathParams())
-        );*/
+        //document.snippets(
+          //      pathParameters(greetingPathParams())
+        //);
 
         GoodbyeRequest req = new GoodbyeRequest();
         req.setFullname("Will ");
@@ -145,5 +146,5 @@ public class ApplicationTestDocumentation {
                 preprocessRequest(prettyPrint()),
                 preprocessResponse(prettyPrint()));
     }
-
+*/
 }
