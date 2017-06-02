@@ -2,4 +2,4 @@ spring:
   data:
     cassandra:
       keyspace-name: sample
-      contact-points: localhost
+      contact-points: docker

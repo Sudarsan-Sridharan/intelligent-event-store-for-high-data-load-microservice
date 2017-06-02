@@ -37,7 +37,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-import static junit.framework.TestCase.assertTrue;
 import static org.elasticsearch.common.xcontent.XContentFactory.jsonBuilder;
 
 @RestController
