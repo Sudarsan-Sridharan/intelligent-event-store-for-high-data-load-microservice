@@ -14,6 +14,7 @@
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/ServicequeuesDAOImpl.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/domain/Hotel.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/websocket/TopicItemDAOImpl.java
+/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ecommerce/api/Restaurant2RestController.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/Product.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/websocket/Servicequeue.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ARestController.java
@@ -54,13 +55,16 @@
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/service/HotelServiceImpl.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/response/HelloResponse.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/domain/HotelByLetter.java
+/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/CreateClientRequest.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/IProduct.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/WebSecurityConfig.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/RestaurantDaoImpl.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/UUIDHolder.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/User.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/repository/HotelByLetterRepository.java
+/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/VersionController.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/BaseUUIDEntity.java
+/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ApplicationConfig.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ecommerce/api/ESExampleObject.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/security/MyUserDetailsService.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/ProductDao.java
