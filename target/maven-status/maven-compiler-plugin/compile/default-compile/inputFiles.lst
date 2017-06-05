@@ -3,6 +3,7 @@
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/UserRole.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/FriendsGraphDoc.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/Test.java
+/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/akka/Greeter.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/Notification.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/WebSocketConfig.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/BaseEntity.java
@@ -22,6 +23,7 @@
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/KafkaOutputBean.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/RootConfiguration.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ecommerce/api/ProductRestController.java
+/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/akka/Printer.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/TopicItem.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/request/HelloRequest.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/org/springframework/cloud/deployer/spi/mesos/marathon/MarathonAppDeployerProperties.java
@@ -51,6 +53,7 @@
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/repository/CassandraHotelByLetterRepository.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/TradeService.java
+/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/akka/AkkaQuickstart.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/security/UserRole.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/service/HotelServiceImpl.java
 /Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/response/HelloResponse.java

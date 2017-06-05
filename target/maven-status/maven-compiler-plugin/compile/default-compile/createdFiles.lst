@@ -1,7 +1,11 @@
 com/deviceinsight/services/request/GoodbyeRequest.class
+com/deviceinsight/services/akka/Greeter$WhoToGreet.class
+com/deviceinsight/services/akka/Greeter.class
 com/deviceinsight/services/model/dao/BaseDao.class
+com/deviceinsight/services/akka/Greeter$Greet.class
 com/deviceinsight/services/config/JestClientService.class
 com/deviceinsight/services/model/ServicequeuesDAO.class
+com/deviceinsight/services/akka/Printer$Greeting.class
 com/deviceinsight/services/repository/HotelRepository.class
 com/deviceinsight/services/Test.class
 com/deviceinsight/services/controller/ExampleController.class
@@ -75,6 +79,7 @@ com/deviceinsight/services/model/ServicequeuesDAOImpl.class
 com/deviceinsight/services/websocket/Portfolio.class
 com/deviceinsight/services/model/dao/UserDAO.class
 com/deviceinsight/services/model/UserRole.class
+com/deviceinsight/services/akka/AkkaQuickstart.class
 com/deviceinsight/services/PrometheusAutoConfiguration.class
 com/deviceinsight/services/domain/HotelByLetter.class
 com/deviceinsight/services/ARestController.class
@@ -87,6 +92,7 @@ com/deviceinsight/services/ecommerce/api/RestaurantRestController.class
 com/deviceinsight/services/controller/TradeServiceImpl$TradeResult.class
 com/deviceinsight/services/HotelController.class
 com/deviceinsight/services/config/KafkaCamelRoute$kafkaOutputBean.class
+com/deviceinsight/services/akka/Printer.class
 com/deviceinsight/services/model/dao/BaseUUIDEntity.class
 com/deviceinsight/services/repository/CassandraHotelByLetterRepository.class
 com/deviceinsight/services/Application.class

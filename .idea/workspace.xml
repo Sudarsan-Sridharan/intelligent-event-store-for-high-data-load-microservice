@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.jar!/org/assertj/core/api/AssertionsForClassTypes.class" line="321" mnemonic="7" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="726b6499-5bf5-4486-b0da-3f8599752544" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/akka/AkkaQuickstart.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/akka/Greeter.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/akka/Printer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/intelligent-event-store-for-high-data-load.iml" afterPath="$PROJECT_DIR$/intelligent-event-store-for-high-data-load.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/deviceinsight/services/CreateClientIntegrationTest.java" afterPath="$PROJECT_DIR$/src/test/java/com/deviceinsight/services/CreateClientIntegrationTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/Restaurant2RestController.java" afterPath="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/Restaurant2RestController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" />
     </list>
     <ignored path="intelligent-event-store-for-high-data-load.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -39,43 +48,45 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
+            <state relative-caret-position="471">
+              <caret line="833" column="46" selection-start-line="833" selection-start-column="46" selection-end-line="833" selection-end-column="46" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CucumberTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/CucumberTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CreateClientIntegrationTest2.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/deviceinsight/services/CreateClientIntegrationTest2.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="60" column="43" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestSteps.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/deviceinsight/services/TestSteps.java">
+      <file leaf-file-name="AkkaQuickstart.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/akka/AkkaQuickstart.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+              <caret line="26" column="83" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Greeter.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/akka/Greeter.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="403">
+              <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#500#501#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Printer.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/akka/Printer.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,18 +94,18 @@
       <file leaf-file-name="accounts.feature" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/feature/accounts.feature">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+            <state relative-caret-position="30">
+              <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CreateClientIntegrationTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CreateClientIntegrationTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/deviceinsight/services/CreateClientIntegrationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="56" column="3" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
+            <state relative-caret-position="390">
+              <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,35 +113,173 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Assertions.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.jar!/org/assertj/core/api/Assertions.class">
+      <file leaf-file-name="AssertionsForClassTypes.java" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0-sources.jar!/org/assertj/core/api/AssertionsForClassTypes.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="392" column="41" selection-start-line="392" selection-start-column="41" selection-end-line="392" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AssertionsForClassTypes.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.jar!/org/assertj/core/api/AssertionsForClassTypes.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="312" column="56" selection-start-line="312" selection-start-column="56" selection-end-line="312" selection-end-column="56" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#10859#10860#0" expanded="true" />
-                <element signature="e#10906#10907#0" expanded="true" />
+                <element signature="n#!!doc" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#4173#4174#0" expanded="false" />
+                <element signature="e#4222#4223#0" expanded="false" />
+                <element signature="e#4469#4470#0" expanded="false" />
+                <element signature="e#4515#4516#0" expanded="false" />
+                <element signature="e#4764#4765#0" expanded="false" />
+                <element signature="e#4811#4812#0" expanded="false" />
+                <element signature="e#5075#5076#0" expanded="false" />
+                <element signature="e#5120#5121#0" expanded="false" />
+                <element signature="e#5363#5364#0" expanded="false" />
+                <element signature="e#5401#5402#0" expanded="false" />
+                <element signature="e#5644#5645#0" expanded="false" />
+                <element signature="e#5682#5683#0" expanded="false" />
+                <element signature="e#5937#5938#0" expanded="false" />
+                <element signature="e#5979#5980#0" expanded="false" />
+                <element signature="e#6234#6235#0" expanded="false" />
+                <element signature="e#6276#6277#0" expanded="false" />
+                <element signature="e#6543#6544#0" expanded="false" />
+                <element signature="e#6590#6591#0" expanded="false" />
+                <element signature="e#6836#6837#0" expanded="false" />
+                <element signature="e#6875#6876#0" expanded="false" />
+                <element signature="e#7121#7122#0" expanded="false" />
+                <element signature="e#7160#7161#0" expanded="false" />
+                <element signature="e#7418#7419#0" expanded="false" />
+                <element signature="e#7462#7463#0" expanded="false" />
+                <element signature="e#7718#7719#0" expanded="false" />
+                <element signature="e#7762#7763#0" expanded="false" />
+                <element signature="e#8020#8021#0" expanded="false" />
+                <element signature="e#8064#8065#0" expanded="false" />
+                <element signature="e#8325#8326#0" expanded="false" />
+                <element signature="e#8369#8370#0" expanded="false" />
+                <element signature="e#8620#8621#0" expanded="false" />
+                <element signature="e#8660#8661#0" expanded="false" />
+                <element signature="e#8912#8913#0" expanded="false" />
+                <element signature="e#8953#8954#0" expanded="false" />
+                <element signature="e#9205#9206#0" expanded="false" />
+                <element signature="e#9246#9247#0" expanded="false" />
+                <element signature="e#9510#9511#0" expanded="false" />
+                <element signature="e#9556#9557#0" expanded="false" />
+                <element signature="e#9802#9803#0" expanded="false" />
+                <element signature="e#9841#9842#0" expanded="false" />
+                <element signature="e#10426#10427#0" expanded="false" />
+                <element signature="e#10466#10467#0" expanded="false" />
+                <element signature="e#10715#10716#0" expanded="false" />
+                <element signature="e#10755#10756#0" expanded="false" />
+                <element signature="e#11016#11017#0" expanded="false" />
+                <element signature="e#11061#11062#0" expanded="false" />
+                <element signature="e#11312#11313#0" expanded="false" />
+                <element signature="e#11354#11355#0" expanded="false" />
+                <element signature="e#11609#11610#0" expanded="false" />
+                <element signature="e#11652#11653#0" expanded="false" />
+                <element signature="e#11907#11908#0" expanded="false" />
+                <element signature="e#11949#11950#0" expanded="false" />
+                <element signature="e#12195#12196#0" expanded="false" />
+                <element signature="e#12234#12235#0" expanded="false" />
+                <element signature="e#12480#12481#0" expanded="false" />
+                <element signature="e#12519#12520#0" expanded="false" />
+                <element signature="e#12777#12778#0" expanded="false" />
+                <element signature="e#12821#12822#0" expanded="false" />
+                <element signature="e#13075#13076#0" expanded="false" />
+                <element signature="e#13118#13119#0" expanded="false" />
+                <element signature="e#13384#13385#0" expanded="false" />
+                <element signature="e#13432#13433#0" expanded="false" />
+                <element signature="e#13681#13682#0" expanded="false" />
+                <element signature="e#13721#13722#0" expanded="false" />
+                <element signature="e#13970#13971#0" expanded="false" />
+                <element signature="e#14010#14011#0" expanded="false" />
+                <element signature="e#14271#14272#0" expanded="false" />
+                <element signature="e#14316#14317#0" expanded="false" />
+                <element signature="e#14582#14583#0" expanded="false" />
+                <element signature="e#14623#14624#0" expanded="false" />
+                <element signature="e#14869#14870#0" expanded="false" />
+                <element signature="e#14908#14909#0" expanded="false" />
+                <element signature="e#16129#16130#0" expanded="false" />
+                <element signature="e#16174#16175#0" expanded="false" />
+                <element signature="e#16435#16436#0" expanded="false" />
+                <element signature="e#16479#16480#0" expanded="false" />
+                <element signature="e#16746#16747#0" expanded="false" />
+                <element signature="e#16793#16794#0" expanded="false" />
+                <element signature="e#17068#17069#0" expanded="false" />
+                <element signature="e#17111#17112#0" expanded="false" />
+                <element signature="e#23303#23304#0" expanded="false" />
+                <element signature="e#23338#23339#0" expanded="false" />
+                <element signature="e#23602#23603#0" expanded="false" />
+                <element signature="e#23648#23649#0" expanded="false" />
+                <element signature="e#29322#29323#0" expanded="false" />
+                <element signature="e#29358#29359#0" expanded="false" />
+                <element signature="e#31843#31844#0" expanded="false" />
+                <element signature="e#31886#31887#0" expanded="false" />
+                <element signature="e#32376#32377#0" expanded="false" />
+                <element signature="e#32413#32414#0" expanded="false" />
+                <element signature="e#32658#32659#0" expanded="false" />
+                <element signature="e#32695#32696#0" expanded="false" />
+                <element signature="e#32940#32941#0" expanded="false" />
+                <element signature="e#32977#32978#0" expanded="false" />
+                <element signature="e#33240#33241#0" expanded="false" />
+                <element signature="e#33277#33278#0" expanded="false" />
+                <element signature="e#33540#33541#0" expanded="false" />
+                <element signature="e#33577#33578#0" expanded="false" />
+                <element signature="e#33908#33909#0" expanded="false" />
+                <element signature="e#33945#33946#0" expanded="false" />
+                <element signature="e#34231#34232#0" expanded="false" />
+                <element signature="e#34268#34269#0" expanded="false" />
+                <element signature="e#34545#34546#0" expanded="false" />
+                <element signature="e#34582#34583#0" expanded="false" />
+                <element signature="e#34853#34854#0" expanded="false" />
+                <element signature="e#34890#34891#0" expanded="false" />
+                <element signature="e#35159#35160#0" expanded="false" />
+                <element signature="e#35196#35197#0" expanded="false" />
+                <element signature="e#35540#35541#0" expanded="false" />
+                <element signature="e#35578#35579#0" expanded="false" />
+                <element signature="e#35918#35919#0" expanded="false" />
+                <element signature="e#35956#35957#0" expanded="false" />
+                <element signature="e#36293#36294#0" expanded="false" />
+                <element signature="e#36331#36332#0" expanded="false" />
+                <element signature="e#37124#37125#0" expanded="false" />
+                <element signature="e#37164#37165#0" expanded="false" />
+                <element signature="e#38180#38181#0" expanded="false" />
+                <element signature="e#38220#38221#0" expanded="false" />
+                <element signature="e#39250#39251#0" expanded="false" />
+                <element signature="e#39285#39286#0" expanded="false" />
+                <element signature="e#40460#40461#0" expanded="false" />
+                <element signature="e#40498#40499#0" expanded="false" />
+                <element signature="e#41364#41365#0" expanded="false" />
+                <element signature="e#41413#41414#0" expanded="false" />
+                <element signature="e#42401#42402#0" expanded="false" />
+                <element signature="e#42437#42438#0" expanded="false" />
+                <element signature="e#43469#43470#0" expanded="false" />
+                <element signature="e#43521#43522#0" expanded="false" />
+                <element signature="e#44506#44507#0" expanded="false" />
+                <element signature="e#44553#44554#0" expanded="false" />
+                <element signature="e#45455#45456#0" expanded="false" />
+                <element signature="e#45502#45503#0" expanded="false" />
+                <element signature="e#46144#46145#0" expanded="false" />
+                <element signature="e#46195#46196#0" expanded="false" />
+                <element signature="e#46691#46692#0" expanded="false" />
+                <element signature="e#46755#46756#0" expanded="false" />
+                <element signature="e#47198#47199#0" expanded="false" />
+                <element signature="e#47260#47261#0" expanded="false" />
+                <element signature="e#47736#47737#0" expanded="false" />
+                <element signature="e#47781#47782#0" expanded="false" />
+                <element signature="e#48276#48277#0" expanded="false" />
+                <element signature="e#48325#48326#0" expanded="false" />
+                <element signature="e#49134#49135#0" expanded="false" />
+                <element signature="e#49179#49180#0" expanded="false" />
+                <element signature="e#49720#49721#0" expanded="false" />
+                <element signature="e#49769#49770#0" expanded="false" />
+                <element signature="e#50179#50180#0" expanded="false" />
+                <element signature="e#50241#50242#0" expanded="false" />
+                <element signature="e#50679#50680#0" expanded="false" />
+                <element signature="e#50739#50740#0" expanded="false" />
+                <element signature="e#51210#51211#0" expanded="false" />
+                <element signature="e#51253#51254#0" expanded="false" />
+                <element signature="e#51743#51744#0" expanded="false" />
+                <element signature="e#51790#51791#0" expanded="false" />
+                <element signature="e#53578#53579#0" expanded="false" />
+                <element signature="e#53635#53636#0" expanded="false" />
+                <element signature="e#58873#58874#0" expanded="false" />
+                <element signature="e#58929#58930#0" expanded="false" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AbstractCharSequenceAssert.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.jar!/org/assertj/core/api/AbstractCharSequenceAssert.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -138,8 +287,31 @@
       <file leaf-file-name="Restaurant2RestController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/Restaurant2RestController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="420">
+              <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestaurantDaoImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/RestaurantDaoImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+              <folding>
+                <element signature="e#690#691#0" expanded="true" />
+                <element signature="e#785#786#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RestaurantDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/RestaurantDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="27" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -175,9 +347,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/Hibernate5AutoConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/CamelKafkaConsumerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/CamelKafkaConsumerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/CamelKafkaConsumerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/config/MyAppConfig.java" />
@@ -222,10 +391,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/CucumberTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/deviceinsight/services/TestSteps.java" />
         <option value="$PROJECT_DIR$/src/test/java/CucumberTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/Restaurant2RestController.java" />
         <option value="$PROJECT_DIR$/src/test/resources/feature/accounts.feature" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/deviceinsight/services/CreateClientIntegrationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/Restaurant2RestController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/akka/Printer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/akka/AkkaQuickstart.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/deviceinsight/services/akka/Greeter.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
@@ -290,9 +462,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="402" />
     <option name="y" value="23" />
-    <option name="width" value="1227" />
-    <option name="height" value="1104" />
+    <option name="width" value="1514" />
+    <option name="height" value="1123" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -383,7 +556,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -419,16 +593,22 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="delivery-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delivery-system" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="feature" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -446,25 +626,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delivery-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="delivery-system" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -485,18 +647,59 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delivery-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="delivery-system" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="akka" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/cucu/spring-boot-rest-cucumber-example-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="project.structure.last.edited" value="SDKs" />
@@ -535,33 +738,7 @@
       <recent name="$PROJECT_DIR$/src/main" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CreateClientIntegrationTest.createClient">
-    <configuration default="false" name="CreateClientIntegrationControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.deviceinsight.services.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="intelligent-event-store-for-high-data-load" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.deviceinsight.services" />
-      <option name="MAIN_CLASS_NAME" value="com.deviceinsight.services.CreateClientIntegrationControllerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Application.AkkaQuickstart">
     <configuration default="false" name="All in intelligent-event-store-for-high-data-load" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="intelligent-event-store-for-high-data-load" />
@@ -657,6 +834,26 @@
       </option>
       <envs />
       <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="AkkaQuickstart" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.deviceinsight.services.akka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.deviceinsight.services.akka.AkkaQuickstart" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="intelligent-event-store-for-high-data-load" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -1104,19 +1301,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Spring Boot.Application" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.CreateClientIntegrationControllerTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.All in intelligent-event-store-for-high-data-load" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.CucumberTest" />
-      <item index="4" class="java.lang.String" itemvalue="Cucumber java.Feature: accounts" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.CreateClientIntegrationTest.createClient" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in intelligent-event-store-for-high-data-load" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CucumberTest" />
+      <item index="3" class="java.lang.String" itemvalue="Cucumber java.Feature: accounts" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CreateClientIntegrationTest.createClient" />
+      <item index="5" class="java.lang.String" itemvalue="Application.AkkaQuickstart" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.CreateClientIntegrationTest.createClient" />
-        <item index="1" class="java.lang.String" itemvalue="Cucumber java.Feature: accounts" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.CucumberTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.All in intelligent-event-store-for-high-data-load" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.CreateClientIntegrationControllerTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.AkkaQuickstart" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.CreateClientIntegrationTest.createClient" />
+        <item index="2" class="java.lang.String" itemvalue="Cucumber java.Feature: accounts" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CucumberTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.All in intelligent-event-store-for-high-data-load" />
       </list>
     </recent_temporary>
   </component>
@@ -1167,35 +1364,8 @@
       <workItem from="1495956387705" duration="76000" />
       <workItem from="1495956484954" duration="2555000" />
       <workItem from="1496090905490" duration="26846000" />
-      <workItem from="1496590377794" duration="1598000" />
-    </task>
-    <task id="LOCAL-00005" summary="finally fixed docker dir">
-      <created>1490055343047</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1490055343047</updated>
-    </task>
-    <task id="LOCAL-00006" summary="fixed docker file">
-      <created>1490056859304</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1490056859304</updated>
-    </task>
-    <task id="LOCAL-00007" summary="------cfg">
-      <created>1490731254565</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1490731254565</updated>
-    </task>
-    <task id="LOCAL-00008" summary="hibernate 5 integration">
-      <created>1490734083442</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1490734083442</updated>
+      <workItem from="1496590377794" duration="5085000" />
+      <workItem from="1496657101859" duration="871000" />
     </task>
     <task id="LOCAL-00009" summary="hibernate 5 integration">
       <created>1490734099726</created>
@@ -1512,7 +1682,35 @@
       <option name="project" value="LOCAL" />
       <updated>1496591291228</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="assertJ with sample added">
+      <created>1496591998400</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1496591998400</updated>
+    </task>
+    <task id="LOCAL-00055" summary="1">
+      <created>1496656797524</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1496656797524</updated>
+    </task>
+    <task id="LOCAL-00056" summary="b">
+      <created>1496656911689</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1496656911689</updated>
+    </task>
+    <task id="LOCAL-00057" summary="r">
+      <created>1496657031929</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1496657031929</updated>
+    </task>
+    <option name="localTasksCounter" value="58" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1548,10 +1746,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="231951000" />
+    <option name="totallyTimeSpent" value="236309000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1227" height="1104" extended-state="0" />
+    <frame x="402" y="23" width="1514" height="1123" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1561,18 +1759,17 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.48136315" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38339922" sideWeight="0.3311828" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17468354" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34683794" sideWeight="0.61097413" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.42094862" sideWeight="0.6688172" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.140625" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34626576" sideWeight="0.61097413" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.41319108" sideWeight="0.6688172" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.49199507" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33695653" sideWeight="0.68146026" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33656645" sideWeight="0.68146026" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30210972" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24320652" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14303958" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.4886548" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1583,6 +1780,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32806325" sideWeight="0.4886548" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -1615,10 +1813,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Websocket spring libary added with endpoint configuration" />
-    <MESSAGE value="rest endpoint added" />
-    <MESSAGE value="context" />
-    <MESSAGE value="upgrade to spring boot 1.5.3 release" />
     <MESSAGE value="camel publishes a test message to kafka queue via rest that can be received in the terminal with ./kafka-console-consumer --zookeeper localhost:2181 --topic test" />
     <MESSAGE value="kafka consumer to std out added" />
     <MESSAGE value="adding process logic in camel route service to be able to hand over to another service like a DAO" />
@@ -1640,7 +1834,11 @@
     <MESSAGE value="mmm" />
     <MESSAGE value="nnn" />
     <MESSAGE value="add cucumber test framework incl. sample" />
-    <option name="LAST_COMMIT_MESSAGE" value="add cucumber test framework incl. sample" />
+    <MESSAGE value="assertJ with sample added" />
+    <MESSAGE value="1" />
+    <MESSAGE value="b" />
+    <MESSAGE value="r" />
+    <option name="LAST_COMMIT_MESSAGE" value="r" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1693,6 +1891,12 @@
           <properties />
           <option name="timeStamp" value="145" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/Restaurant2RestController.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="147" />
+        </line-breakpoint>
         <line-breakpoint type="java-method">
           <url>file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/Client.java</url>
           <line>23</line>
@@ -1703,7 +1907,7 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="147" />
+      <option name="time" value="148" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1712,34 +1916,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/4.3.8.RELEASE/spring-core-4.3.8.RELEASE-sources.jar!/org/springframework/core/convert/support/DefaultConversionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="175" column="15" selection-start-line="175" selection-start-column="15" selection-end-line="175" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE-sources.jar!/org/springframework/web/client/RestTemplate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="401" column="33" selection-start-line="401" selection-start-column="33" selection-end-line="401" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.3.RELEASE/spring-boot-1.5.3.RELEASE-sources.jar!/org/springframework/boot/context/embedded/EmbeddedWebApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="121" column="0" selection-start-line="121" selection-start-column="0" selection-end-line="121" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot/1.5.3.RELEASE/spring-boot-1.5.3.RELEASE-sources.jar!/org/springframework/boot/SpringApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="369" column="0" selection-start-line="369" selection-start-column="0" selection-end-line="369" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-test/4.3.2.RELEASE/spring-test-4.3.2.RELEASE-sources.jar!/org/springframework/test/context/junit4/statements/RunAfterTestClassCallbacks.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="224">
@@ -1810,13 +1986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/RestaurantDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1835,17 +2004,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="268" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/RestaurantDaoImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="26" column="29" selection-start-line="26" selection-start-column="15" selection-end-line="26" selection-end-column="29" />
-          <folding>
-            <element signature="e#690#691#0" expanded="false" />
-            <element signature="e#785#786#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1898,22 +2056,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6285">
-          <caret line="456" column="0" selection-start-line="456" selection-start-column="0" selection-end-line="456" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding>
-            <element signature="e#564#565#0" expanded="false" />
-            <element signature="e#626#627#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1953,7 +2099,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1961,7 +2106,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="26" selection-start-line="8" selection-start-column="26" selection-end-line="8" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1969,7 +2113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1977,9 +2120,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1999,7 +2139,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2030,7 +2169,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2038,51 +2176,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
           <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/deviceinsight/services/CreateClientIntegrationTest2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="60" column="43" selection-start-line="60" selection-start-column="43" selection-end-line="60" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/Restaurant2RestController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/feature/accounts.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="48" column="25" selection-start-line="48" selection-start-column="25" selection-end-line="48" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.jar!/org/assertj/core/api/AbstractCharSequenceAssert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2090,14 +2183,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="392" column="41" selection-start-line="392" selection-start-column="41" selection-end-line="392" selection-end-column="41" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.jar!/org/assertj/core/api/AbstractCharSequenceAssert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1605">
+          <caret line="145" column="38" selection-start-line="145" selection-start-column="38" selection-end-line="145" selection-end-column="38" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0.jar!/org/assertj/core/api/AssertionsForClassTypes.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="312" column="56" selection-start-line="312" selection-start-column="56" selection-end-line="312" selection-end-column="56" />
+        <state relative-caret-position="2040">
+          <caret line="321" column="21" selection-start-line="321" selection-start-column="21" selection-end-line="321" selection-end-column="21" />
           <folding>
             <element signature="e#10859#10860#0" expanded="true" />
             <element signature="e#10906#10907#0" expanded="true" />
@@ -2105,10 +2204,270 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/deviceinsight/services/CreateClientIntegrationTest2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="44" selection-start-line="60" selection-start-column="44" selection-end-line="60" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6285">
+          <caret line="456" column="36" selection-start-line="98" selection-start-column="6" selection-end-line="456" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/RestaurantDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/ecommerce/api/Restaurant2RestController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/feature/accounts.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/assertj/assertj-core/3.8.0/assertj-core-3.8.0-sources.jar!/org/assertj/core/api/AssertionsForClassTypes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#4173#4174#0" expanded="false" />
+            <element signature="e#4222#4223#0" expanded="false" />
+            <element signature="e#4469#4470#0" expanded="false" />
+            <element signature="e#4515#4516#0" expanded="false" />
+            <element signature="e#4764#4765#0" expanded="false" />
+            <element signature="e#4811#4812#0" expanded="false" />
+            <element signature="e#5075#5076#0" expanded="false" />
+            <element signature="e#5120#5121#0" expanded="false" />
+            <element signature="e#5363#5364#0" expanded="false" />
+            <element signature="e#5401#5402#0" expanded="false" />
+            <element signature="e#5644#5645#0" expanded="false" />
+            <element signature="e#5682#5683#0" expanded="false" />
+            <element signature="e#5937#5938#0" expanded="false" />
+            <element signature="e#5979#5980#0" expanded="false" />
+            <element signature="e#6234#6235#0" expanded="false" />
+            <element signature="e#6276#6277#0" expanded="false" />
+            <element signature="e#6543#6544#0" expanded="false" />
+            <element signature="e#6590#6591#0" expanded="false" />
+            <element signature="e#6836#6837#0" expanded="false" />
+            <element signature="e#6875#6876#0" expanded="false" />
+            <element signature="e#7121#7122#0" expanded="false" />
+            <element signature="e#7160#7161#0" expanded="false" />
+            <element signature="e#7418#7419#0" expanded="false" />
+            <element signature="e#7462#7463#0" expanded="false" />
+            <element signature="e#7718#7719#0" expanded="false" />
+            <element signature="e#7762#7763#0" expanded="false" />
+            <element signature="e#8020#8021#0" expanded="false" />
+            <element signature="e#8064#8065#0" expanded="false" />
+            <element signature="e#8325#8326#0" expanded="false" />
+            <element signature="e#8369#8370#0" expanded="false" />
+            <element signature="e#8620#8621#0" expanded="false" />
+            <element signature="e#8660#8661#0" expanded="false" />
+            <element signature="e#8912#8913#0" expanded="false" />
+            <element signature="e#8953#8954#0" expanded="false" />
+            <element signature="e#9205#9206#0" expanded="false" />
+            <element signature="e#9246#9247#0" expanded="false" />
+            <element signature="e#9510#9511#0" expanded="false" />
+            <element signature="e#9556#9557#0" expanded="false" />
+            <element signature="e#9802#9803#0" expanded="false" />
+            <element signature="e#9841#9842#0" expanded="false" />
+            <element signature="e#10426#10427#0" expanded="false" />
+            <element signature="e#10466#10467#0" expanded="false" />
+            <element signature="e#10715#10716#0" expanded="false" />
+            <element signature="e#10755#10756#0" expanded="false" />
+            <element signature="e#11016#11017#0" expanded="false" />
+            <element signature="e#11061#11062#0" expanded="false" />
+            <element signature="e#11312#11313#0" expanded="false" />
+            <element signature="e#11354#11355#0" expanded="false" />
+            <element signature="e#11609#11610#0" expanded="false" />
+            <element signature="e#11652#11653#0" expanded="false" />
+            <element signature="e#11907#11908#0" expanded="false" />
+            <element signature="e#11949#11950#0" expanded="false" />
+            <element signature="e#12195#12196#0" expanded="false" />
+            <element signature="e#12234#12235#0" expanded="false" />
+            <element signature="e#12480#12481#0" expanded="false" />
+            <element signature="e#12519#12520#0" expanded="false" />
+            <element signature="e#12777#12778#0" expanded="false" />
+            <element signature="e#12821#12822#0" expanded="false" />
+            <element signature="e#13075#13076#0" expanded="false" />
+            <element signature="e#13118#13119#0" expanded="false" />
+            <element signature="e#13384#13385#0" expanded="false" />
+            <element signature="e#13432#13433#0" expanded="false" />
+            <element signature="e#13681#13682#0" expanded="false" />
+            <element signature="e#13721#13722#0" expanded="false" />
+            <element signature="e#13970#13971#0" expanded="false" />
+            <element signature="e#14010#14011#0" expanded="false" />
+            <element signature="e#14271#14272#0" expanded="false" />
+            <element signature="e#14316#14317#0" expanded="false" />
+            <element signature="e#14582#14583#0" expanded="false" />
+            <element signature="e#14623#14624#0" expanded="false" />
+            <element signature="e#14869#14870#0" expanded="false" />
+            <element signature="e#14908#14909#0" expanded="false" />
+            <element signature="e#16129#16130#0" expanded="false" />
+            <element signature="e#16174#16175#0" expanded="false" />
+            <element signature="e#16435#16436#0" expanded="false" />
+            <element signature="e#16479#16480#0" expanded="false" />
+            <element signature="e#16746#16747#0" expanded="false" />
+            <element signature="e#16793#16794#0" expanded="false" />
+            <element signature="e#17068#17069#0" expanded="false" />
+            <element signature="e#17111#17112#0" expanded="false" />
+            <element signature="e#23303#23304#0" expanded="false" />
+            <element signature="e#23338#23339#0" expanded="false" />
+            <element signature="e#23602#23603#0" expanded="false" />
+            <element signature="e#23648#23649#0" expanded="false" />
+            <element signature="e#29322#29323#0" expanded="false" />
+            <element signature="e#29358#29359#0" expanded="false" />
+            <element signature="e#31843#31844#0" expanded="false" />
+            <element signature="e#31886#31887#0" expanded="false" />
+            <element signature="e#32376#32377#0" expanded="false" />
+            <element signature="e#32413#32414#0" expanded="false" />
+            <element signature="e#32658#32659#0" expanded="false" />
+            <element signature="e#32695#32696#0" expanded="false" />
+            <element signature="e#32940#32941#0" expanded="false" />
+            <element signature="e#32977#32978#0" expanded="false" />
+            <element signature="e#33240#33241#0" expanded="false" />
+            <element signature="e#33277#33278#0" expanded="false" />
+            <element signature="e#33540#33541#0" expanded="false" />
+            <element signature="e#33577#33578#0" expanded="false" />
+            <element signature="e#33908#33909#0" expanded="false" />
+            <element signature="e#33945#33946#0" expanded="false" />
+            <element signature="e#34231#34232#0" expanded="false" />
+            <element signature="e#34268#34269#0" expanded="false" />
+            <element signature="e#34545#34546#0" expanded="false" />
+            <element signature="e#34582#34583#0" expanded="false" />
+            <element signature="e#34853#34854#0" expanded="false" />
+            <element signature="e#34890#34891#0" expanded="false" />
+            <element signature="e#35159#35160#0" expanded="false" />
+            <element signature="e#35196#35197#0" expanded="false" />
+            <element signature="e#35540#35541#0" expanded="false" />
+            <element signature="e#35578#35579#0" expanded="false" />
+            <element signature="e#35918#35919#0" expanded="false" />
+            <element signature="e#35956#35957#0" expanded="false" />
+            <element signature="e#36293#36294#0" expanded="false" />
+            <element signature="e#36331#36332#0" expanded="false" />
+            <element signature="e#37124#37125#0" expanded="false" />
+            <element signature="e#37164#37165#0" expanded="false" />
+            <element signature="e#38180#38181#0" expanded="false" />
+            <element signature="e#38220#38221#0" expanded="false" />
+            <element signature="e#39250#39251#0" expanded="false" />
+            <element signature="e#39285#39286#0" expanded="false" />
+            <element signature="e#40460#40461#0" expanded="false" />
+            <element signature="e#40498#40499#0" expanded="false" />
+            <element signature="e#41364#41365#0" expanded="false" />
+            <element signature="e#41413#41414#0" expanded="false" />
+            <element signature="e#42401#42402#0" expanded="false" />
+            <element signature="e#42437#42438#0" expanded="false" />
+            <element signature="e#43469#43470#0" expanded="false" />
+            <element signature="e#43521#43522#0" expanded="false" />
+            <element signature="e#44506#44507#0" expanded="false" />
+            <element signature="e#44553#44554#0" expanded="false" />
+            <element signature="e#45455#45456#0" expanded="false" />
+            <element signature="e#45502#45503#0" expanded="false" />
+            <element signature="e#46144#46145#0" expanded="false" />
+            <element signature="e#46195#46196#0" expanded="false" />
+            <element signature="e#46691#46692#0" expanded="false" />
+            <element signature="e#46755#46756#0" expanded="false" />
+            <element signature="e#47198#47199#0" expanded="false" />
+            <element signature="e#47260#47261#0" expanded="false" />
+            <element signature="e#47736#47737#0" expanded="false" />
+            <element signature="e#47781#47782#0" expanded="false" />
+            <element signature="e#48276#48277#0" expanded="false" />
+            <element signature="e#48325#48326#0" expanded="false" />
+            <element signature="e#49134#49135#0" expanded="false" />
+            <element signature="e#49179#49180#0" expanded="false" />
+            <element signature="e#49720#49721#0" expanded="false" />
+            <element signature="e#49769#49770#0" expanded="false" />
+            <element signature="e#50179#50180#0" expanded="false" />
+            <element signature="e#50241#50242#0" expanded="false" />
+            <element signature="e#50679#50680#0" expanded="false" />
+            <element signature="e#50739#50740#0" expanded="false" />
+            <element signature="e#51210#51211#0" expanded="false" />
+            <element signature="e#51253#51254#0" expanded="false" />
+            <element signature="e#51743#51744#0" expanded="false" />
+            <element signature="e#51790#51791#0" expanded="false" />
+            <element signature="e#53578#53579#0" expanded="false" />
+            <element signature="e#53635#53636#0" expanded="false" />
+            <element signature="e#58873#58874#0" expanded="false" />
+            <element signature="e#58929#58930#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/model/dao/RestaurantDaoImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+          <folding>
+            <element signature="e#690#691#0" expanded="true" />
+            <element signature="e#785#786#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/deviceinsight/services/CreateClientIntegrationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="56" column="3" selection-start-line="56" selection-start-column="3" selection-end-line="56" selection-end-column="3" />
+        <state relative-caret-position="390">
+          <caret line="26" column="41" selection-start-line="26" selection-start-column="41" selection-end-line="26" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/akka/Greeter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="41" column="54" selection-start-line="41" selection-start-column="54" selection-end-line="41" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#500#501#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/akka/Printer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="33" column="1" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="833" column="46" selection-start-line="833" selection-start-column="46" selection-end-line="833" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/deviceinsight/services/akka/AkkaQuickstart.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="83" selection-start-line="26" selection-start-column="83" selection-end-line="26" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
