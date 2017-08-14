@@ -1,5 +1,5 @@
 spring:
   data:
     cassandra:
-      keyspace-name: sample
-      contact-points: docker
+      keyspace-name: event_store
+      #contact-points: docker

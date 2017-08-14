@@ -1,5 +1,6 @@
 package com.deviceinsight.services.model.dao;
 
+import com.deviceinsight.services.ecommerce.impl.model.LineItem;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -28,6 +29,11 @@ public class BaseDaoImpl<T> extends UUIDHolder implements BaseDao<T> {
         BigInteger bi2 = new BigInteger(withoutDashes.substring(16, 32), 16);
         UUID uuid = new UUID(bi1.longValue(), bi2.longValue());
         return sessionFactory.getCurrentSession().get(getMyType(), uuid);
+    }
+
+    @Override
+    public void delete(T existingLineItem) {
+        sessionFactory.getCurrentSession().delete(existingLineItem);
     }
 
     public Class<T> getMyType() {

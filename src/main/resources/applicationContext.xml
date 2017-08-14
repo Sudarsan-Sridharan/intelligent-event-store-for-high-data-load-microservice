@@ -9,6 +9,8 @@
 
     <!--<context:component-scan base-package="com.hazelcast.springconfiguration.annotated"/>-->
 
+
+
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="locations">
             <list>

@@ -40,7 +40,8 @@ public class Hibernate5AutoConfiguration {
         LocalSessionFactoryBean sessionFactory = new LocalSessionFactoryBean();
         sessionFactory.setDataSource(dataSource);
         sessionFactory.setPackagesToScan(new String[]{
-                "com.deviceinsight.services.model"
+                "com.deviceinsight.services.model",
+                "com.deviceinsight.services.ecommerce"
         });
         return sessionFactory;
     }
