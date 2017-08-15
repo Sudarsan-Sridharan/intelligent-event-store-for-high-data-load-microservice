@@ -45,22 +45,13 @@ public class ExampleController {
     }
 
     @ResponseBody
-    @RequestMapping(value = {"/login/{username}"}, method = {RequestMethod.POST})
-    public ResponseEntity loginUsername(@RequestBody UsernamePasspwdUpgradeRequest dto, @RequestParam MultiValueMap<String, String> allRequestParams, HttpServletRequest request,
-                                        Model model) throws Exception {
-        String email;// = allRequestParams.get("email").get(0);
-        String username;// = allRequestParams.get("username").get(0);
-    /*
-    admin
-    demo
-     */
-        username = "admin";
+    @RequestMapping(value = {"/login/rest"}, method = {RequestMethod.POST})
+    public ResponseEntity loginUsername(@RequestBody UsernamePasspwdUpgradeRequest dto, HttpServletRequest request) throws Exception {
         String pw = "demo";//allRequestParams.get("password");
-        username = dto.getUsername();
         pw = dto.getPasswd();
         String password_temporary_plain = pw;//password.get(0);
         tmp = password_temporary_plain;
-        if (authenticateUserAndSetSession(userDAO.findByUsername(username), request)) {
+        if (authenticateUserAndSetSession(userDAO.findByUsername(dto.getUsername()), request)) {
             return new ResponseEntity(HttpStatus.NO_CONTENT);
         } else {
             return new ResponseEntity(HttpStatus.UNAUTHORIZED);

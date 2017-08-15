@@ -8,7 +8,7 @@ public interface LineItemDao<LineItem> extends BaseDao<LineItem> {
 
     void save(LineItem lineItem);
 
-    List<LineItem> list(String customerUuid);
+    List<LineItem> list(String cartUuid);
 
     LineItem getByCartUuidAndProductUuid(String cartUuid, String productUuid);
 }

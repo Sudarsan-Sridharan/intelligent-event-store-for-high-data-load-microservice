@@ -78,12 +78,20 @@ public class CartController {
         } else {
             cart = availableCart;
             LineItem lineItem = (LineItem) lineItemDao.getByCartUuidAndProductUuid(cart.getUuid().toString(), cartAddRequestDto.getProductUuid().toString());
-            if (!lineItem.getTitle().equals(product.getTitle()) || lineItem.getPrice() != product.getPrice()) {
-                cartService.synchronizeProductPropertiesToCart(cart.getUuid().toString(), product.getUuid().toString());
-                lineItemDifferenceDto = new LineItemDifferenceDto(new LineItemDto(lineItem.getTitle(), lineItem.getPrice(), lineItem.getAmount(), lineItem.getTax()), new LineItemDto(product.getTitle(), product.getPrice(), cartAddRequestDto.getAmount(), product.getPrice())); // todo
+
+            if(lineItem==null) {
+                cartService.addToCart(cart.getUuid().toString(), cartAddRequestDto.getProductUuid(), cartAddRequestDto.getAmount());
+
+            } else {
+
+
+                if (!lineItem.getTitle().equals(product.getTitle()) || lineItem.getPrice() != product.getPrice()) {
+                    cartService.synchronizeProductPropertiesToCart(cart.getUuid().toString(), product.getUuid().toString());
+                    lineItemDifferenceDto = new LineItemDifferenceDto(new LineItemDto(lineItem.getTitle(), lineItem.getPrice(), lineItem.getAmount(), lineItem.getTax()), new LineItemDto(product.getTitle(), product.getPrice(), cartAddRequestDto.getAmount(), product.getPrice())); // todo
+                }
+                cartAddResponseDto.setDifference(lineItemDifferenceDto);
+                cartService.addToCart(cart.getUuid().toString(), cartAddRequestDto.getProductUuid(), cartAddRequestDto.getAmount());
             }
-            cartAddResponseDto.setDifference(lineItemDifferenceDto);
-            cartService.addToCart(cart.getUuid().toString(), cartAddRequestDto.getProductUuid(), cartAddRequestDto.getAmount());
         }
 
         try {

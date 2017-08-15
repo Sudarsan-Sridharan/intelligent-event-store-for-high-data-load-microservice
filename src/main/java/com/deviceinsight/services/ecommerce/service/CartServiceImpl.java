@@ -36,11 +36,16 @@ public class CartServiceImpl implements CartService {
 
         double totalInclTax = 0;
 
+        double totalExclTax = 0;
+
+
         for(Object ldto : lineItems) {
-             totalInclTax = ((LineItem) ldto).getAmount()*((LineItem) ldto).getPrice();
+            double single = ((LineItem) ldto).getAmount()*((LineItem) ldto).getPrice();
+            totalInclTax += single;
+            totalExclTax += single/(1+((((LineItem) ldto).getTax())/100)); // todo check tax calulation
         }
 
-        CartDto cartDto = new CartDto(lineItemDtos, totalInclTax, 0d);
+        CartDto cartDto = new CartDto(lineItemDtos, totalInclTax, totalExclTax);
 
 
 

@@ -11,10 +11,6 @@ public class User {
     @GeneratedValue
     private int id;
     private String avatar_url_gravatar_by_email;
-    private Long average_time_service;
-    private Long average_time_pay;
-    private int service_counter;
-    private int pay_counter;
     private String reset_password_token;
     private String telephone;
     private int last_token_timestamp = 0;
@@ -34,8 +30,17 @@ public class User {
     @NotNull(message="")
     @NotEmpty(message="")*/
     private String password;
-    private String password_autologin;
+
     private String email;
+
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 
     public String getAvatar_url_gravatar_by_email() {
         return avatar_url_gravatar_by_email;
@@ -45,44 +50,12 @@ public class User {
         this.avatar_url_gravatar_by_email = avatar_url_gravatar_by_email;
     }
 
-    public Long getAverage_time_service() {
-        return average_time_service;
+    public String getReset_password_token() {
+        return reset_password_token;
     }
 
-    public void setAverage_time_service(Long average_time_service) {
-        this.average_time_service = average_time_service;
-    }
-
-    public Long getAverage_time_pay() {
-        return average_time_pay;
-    }
-
-    public void setAverage_time_pay(Long average_time_pay) {
-        this.average_time_pay = average_time_pay;
-    }
-
-    public int getService_counter() {
-        return service_counter;
-    }
-
-    public void setService_counter(int service_counter) {
-        this.service_counter = service_counter;
-    }
-
-    public int getPay_counter() {
-        return pay_counter;
-    }
-
-    public void setPay_counter(int pay_counter) {
-        this.pay_counter = pay_counter;
-    }
-
-    public String getPassword_autologin() {
-        return password_autologin;
-    }
-
-    public void setPassword_autologin(String password_autologin) {
-        this.password_autologin = password_autologin;
+    public void setReset_password_token(String reset_password_token) {
+        this.reset_password_token = reset_password_token;
     }
 
     public String getTelephone() {
@@ -101,12 +74,28 @@ public class User {
         this.last_token_timestamp = last_token_timestamp;
     }
 
-    public String getReset_password_token() {
-        return reset_password_token;
+    public boolean isEnabled() {
+        return enabled;
     }
 
-    public void setReset_password_token(String reset_password_token) {
-        this.reset_password_token = reset_password_token;
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public String getUserRole() {
+        return user_role;
+    }
+
+    public void setUserRole(String user_role) {
+        this.user_role = user_role;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getFirst_name() {
@@ -125,23 +114,6 @@ public class User {
         this.last_name = last_name;
     }
 
-    // @Column(name = "id")
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
     public String getPassword() {
         return password;
     }
@@ -157,23 +129,4 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
-
-
-    public String getUserRole() {
-        return this.user_role;
-    }
-
-    public void setUserRole(String userRole) {
-        this.user_role = userRole;
-    }
-
-    @Column(name = "enabled", nullable = false)
-    public boolean isEnabled() {
-        return this.enabled;
-    }
-
-    public void setEnabled(boolean enabled) {
-        this.enabled = enabled;
-    }
-
 }

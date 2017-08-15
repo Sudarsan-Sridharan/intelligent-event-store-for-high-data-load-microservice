@@ -5,6 +5,8 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+
 @Component
 public class ProductDaoImpl extends BaseDaoImpl<Product> implements ProductDao<Product> {
 
@@ -18,5 +20,12 @@ public class ProductDaoImpl extends BaseDaoImpl<Product> implements ProductDao<P
     @Override
     public void save(Product product) {
         sessionFactory.getCurrentSession().save(product);
+    }
+
+    @Override
+    public List<Product> list() {
+
+        return sessionFactory.getCurrentSession().createCriteria(Product.class).list();
+
     }
 }
