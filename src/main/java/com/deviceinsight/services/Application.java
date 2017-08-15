@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.security.oauth2.client.EnableOAuth
 @SpringBootApplication
 @EnablePrometheusEndpoint
 @EnableSpringBootMetricsCollector
-@EnableOAuth2Sso
+//@EnableOAuth2Sso
 @EntityScan("com.deviceinsight.services.model")
 public class Application {
     public static void main(String[] args) {
