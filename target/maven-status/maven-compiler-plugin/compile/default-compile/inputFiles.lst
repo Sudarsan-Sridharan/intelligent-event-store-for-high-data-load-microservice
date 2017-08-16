@@ -1,88 +1,120 @@
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/websocket/TopicItemDAO.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/repository/CassandraHotelRepository.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/UserRole.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/FriendsGraphDoc.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/Test.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/akka/Greeter.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/Notification.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/WebSocketConfig.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/BaseEntity.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/PortfolioController.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/JestClientService.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/security/AuthFailureHandler.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/ProductDaoImpl.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/HazelcastConfiguration.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/ServicequeuesDAOImpl.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/domain/Hotel.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/websocket/TopicItemDAOImpl.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ecommerce/api/Restaurant2RestController.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/Product.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/websocket/Servicequeue.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ARestController.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/request/AbstractRequest.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/KafkaOutputBean.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/RootConfiguration.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ecommerce/api/ProductRestController.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/akka/Printer.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/TopicItem.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/request/HelloRequest.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/org/springframework/cloud/deployer/spi/mesos/marathon/MarathonAppDeployerProperties.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/UserDAO.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/websocket/Portfolio.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/GraphApiController.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/Client.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/repository/HotelRepository.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/UserDAOImpl.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/request/GoodbyeRequest.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/RestaurantDao.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/security/HttpAuthenticationEntryPoint.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/service/HotelService.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/Application.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ecommerce/api/Article.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/Hibernate5AutoConfiguration.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/PrometheusAutoConfiguration.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/domain/HotelByLetterKey.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/websocket/PortfolioServiceImpl.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/ExampleController.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/SpringClient.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/security/AuthSuccessHandler.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/BaseDaoImpl.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/PanamaEventDto.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/HotelController.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/repository/CassandraHotelByLetterRepository.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/TradeService.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/akka/AkkaQuickstart.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/security/UserRole.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/service/HotelServiceImpl.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/response/HelloResponse.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/domain/HotelByLetter.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/CreateClientRequest.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/IProduct.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/WebSecurityConfig.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/RestaurantDaoImpl.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/UUIDHolder.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/User.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/repository/HotelByLetterRepository.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/VersionController.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/BaseUUIDEntity.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ApplicationConfig.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ecommerce/api/ESExampleObject.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/security/MyUserDetailsService.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/ProductDao.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/response/GoodbyeResponse.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/websocket/PortfolioPosition.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/security/UsernamePasspwdUpgradeRequest.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/TradeServiceImpl.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/ecommerce/api/ProductSaveDto.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/Trade.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/ServicequeuesDAO.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/GreetingController.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/dao/BaseDao.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/websocket/PortfolioService.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/KafkaPartitionUtil.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/controller/security/HttpLogoutSuccessHandler.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/Table.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/Servicequeue.java
-/Users/ebners/Desktop/DATA/_/delivery-system/src/main/java/com/deviceinsight/services/model/Restaurant.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/api/ProductRestController.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/controller/CheckoutDto.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/akka/Printer.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/service/CartServiceImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/security/MyUserDetailsService.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/controller/CartAddRequestDto.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/dto/payment/PaymentSelectionDto.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/repository/CassandraHotelByLetterRepository.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/request/GoodbyeRequest.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/GraphApiController.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/WebSecurityConfig.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/dto/cart/CartDto.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/response/HelloResponse.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/security/AuthFailureHandler.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/ServicequeuesDAO.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/security/HttpAuthenticationEntryPoint.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/controller/LineItemDifferenceDto.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/PrometheusAutoConfiguration.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/api/Article.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/impl/dao/CartDao.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/User.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/Test.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/controller/CaptureBodyDto.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/websocket/PortfolioService.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/api/Restaurant2RestController.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/akka/AkkaQuickstart.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/dao/RestaurantDaoImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/dao/UserDAOImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/service/CaptureResultDto.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/domain/HotelByLetter.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/PortfolioController.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/service/HotelService.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/RootConfiguration.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/impl/dao/SaleItemDao.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/impl/dao/LineItemDao.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/UserRole.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/org/springframework/cloud/deployer/spi/mesos/marathon/MarathonAppDeployerProperties.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/impl/dao/OrderDao.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/impl/dao/SaleItemDaoImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/Table.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/websocket/Portfolio.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/SpringClient.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/impl/dao/CartDaoImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/response/GoodbyeResponse.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/akka/Greeter.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/security/AuthSuccessHandler.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/dao/UserDAO.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/websocket/Servicequeue.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/security/HttpLogoutSuccessHandler.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/websocket/PortfolioServiceImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/request/HelloRequest.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/domain/Hotel.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/TopicItem.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/request/AbstractRequest.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/GreetingController.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/impl/dao/LineItemDaoImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/impl/dao/OrderDaoImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/api/cart/LineItem.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/dao/BaseEntity.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/service/HotelServiceImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/dao/BaseUUIDEntity.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/ExampleController.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/controller/CartController.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/HotelController.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/api/cart/ShopppingCart.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/api/ProductSaveDto.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/Product.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/websocket/TopicItemDAOImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ApplicationConfig.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/impl/model/SaleItem.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/config/Notification.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/dao/RestaurantDao.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/service/CartService.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/dto/cart/LineItemDto.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/FriendsGraphDoc.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/config/KafkaCamelRoute.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/domain/HotelByLetterKey.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/controller/CheckoutController.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/KafkaPartitionUtil.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/Servicequeue.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/impl/model/LineItem.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ARestController.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/PanamaEventDto.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/impl/model/Order.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/impl/cart/ShoppingCartImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/Restaurant.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/config/WebSocketConfig.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/dao/BaseDaoImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/ServicequeuesDAOImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/controller/CaptureController.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/config/JestClientService.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/Trade.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/dao/BaseDao.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/api/RestaurantRestController.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/api/ESExampleObject.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/TradeServiceImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/dao/ProductDao.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/service/CaptureService.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/CreateClientRequest.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/Hibernate5AutoConfiguration.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/Client.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/dao/ProductDaoImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/Application.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/repository/HotelRepository.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/dao/UUIDHolder.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/security/UsernamePasspwdUpgradeRequest.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/websocket/PortfolioPosition.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/config/KafkaOutputBean.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/repository/CassandraHotelRepository.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/TradeService.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/repository/HotelByLetterRepository.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/VersionController.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/controller/PersonalDataDto.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/impl/model/Cart.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/HazelcastConfiguration.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/service/CaptureServiceImpl.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/model/IProduct.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/ecommerce/controller/CartAddResponseDto.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/controller/security/UserRole.java
+/Users/ebners/Next-Cloud UG/intelligent-event-store-for-high-data-load-microservice/src/main/java/com/deviceinsight/services/websocket/TopicItemDAO.java

@@ -1,0 +1,133 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Shop",
+		"_postman_id": "f48a8093-1842-b088-3752-3bc3cfd79658",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/login/rest",
+			"request": {
+				"url": "localhost:8080/login/rest",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\":\"admin\",\n\"passwd\":\"admin\"\n}"
+				},
+				"description": "authenticate as admin"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/login/rest",
+			"request": {
+				"url": "localhost:8080/login/rest",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"username\":\"john.doe\",\n\"passwd\":\"demo\"\n}"
+				},
+				"description": "authenticate as customer"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cart/add",
+			"request": {
+				"url": "localhost:8080/cart/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"productUuid\":\"ca275984-0f8d-43a7-88a8-0bd12f157547\",\n\"amount\":1\n}"
+				},
+				"description": "add sample product to cart"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/capture",
+			"request": {
+				"url": "localhost:8080/capture",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"personalData\":{\n\t\t\"firstName\":\"John\",\n\t\t\"lastName\":\"Doe\",\n\t\t\"streetName\":\"Marienplatz\",\n\t\t\"streetNumber\":\"1\",\n\t\t\"postalCode\":80331,\n\t\t\"city\":\"München\"\n\t},\n\t\"paymentSelection\":{\n\t\t\"method\":\"PayPal\"\n\t}\n}"
+				},
+				"description": "finish order with sample address data"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/products",
+			"request": {
+				"url": "http://localhost:8080/products",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "list all products (checks that authentication with different roles works, login with admin first)"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/cart",
+			"request": {
+				"url": "http://localhost:8080/cart",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": "show current cart content"
+			},
+			"response": []
+		}
+	]
+}
