@@ -99,6 +99,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
  .permitAll().and().logout().logoutSuccessUrl("/livetrading").logoutUrl("/logout").permitAll()*//////////////
                 //.and().antMatcher("/myaccount/dashboard").authorizeRequests().anyRequest().hasAnyRole("USER")
                 .and().authorizeRequests()
+                .antMatchers("/api/**").permitAll()
                 .antMatchers("/latex").permitAll()
                 .antMatchers("/createInvoice").permitAll()
                 .antMatchers("/api/v1/checkAuth").permitAll()
@@ -116,7 +117,7 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/", "/auth/**").permitAll()
                 .antMatchers("/secured").hasRole("USER")
                 .antMatchers("/products").hasRole("ADMIN")
-                .antMatchers("/api/v1/**").hasAnyRole("USER", "ADMIN")
+                //.antMatchers("/api/v1/**").hasAnyRole("USER", "ADMIN")
                 .antMatchers("/**").permitAll()
         ;
 

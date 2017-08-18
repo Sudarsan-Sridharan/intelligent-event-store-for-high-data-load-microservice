@@ -1,4 +1,4 @@
-package com.deviceinsight.services.ecommerce.api;
+package com.deviceinsight.services.ecommerce.controller;
 
 import com.deviceinsight.services.model.Product;
 import com.deviceinsight.services.model.dao.ProductDao;
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping(value = "/products")
-public class ProductRestController {
+@RequestMapping(value = "/api/v1/products")
+public class ProductsController {
 
     @Autowired
     private ProductDao<Product> productDao;

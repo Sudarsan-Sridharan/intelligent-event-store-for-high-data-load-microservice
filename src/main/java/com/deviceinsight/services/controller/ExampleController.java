@@ -38,11 +38,11 @@ public class ExampleController {
         return "whooow secured content!!";
     }
 
-    @RequestMapping("/")
+/*    @RequestMapping("/")
     @ResponseBody
     public String index() {
         return "it works!";
-    }
+    }*/
 
     @ResponseBody
     @RequestMapping(value = {"/login/rest"}, method = {RequestMethod.POST})
